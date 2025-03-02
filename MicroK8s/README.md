@@ -1,3 +1,9 @@
+```diff
++ I began to learn and practicing KUBERNETES with Microsoft Learn with the following learning path:
++    INTRODUCTION TO KUKERNETES ON AZURE 
++ I am emphasizing in practicing kubernetes with AKS (Azure Kubernetes Service)
+```
+
 ##### MicroK8s is an option for deploying a single-node Kubernetes cluster as a single package to target workstations 
 ##### and Internet of Things (IoT) devices. Canonical, the creator of Ubuntu Linux, originally developed and currently maintains MicroK8s. 
 #####   I tested the Linux version with Ubuntu 24.04 LTS in a VM inside HYPER-V
@@ -153,16 +159,25 @@ sudo kubectl scale --replicas=3 deployments/nginx
 ```
 ##### output EXAMPLE:
 ##### deployment.apps/nginx scaled
+
+##### output EXAMPLE:
+##### To check the number of running pods, run the kubectl get command, and again pass the -o wide parameter
+
+```
+sudo kubectl get pods -o wide
+```
+##### output EXAMPLE:
+##### NAME                     READY   STATUS    RESTARTS   AGE     IP           NODE          NOMINATED NODE   READINESS GATES
+##### nginx-86c57db685-dj6lz   1/1     Running   0          7m57s   10.1.83.10   microk8s-vm   <none>           <none>
+##### nginx-86c57db685-lzrwp   1/1     Running   0          9s      10.1.83.12   microk8s-vm   <none>           <none>
+##### nginx-86c57db685-m7vdd   1/1     Running   0          9s      10.1.83.11   microk8s-vm   <none>           <none>
+##### ubuntu@microk8s-vm:~$
+
+
+
 ```
 
 ```
-```
-
-```
-
-
-
-
 
 ##### output EXAMPLE:
 ##### 
@@ -171,11 +186,4 @@ sudo kubectl scale --replicas=3 deployments/nginx
 ##### 
 ##### 
 ```
-```
-```diff
-+ I learned that Azure App Service uses the following layers for a Python Web App with Flask: 
-+ 1) Ubuntu (or other Linux Distro)  2) Docker.  3) Python.  4) Virtual Python Environment.  5) Flask  6) NGINX  7) Gunicorn
-+ NGINX act as reverse proxy server, load balancer, content cache server, web server for Static clients,
-+ can manage slow connections, + other SSL/HTTP/HTTPS features, protection de DDOS attacks and can PASS DYNAMIC WEB CONTENT
-+ to GUNICORM while NGINX manages STATIC WEB CONTENT
 ```
