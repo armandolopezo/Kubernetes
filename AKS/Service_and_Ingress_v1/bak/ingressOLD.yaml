@@ -7,9 +7,6 @@ metadata:
     kubernetes.io/ingress.class: addon-http-application-routing
 spec:
   rules:
-  #
-  # I HAVE TO CHANGE THIS WITH THE ACTUAL HOSTNAME beloW in the host field replacing <uuid> and <region> with the actual values
-  #
     - host: contoso-website.com  # I HAVE TO CHANGE THIS WITH THE ACTUAL HOSTNAME
       http:
         paths:
