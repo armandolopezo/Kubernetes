@@ -46,6 +46,3 @@ az aks nodepool add \
 - aks-userpool-21895026-vmss000000    Ready    agent   105s   v1.23.12
 - aks-userpool-21895026-vmss000001    Ready    agent   105s   v1.23.12
 ```
-
-
-
