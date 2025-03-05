@@ -4,8 +4,7 @@
 ###### 3) Look the following files in the subfolder SERVICE_AND_INGRESS_V1 inside the AKS folder (root folder for first files like this README.MD).
 ###### 4) Execute commands from README.MD in the subfolder with the following secuence:
 ###### 5) Deploy networking SERVICE with the SERVICE.YAML file.
-###### 6) Create AZURE DNS ZONE with the commands in the file DNSZONE.MD.
-###### 7) Deploy the networking INGRESS with the INGRESS.YAML file.
+###### 6) Deploy the networking INGRESS with the INGRESS.YAML file.
 
 ###### Some additional clarifications:
 ###### following was required to practicing AKS in Microsoft Learn (INTRODUCTION TO KUBERNETES ON AKS)
