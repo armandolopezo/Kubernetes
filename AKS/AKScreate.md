@@ -18,6 +18,7 @@ az aks create \
 --node-count 2 \
 --generate-ssh-keys \
 --node-vm-size Standard_B2s \
+--enable-app-routing  \   # THIS LINE WAS NOT IN THE ORIGINAL COMMAND. I ADDED IT AFTER CHECKING THE "HORIZONTAL POD AUTOSCALER" learning exercises.
 --network-plugin azure
 ```
 

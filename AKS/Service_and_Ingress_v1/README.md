@@ -21,7 +21,9 @@
 + NAME              TYPE        CLUSTER-IP     EXTERNAL-IP   PORT(S)   AGE
 + contoso-website   ClusterIP   10.0.158.189   <none>        80/TCP    42s
 ```
-### I have to execute the following two commands in AZURE CLOUD SHELL to get DNS ZONE
+### I have to create an link a AZURE DNS ZONE with AKS. See and execute the COMMANDS from "DnsZone.md" to cree the required DNS ZONE.
+
+### I will execute the following two commands in AZURE CLOUD SHELL to test DNS ZONE (I don't know if they work.)
 
 `az network dns zone list`
 
