@@ -1,0 +1,8 @@
+ "azurePortalFqdn": "aks-contos-rg-contoso-video-bc99b5-lctzev44.portal.hcp.eastus.azmk8s.io"
+
+  "dnsPrefix": "aks-contos-rg-contoso-video-bc99b5",
+
+  "fqdn": "aks-contos-rg-contoso-video-bc99b5-lctzev44.hcp.eastus.azmk8s.io",
+
+    "dnsServiceIp": "10.0.0.10",
+
