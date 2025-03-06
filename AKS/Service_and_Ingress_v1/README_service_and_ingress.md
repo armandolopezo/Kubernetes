@@ -49,5 +49,9 @@ az aks show \
 + NAME              HOSTS                                           ADDRESS        PORTS   AGE
 + contoso-website   contoso.5cd29ec927f24764b052.eastus.aksapp.io   52.226.96.30   80      4m44s
 ```
+### Most probably HOSTS is not like the previous output, but * that is RIGHT. I also have to wait some SECONDS OR MINUTES FOR UPDATES
+### of the IP ADDRESS AND FQDN IN THE AZURE DNS ZONE. FOR EXAMPLE FOR THE INGRESS.YAMLfile updated today march 5, 2025 there is a 
+### creation of the TYPE A RECORD: WWW in the zone CONTOSOALO.COM that corresponds to the registration of HOSTNAME WWW.CONTOSOALO.COM 
+### created in INGRESS.YAML (ANNOTATIONS:)
 
 ### Finally, I have to Open a browser, and go to the FQDN described in the output or use the PUBLIC IP ADDRESS. You should see a websiteo
