@@ -1,0 +1,18 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: contoso-website
+  annotations:
+spec:
+  ingressClassName: webapprouting.kubernetes.azure.com
+  rules:
+  - host: contoso-website.com
+    http:
+      paths:
+      - backend:
+          service:
+            name: contoso-website
+            port:
+              number: 80
+        path: /
+        pathType: Prefix

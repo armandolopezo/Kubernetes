@@ -15,7 +15,7 @@
 az aks create \
 --resource-group $RESOURCE_GROUP \
 --name $CLUSTER_NAME \
---node-count 2 \
+--node-count 1 \
 --generate-ssh-keys \
 --node-vm-size Standard_B2s \
 --enable-app-routing    
@@ -29,10 +29,6 @@ az aks create \
 ### Verify that the cluster is running and that you can connect to it using the "kubectl get nodes" command.
 
 `kubectl get nodes`
-
-### Create the application namespace using the "kubectl create namespace" command
-
-`kubectl create namespace hpa-contoso`
 
 ### Deploy the application to the cluster using the "kubectl apply" command
 
@@ -66,8 +62,8 @@ az aks create \
 
 ### Check the results - Query the metrics and usage of the HPA using the "kubectl get hpa" command
 
-`kubectl get hpa --namespace hpa-contoso`
+`kubectl get hpa`
 
 ### Check the REPLICAS
 
-`kubectl get rs -n hpa-contoso`
+`kubectl get rs`
