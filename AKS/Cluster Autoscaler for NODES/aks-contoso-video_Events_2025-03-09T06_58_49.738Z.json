@@ -1,0 +1,819 @@
+[
+    {
+        "metadata": {
+            "name": "nginx-85497484cc-rvqrh.182b0c858d079891",
+            "namespace": "app-routing-system",
+            "uid": "9e997235-dd7c-4b4c-850f-cf07f4fec1ea",
+            "resourceVersion": "4151",
+            "creationTimestamp": "2025-03-09T05:50:48Z",
+            "managedFields": [
+                {
+                    "manager": "kube-scheduler",
+                    "operation": "Update",
+                    "apiVersion": "events.k8s.io/v1",
+                    "time": "2025-03-09T05:55:48Z",
+                    "fieldsType": "FieldsV1",
+                    "fieldsV1": {
+                        "f:action": {},
+                        "f:eventTime": {},
+                        "f:note": {},
+                        "f:reason": {},
+                        "f:regarding": {},
+                        "f:reportingController": {},
+                        "f:reportingInstance": {},
+                        "f:series": {
+                            ".": {},
+                            "f:count": {},
+                            "f:lastObservedTime": {}
+                        },
+                        "f:type": {}
+                    }
+                }
+            ]
+        },
+        "involvedObject": {
+            "kind": "Pod",
+            "namespace": "app-routing-system",
+            "name": "nginx-85497484cc-rvqrh",
+            "uid": "3a18b379-e28d-4354-a088-909381091320",
+            "apiVersion": "v1",
+            "resourceVersion": "1426"
+        },
+        "reason": "FailedScheduling",
+        "message": "0/1 nodes are available: 1 Insufficient cpu. preemption: 0/1 nodes are available: 1 No preemption victims found for incoming pod.",
+        "source": {},
+        "firstTimestamp": null,
+        "lastTimestamp": null,
+        "type": "Warning",
+        "eventTime": "2025-03-09T05:50:48.645079Z",
+        "series": {
+            "count": 2,
+            "lastObservedTime": "2025-03-09T05:55:48.651050Z"
+        },
+        "action": "Scheduling",
+        "reportingComponent": "default-scheduler",
+        "reportingInstance": "default-scheduler-kube-scheduler-v2-5f4fc694bf-jhrnh"
+    },
+    {
+        "metadata": {
+            "name": "nginx-85497484cc-rvqrh.182b0cec5255d027",
+            "namespace": "app-routing-system",
+            "uid": "e851aab1-b4d2-4743-aa98-4660f28f2b55",
+            "resourceVersion": "4785",
+            "creationTimestamp": "2025-03-09T05:58:10Z",
+            "managedFields": [
+                {
+                    "manager": "kube-scheduler",
+                    "operation": "Update",
+                    "apiVersion": "events.k8s.io/v1",
+                    "time": "2025-03-09T05:58:10Z",
+                    "fieldsType": "FieldsV1",
+                    "fieldsV1": {
+                        "f:action": {},
+                        "f:eventTime": {},
+                        "f:note": {},
+                        "f:reason": {},
+                        "f:regarding": {},
+                        "f:reportingController": {},
+                        "f:reportingInstance": {},
+                        "f:type": {}
+                    }
+                }
+            ]
+        },
+        "involvedObject": {
+            "kind": "Pod",
+            "namespace": "app-routing-system",
+            "name": "nginx-85497484cc-rvqrh",
+            "uid": "3a18b379-e28d-4354-a088-909381091320",
+            "apiVersion": "v1",
+            "resourceVersion": "1426"
+        },
+        "reason": "FailedScheduling",
+        "message": "0/1 nodes are available: 1 Insufficient cpu. preemption: 0/1 nodes are available: 1 No preemption victims found for incoming pod.",
+        "source": {},
+        "firstTimestamp": null,
+        "lastTimestamp": null,
+        "type": "Warning",
+        "eventTime": "2025-03-09T05:58:10.041988Z",
+        "action": "Scheduling",
+        "reportingComponent": "default-scheduler",
+        "reportingInstance": "default-scheduler-kube-scheduler-v2-5f4fc694bf-cmh68"
+    },
+    {
+        "metadata": {
+            "name": "nginx-85497484cc-rvqrh.182b0cfe4ca022a5",
+            "namespace": "app-routing-system",
+            "uid": "0fd57b97-3506-440a-ae22-9c78d888a0f0",
+            "resourceVersion": "6706",
+            "creationTimestamp": "2025-03-09T05:59:27Z",
+            "managedFields": [
+                {
+                    "manager": "kube-scheduler",
+                    "operation": "Update",
+                    "apiVersion": "events.k8s.io/v1",
+                    "time": "2025-03-09T06:04:27Z",
+                    "fieldsType": "FieldsV1",
+                    "fieldsV1": {
+                        "f:action": {},
+                        "f:eventTime": {},
+                        "f:note": {},
+                        "f:reason": {},
+                        "f:regarding": {},
+                        "f:reportingController": {},
+                        "f:reportingInstance": {},
+                        "f:series": {
+                            ".": {},
+                            "f:count": {},
+                            "f:lastObservedTime": {}
+                        },
+                        "f:type": {}
+                    }
+                }
+            ]
+        },
+        "involvedObject": {
+            "kind": "Pod",
+            "namespace": "app-routing-system",
+            "name": "nginx-85497484cc-rvqrh",
+            "uid": "3a18b379-e28d-4354-a088-909381091320",
+            "apiVersion": "v1",
+            "resourceVersion": "1426"
+        },
+        "reason": "FailedScheduling",
+        "message": "0/1 nodes are available: 1 Insufficient cpu. preemption: 0/1 nodes are available: 1 No preemption victims found for incoming pod.",
+        "source": {},
+        "firstTimestamp": null,
+        "lastTimestamp": null,
+        "type": "Warning",
+        "eventTime": "2025-03-09T05:59:27.255607Z",
+        "series": {
+            "count": 2,
+            "lastObservedTime": "2025-03-09T06:04:27.263768Z"
+        },
+        "action": "Scheduling",
+        "reportingComponent": "default-scheduler",
+        "reportingInstance": "default-scheduler-kube-scheduler-v2-5f4fc694bf-qrks5"
+    },
+    {
+        "metadata": {
+            "name": "nginx-85497484cc-rvqrh.182b0d8a001bf6ef",
+            "namespace": "app-routing-system",
+            "uid": "e5422806-5881-4edd-9b3d-dad1a1a0187b",
+            "resourceVersion": "13912",
+            "creationTimestamp": "2025-03-09T06:09:27Z",
+            "managedFields": [
+                {
+                    "manager": "kube-scheduler",
+                    "operation": "Update",
+                    "apiVersion": "events.k8s.io/v1",
+                    "time": "2025-03-09T06:29:27Z",
+                    "fieldsType": "FieldsV1",
+                    "fieldsV1": {
+                        "f:action": {},
+                        "f:eventTime": {},
+                        "f:note": {},
+                        "f:reason": {},
+                        "f:regarding": {},
+                        "f:reportingController": {},
+                        "f:reportingInstance": {},
+                        "f:series": {
+                            ".": {},
+                            "f:count": {},
+                            "f:lastObservedTime": {}
+                        },
+                        "f:type": {}
+                    }
+                }
+            ]
+        },
+        "involvedObject": {
+            "kind": "Pod",
+            "namespace": "app-routing-system",
+            "name": "nginx-85497484cc-rvqrh",
+            "uid": "3a18b379-e28d-4354-a088-909381091320",
+            "apiVersion": "v1",
+            "resourceVersion": "6707"
+        },
+        "reason": "FailedScheduling",
+        "message": "0/2 nodes are available: 1 Insufficient cpu, 1 node(s) had untolerated taint {kubernetes.azure.com/scalesetpriority: spot}. preemption: 0/2 nodes are available: 1 No preemption victims found for incoming pod, 1 Preemption is not helpful for scheduling.",
+        "source": {},
+        "firstTimestamp": null,
+        "lastTimestamp": null,
+        "type": "Warning",
+        "eventTime": "2025-03-09T06:09:27.267301Z",
+        "series": {
+            "count": 4,
+            "lastObservedTime": "2025-03-09T06:24:27.288237Z"
+        },
+        "action": "Scheduling",
+        "reportingComponent": "default-scheduler",
+        "reportingInstance": "default-scheduler-kube-scheduler-v2-5f4fc694bf-qrks5"
+    },
+    {
+        "metadata": {
+            "name": "contoso-website-9866b76f7-fn2v6.182b0cec525995d6",
+            "namespace": "costsavings",
+            "uid": "a1b4631d-5a26-4684-8610-d938c7a5d84f",
+            "resourceVersion": "4786",
+            "creationTimestamp": "2025-03-09T05:58:10Z",
+            "managedFields": [
+                {
+                    "manager": "kube-scheduler",
+                    "operation": "Update",
+                    "apiVersion": "events.k8s.io/v1",
+                    "time": "2025-03-09T05:58:10Z",
+                    "fieldsType": "FieldsV1",
+                    "fieldsV1": {
+                        "f:action": {},
+                        "f:eventTime": {},
+                        "f:note": {},
+                        "f:reason": {},
+                        "f:regarding": {},
+                        "f:reportingController": {},
+                        "f:reportingInstance": {},
+                        "f:type": {}
+                    }
+                }
+            ]
+        },
+        "involvedObject": {
+            "kind": "Pod",
+            "namespace": "costsavings",
+            "name": "contoso-website-9866b76f7-fn2v6",
+            "uid": "adc69e7e-5251-4e5b-bc6a-51bc35e579b1",
+            "apiVersion": "v1",
+            "resourceVersion": "3371"
+        },
+        "reason": "FailedScheduling",
+        "message": "0/1 nodes are available: 1 node(s) didn't match Pod's node affinity/selector. preemption: 0/1 nodes are available: 1 Preemption is not helpful for scheduling.",
+        "source": {},
+        "firstTimestamp": null,
+        "lastTimestamp": null,
+        "type": "Warning",
+        "eventTime": "2025-03-09T05:58:10.042244Z",
+        "action": "Scheduling",
+        "reportingComponent": "default-scheduler",
+        "reportingInstance": "default-scheduler-kube-scheduler-v2-5f4fc694bf-cmh68"
+    },
+    {
+        "metadata": {
+            "name": "contoso-website-9866b76f7-fn2v6.182b0cfe4caba5f2",
+            "namespace": "costsavings",
+            "uid": "82208ee3-bf95-4f42-839c-8f6d36427c9b",
+            "resourceVersion": "5151",
+            "creationTimestamp": "2025-03-09T05:59:27Z",
+            "managedFields": [
+                {
+                    "manager": "kube-scheduler",
+                    "operation": "Update",
+                    "apiVersion": "events.k8s.io/v1",
+                    "time": "2025-03-09T05:59:27Z",
+                    "fieldsType": "FieldsV1",
+                    "fieldsV1": {
+                        "f:action": {},
+                        "f:eventTime": {},
+                        "f:note": {},
+                        "f:reason": {},
+                        "f:regarding": {},
+                        "f:reportingController": {},
+                        "f:reportingInstance": {},
+                        "f:type": {}
+                    }
+                }
+            ]
+        },
+        "involvedObject": {
+            "kind": "Pod",
+            "namespace": "costsavings",
+            "name": "contoso-website-9866b76f7-fn2v6",
+            "uid": "adc69e7e-5251-4e5b-bc6a-51bc35e579b1",
+            "apiVersion": "v1",
+            "resourceVersion": "3371"
+        },
+        "reason": "FailedScheduling",
+        "message": "0/1 nodes are available: 1 node(s) didn't match Pod's node affinity/selector. preemption: 0/1 nodes are available: 1 Preemption is not helpful for scheduling.",
+        "source": {},
+        "firstTimestamp": null,
+        "lastTimestamp": null,
+        "type": "Warning",
+        "eventTime": "2025-03-09T05:59:27.256369Z",
+        "action": "Scheduling",
+        "reportingComponent": "default-scheduler",
+        "reportingInstance": "default-scheduler-kube-scheduler-v2-5f4fc694bf-qrks5"
+    },
+    {
+        "metadata": {
+            "name": "contoso-website.182b0cc9115ad4d3",
+            "namespace": "costsavings",
+            "uid": "191afb39-de35-48e8-8c21-1b88215e9b73",
+            "resourceVersion": "4653",
+            "creationTimestamp": "2025-03-09T05:55:38Z",
+            "managedFields": [
+                {
+                    "manager": "kube-controller-manager",
+                    "operation": "Update",
+                    "apiVersion": "v1",
+                    "time": "2025-03-09T05:57:38Z",
+                    "fieldsType": "FieldsV1",
+                    "fieldsV1": {
+                        "f:count": {},
+                        "f:firstTimestamp": {},
+                        "f:involvedObject": {},
+                        "f:lastTimestamp": {},
+                        "f:message": {},
+                        "f:reason": {},
+                        "f:reportingComponent": {},
+                        "f:source": {
+                            "f:component": {}
+                        },
+                        "f:type": {}
+                    }
+                }
+            ]
+        },
+        "involvedObject": {
+            "kind": "HorizontalPodAutoscaler",
+            "namespace": "costsavings",
+            "name": "contoso-website",
+            "uid": "46b57477-f3b2-4d0e-b918-ea255c902dcf",
+            "apiVersion": "autoscaling/v2",
+            "resourceVersion": "4037"
+        },
+        "reason": "FailedGetResourceMetric",
+        "message": "failed to get cpu utilization: unable to get metrics for resource cpu: no metrics returned from resource metrics API",
+        "source": {
+            "component": "horizontal-pod-autoscaler"
+        },
+        "firstTimestamp": "2025-03-09T05:55:38Z",
+        "lastTimestamp": "2025-03-09T05:57:38Z",
+        "count": 9,
+        "type": "Warning",
+        "eventTime": null,
+        "reportingComponent": "horizontal-pod-autoscaler",
+        "reportingInstance": ""
+    },
+    {
+        "metadata": {
+            "name": "contoso-website.182b0cc911b4a482",
+            "namespace": "costsavings",
+            "uid": "bf2678f1-11b0-4cf3-803a-037932e0f7ad",
+            "resourceVersion": "4586",
+            "creationTimestamp": "2025-03-09T05:55:38Z",
+            "managedFields": [
+                {
+                    "manager": "kube-controller-manager",
+                    "operation": "Update",
+                    "apiVersion": "v1",
+                    "time": "2025-03-09T05:57:23Z",
+                    "fieldsType": "FieldsV1",
+                    "fieldsV1": {
+                        "f:count": {},
+                        "f:firstTimestamp": {},
+                        "f:involvedObject": {},
+                        "f:lastTimestamp": {},
+                        "f:message": {},
+                        "f:reason": {},
+                        "f:reportingComponent": {},
+                        "f:source": {
+                            "f:component": {}
+                        },
+                        "f:type": {}
+                    }
+                }
+            ]
+        },
+        "involvedObject": {
+            "kind": "HorizontalPodAutoscaler",
+            "namespace": "costsavings",
+            "name": "contoso-website",
+            "uid": "46b57477-f3b2-4d0e-b918-ea255c902dcf",
+            "apiVersion": "autoscaling/v2",
+            "resourceVersion": "4037"
+        },
+        "reason": "FailedGetResourceMetric",
+        "message": "failed to get memory utilization: unable to get metrics for resource memory: no metrics returned from resource metrics API",
+        "source": {
+            "component": "horizontal-pod-autoscaler"
+        },
+        "firstTimestamp": "2025-03-09T05:55:38Z",
+        "lastTimestamp": "2025-03-09T05:57:23Z",
+        "count": 8,
+        "type": "Warning",
+        "eventTime": null,
+        "reportingComponent": "horizontal-pod-autoscaler",
+        "reportingInstance": ""
+    },
+    {
+        "metadata": {
+            "name": "contoso-website.182b0cc9121e26fd",
+            "namespace": "costsavings",
+            "uid": "e95cc62f-7238-42a3-89fe-0451e48407e5",
+            "resourceVersion": "4588",
+            "creationTimestamp": "2025-03-09T05:55:38Z",
+            "managedFields": [
+                {
+                    "manager": "kube-controller-manager",
+                    "operation": "Update",
+                    "apiVersion": "v1",
+                    "time": "2025-03-09T05:57:23Z",
+                    "fieldsType": "FieldsV1",
+                    "fieldsV1": {
+                        "f:count": {},
+                        "f:firstTimestamp": {},
+                        "f:involvedObject": {},
+                        "f:lastTimestamp": {},
+                        "f:message": {},
+                        "f:reason": {},
+                        "f:reportingComponent": {},
+                        "f:source": {
+                            "f:component": {}
+                        },
+                        "f:type": {}
+                    }
+                }
+            ]
+        },
+        "involvedObject": {
+            "kind": "HorizontalPodAutoscaler",
+            "namespace": "costsavings",
+            "name": "contoso-website",
+            "uid": "46b57477-f3b2-4d0e-b918-ea255c902dcf",
+            "apiVersion": "autoscaling/v2",
+            "resourceVersion": "4037"
+        },
+        "reason": "FailedComputeMetricsReplicas",
+        "message": "invalid metrics (2 invalid out of 2), first error is: failed to get cpu resource metric value: failed to get cpu utilization: unable to get metrics for resource cpu: no metrics returned from resource metrics API",
+        "source": {
+            "component": "horizontal-pod-autoscaler"
+        },
+        "firstTimestamp": "2025-03-09T05:55:38Z",
+        "lastTimestamp": "2025-03-09T05:57:23Z",
+        "count": 8,
+        "type": "Warning",
+        "eventTime": null,
+        "reportingComponent": "horizontal-pod-autoscaler",
+        "reportingInstance": ""
+    },
+    {
+        "metadata": {
+            "name": "contoso-website.182b0cf3d87cafe6",
+            "namespace": "costsavings",
+            "uid": "0f3eb74f-cfb0-4066-886f-b9f8874e9ad1",
+            "resourceVersion": "5082",
+            "creationTimestamp": "2025-03-09T05:58:42Z",
+            "managedFields": [
+                {
+                    "manager": "kube-controller-manager",
+                    "operation": "Update",
+                    "apiVersion": "v1",
+                    "time": "2025-03-09T05:59:12Z",
+                    "fieldsType": "FieldsV1",
+                    "fieldsV1": {
+                        "f:count": {},
+                        "f:firstTimestamp": {},
+                        "f:involvedObject": {},
+                        "f:lastTimestamp": {},
+                        "f:message": {},
+                        "f:reason": {},
+                        "f:reportingComponent": {},
+                        "f:source": {
+                            "f:component": {}
+                        },
+                        "f:type": {}
+                    }
+                }
+            ]
+        },
+        "involvedObject": {
+            "kind": "HorizontalPodAutoscaler",
+            "namespace": "costsavings",
+            "name": "contoso-website",
+            "uid": "46b57477-f3b2-4d0e-b918-ea255c902dcf",
+            "apiVersion": "autoscaling/v2",
+            "resourceVersion": "4104"
+        },
+        "reason": "FailedGetResourceMetric",
+        "message": "failed to get cpu utilization: unable to get metrics for resource cpu: no metrics returned from resource metrics API",
+        "source": {
+            "component": "horizontal-pod-autoscaler"
+        },
+        "firstTimestamp": "2025-03-09T05:58:42Z",
+        "lastTimestamp": "2025-03-09T05:59:12Z",
+        "count": 3,
+        "type": "Warning",
+        "eventTime": null,
+        "reportingComponent": "horizontal-pod-autoscaler",
+        "reportingInstance": ""
+    },
+    {
+        "metadata": {
+            "name": "contoso-website.182b0cf3d8e85483",
+            "namespace": "costsavings",
+            "uid": "b088dd7b-9781-4305-a943-7e0f90030272",
+            "resourceVersion": "5083",
+            "creationTimestamp": "2025-03-09T05:58:42Z",
+            "managedFields": [
+                {
+                    "manager": "kube-controller-manager",
+                    "operation": "Update",
+                    "apiVersion": "v1",
+                    "time": "2025-03-09T05:59:12Z",
+                    "fieldsType": "FieldsV1",
+                    "fieldsV1": {
+                        "f:count": {},
+                        "f:firstTimestamp": {},
+                        "f:involvedObject": {},
+                        "f:lastTimestamp": {},
+                        "f:message": {},
+                        "f:reason": {},
+                        "f:reportingComponent": {},
+                        "f:source": {
+                            "f:component": {}
+                        },
+                        "f:type": {}
+                    }
+                }
+            ]
+        },
+        "involvedObject": {
+            "kind": "HorizontalPodAutoscaler",
+            "namespace": "costsavings",
+            "name": "contoso-website",
+            "uid": "46b57477-f3b2-4d0e-b918-ea255c902dcf",
+            "apiVersion": "autoscaling/v2",
+            "resourceVersion": "4104"
+        },
+        "reason": "FailedGetResourceMetric",
+        "message": "failed to get memory utilization: unable to get metrics for resource memory: no metrics returned from resource metrics API",
+        "source": {
+            "component": "horizontal-pod-autoscaler"
+        },
+        "firstTimestamp": "2025-03-09T05:58:42Z",
+        "lastTimestamp": "2025-03-09T05:59:12Z",
+        "count": 3,
+        "type": "Warning",
+        "eventTime": null,
+        "reportingComponent": "horizontal-pod-autoscaler",
+        "reportingInstance": ""
+    },
+    {
+        "metadata": {
+            "name": "contoso-website.182b0cf3d8e95398",
+            "namespace": "costsavings",
+            "uid": "4c32c9dc-4c04-492c-b45e-e2cf1d953167",
+            "resourceVersion": "5084",
+            "creationTimestamp": "2025-03-09T05:58:42Z",
+            "managedFields": [
+                {
+                    "manager": "kube-controller-manager",
+                    "operation": "Update",
+                    "apiVersion": "v1",
+                    "time": "2025-03-09T05:59:12Z",
+                    "fieldsType": "FieldsV1",
+                    "fieldsV1": {
+                        "f:count": {},
+                        "f:firstTimestamp": {},
+                        "f:involvedObject": {},
+                        "f:lastTimestamp": {},
+                        "f:message": {},
+                        "f:reason": {},
+                        "f:reportingComponent": {},
+                        "f:source": {
+                            "f:component": {}
+                        },
+                        "f:type": {}
+                    }
+                }
+            ]
+        },
+        "involvedObject": {
+            "kind": "HorizontalPodAutoscaler",
+            "namespace": "costsavings",
+            "name": "contoso-website",
+            "uid": "46b57477-f3b2-4d0e-b918-ea255c902dcf",
+            "apiVersion": "autoscaling/v2",
+            "resourceVersion": "4104"
+        },
+        "reason": "FailedComputeMetricsReplicas",
+        "message": "invalid metrics (2 invalid out of 2), first error is: failed to get cpu resource metric value: failed to get cpu utilization: unable to get metrics for resource cpu: no metrics returned from resource metrics API",
+        "source": {
+            "component": "horizontal-pod-autoscaler"
+        },
+        "firstTimestamp": "2025-03-09T05:58:42Z",
+        "lastTimestamp": "2025-03-09T05:59:12Z",
+        "count": 3,
+        "type": "Warning",
+        "eventTime": null,
+        "reportingComponent": "horizontal-pod-autoscaler",
+        "reportingInstance": ""
+    },
+    {
+        "metadata": {
+            "name": "contoso-website.182b0d05dde29a77",
+            "namespace": "costsavings",
+            "uid": "16b71716-95ee-463e-b68d-52c179f708c4",
+            "resourceVersion": "5994",
+            "creationTimestamp": "2025-03-09T05:59:59Z",
+            "managedFields": [
+                {
+                    "manager": "kube-controller-manager",
+                    "operation": "Update",
+                    "apiVersion": "v1",
+                    "time": "2025-03-09T06:01:59Z",
+                    "fieldsType": "FieldsV1",
+                    "fieldsV1": {
+                        "f:count": {},
+                        "f:firstTimestamp": {},
+                        "f:involvedObject": {},
+                        "f:lastTimestamp": {},
+                        "f:message": {},
+                        "f:reason": {},
+                        "f:reportingComponent": {},
+                        "f:source": {
+                            "f:component": {}
+                        },
+                        "f:type": {}
+                    }
+                }
+            ]
+        },
+        "involvedObject": {
+            "kind": "HorizontalPodAutoscaler",
+            "namespace": "costsavings",
+            "name": "contoso-website",
+            "uid": "46b57477-f3b2-4d0e-b918-ea255c902dcf",
+            "apiVersion": "autoscaling/v2",
+            "resourceVersion": "4104"
+        },
+        "reason": "FailedGetResourceMetric",
+        "message": "failed to get cpu utilization: unable to get metrics for resource cpu: no metrics returned from resource metrics API",
+        "source": {
+            "component": "horizontal-pod-autoscaler"
+        },
+        "firstTimestamp": "2025-03-09T05:59:59Z",
+        "lastTimestamp": "2025-03-09T06:01:59Z",
+        "count": 9,
+        "type": "Warning",
+        "eventTime": null,
+        "reportingComponent": "horizontal-pod-autoscaler",
+        "reportingInstance": ""
+    },
+    {
+        "metadata": {
+            "name": "contoso-website.182b0d05de9f1e8e",
+            "namespace": "costsavings",
+            "uid": "fee9e193-0dbb-40bd-9f98-c2a297330560",
+            "resourceVersion": "5919",
+            "creationTimestamp": "2025-03-09T05:59:59Z",
+            "managedFields": [
+                {
+                    "manager": "kube-controller-manager",
+                    "operation": "Update",
+                    "apiVersion": "v1",
+                    "time": "2025-03-09T06:01:44Z",
+                    "fieldsType": "FieldsV1",
+                    "fieldsV1": {
+                        "f:count": {},
+                        "f:firstTimestamp": {},
+                        "f:involvedObject": {},
+                        "f:lastTimestamp": {},
+                        "f:message": {},
+                        "f:reason": {},
+                        "f:reportingComponent": {},
+                        "f:source": {
+                            "f:component": {}
+                        },
+                        "f:type": {}
+                    }
+                }
+            ]
+        },
+        "involvedObject": {
+            "kind": "HorizontalPodAutoscaler",
+            "namespace": "costsavings",
+            "name": "contoso-website",
+            "uid": "46b57477-f3b2-4d0e-b918-ea255c902dcf",
+            "apiVersion": "autoscaling/v2",
+            "resourceVersion": "4104"
+        },
+        "reason": "FailedGetResourceMetric",
+        "message": "failed to get memory utilization: unable to get metrics for resource memory: no metrics returned from resource metrics API",
+        "source": {
+            "component": "horizontal-pod-autoscaler"
+        },
+        "firstTimestamp": "2025-03-09T05:59:59Z",
+        "lastTimestamp": "2025-03-09T06:01:44Z",
+        "count": 8,
+        "type": "Warning",
+        "eventTime": null,
+        "reportingComponent": "horizontal-pod-autoscaler",
+        "reportingInstance": ""
+    },
+    {
+        "metadata": {
+            "name": "contoso-website.182b0d05dea00c0f",
+            "namespace": "costsavings",
+            "uid": "f216fffb-d244-4521-ab3a-a0041d166a81",
+            "resourceVersion": "5920",
+            "creationTimestamp": "2025-03-09T05:59:59Z",
+            "managedFields": [
+                {
+                    "manager": "kube-controller-manager",
+                    "operation": "Update",
+                    "apiVersion": "v1",
+                    "time": "2025-03-09T06:01:44Z",
+                    "fieldsType": "FieldsV1",
+                    "fieldsV1": {
+                        "f:count": {},
+                        "f:firstTimestamp": {},
+                        "f:involvedObject": {},
+                        "f:lastTimestamp": {},
+                        "f:message": {},
+                        "f:reason": {},
+                        "f:reportingComponent": {},
+                        "f:source": {
+                            "f:component": {}
+                        },
+                        "f:type": {}
+                    }
+                }
+            ]
+        },
+        "involvedObject": {
+            "kind": "HorizontalPodAutoscaler",
+            "namespace": "costsavings",
+            "name": "contoso-website",
+            "uid": "46b57477-f3b2-4d0e-b918-ea255c902dcf",
+            "apiVersion": "autoscaling/v2",
+            "resourceVersion": "4104"
+        },
+        "reason": "FailedComputeMetricsReplicas",
+        "message": "invalid metrics (2 invalid out of 2), first error is: failed to get cpu resource metric value: failed to get cpu utilization: unable to get metrics for resource cpu: no metrics returned from resource metrics API",
+        "source": {
+            "component": "horizontal-pod-autoscaler"
+        },
+        "firstTimestamp": "2025-03-09T05:59:59Z",
+        "lastTimestamp": "2025-03-09T06:01:44Z",
+        "count": 8,
+        "type": "Warning",
+        "eventTime": null,
+        "reportingComponent": "horizontal-pod-autoscaler",
+        "reportingInstance": ""
+    },
+    {
+        "metadata": {
+            "name": "konnectivity-agent-6648585956-drzl6.182b0ec47103c6a9",
+            "namespace": "kube-system",
+            "uid": "37688801-37b2-4873-ad8d-01cca1a57155",
+            "resourceVersion": "14644",
+            "creationTimestamp": "2025-03-09T06:31:57Z",
+            "managedFields": [
+                {
+                    "manager": "kubelet",
+                    "operation": "Update",
+                    "apiVersion": "v1",
+                    "time": "2025-03-09T06:31:57Z",
+                    "fieldsType": "FieldsV1",
+                    "fieldsV1": {
+                        "f:count": {},
+                        "f:firstTimestamp": {},
+                        "f:involvedObject": {},
+                        "f:lastTimestamp": {},
+                        "f:message": {},
+                        "f:reason": {},
+                        "f:reportingComponent": {},
+                        "f:reportingInstance": {},
+                        "f:source": {
+                            "f:component": {},
+                            "f:host": {}
+                        },
+                        "f:type": {}
+                    }
+                }
+            ]
+        },
+        "involvedObject": {
+            "kind": "Pod",
+            "namespace": "kube-system",
+            "name": "konnectivity-agent-6648585956-drzl6",
+            "uid": "b717785c-59e0-4989-9573-c1b3657170f7",
+            "apiVersion": "v1",
+            "resourceVersion": "14631",
+            "fieldPath": "spec.containers{konnectivity-agent}"
+        },
+        "reason": "Unhealthy",
+        "message": "Readiness probe failed: HTTP probe failed with statuscode: 503",
+        "source": {
+            "component": "kubelet",
+            "host": "aks-nodepool1-32000998-vmss000000"
+        },
+        "firstTimestamp": "2025-03-09T06:31:57Z",
+        "lastTimestamp": "2025-03-09T06:31:57Z",
+        "count": 1,
+        "type": "Warning",
+        "eventTime": null,
+        "reportingComponent": "kubelet",
+        "reportingInstance": "aks-nodepool1-32000998-vmss000000"
+    }
+]

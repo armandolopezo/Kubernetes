@@ -38,7 +38,7 @@ az aks create \
 
 `az aks nodepool add \
     --resource-group $RESOURCE_GROUP \
-    --cluster-name $AKS_CLUSTER_NAME \
+    --cluster-name $CLUSTER_NAME \
     --name batchprocpl2 \
     --enable-cluster-autoscaler \
     --max-count 3 \
@@ -46,14 +46,18 @@ az aks create \
     --priority Spot \
     --eviction-policy Delete \
     --spot-max-price -1 \
-    --node-vm-size Standard_B2s \
+    --node-vm-size Standard_DS2_v2 \
     --no-wait `
+
+### Checking the NODEPOOLS
+
+`az aks nodepool list  --resource-group $RESOURCE_GROUP  --cluster-name $CLUSTER_NAME`
 
 ### Run the az aks nodepool show command to show the details of the new spot node pool for the batch-processing service
 
 `az aks nodepool show \
     --resource-group $RESOURCE_GROUP \
-    --cluster-name $AKS_CLUSTER_NAME \
+    --cluster-name $CLUSTER_NAME \
     --name batchprocpl2`
 
 ### Create the application namespace using the "kubectl create namespace" command
@@ -65,6 +69,11 @@ az aks create \
 `kubectl apply -f deployment.yaml`
 
 ### Create an Azure DNS zone using the "az network dns zone create" command. The following example creates a DNS zone named contoso-website.com:
+### Check DEPLOYMENT
+
+`kubectl get deployment -n costsavings`
+
+### DNS ZONE creation for website name resolution.
 
 `az network dns zone create --resource-group $RESOURCE_GROUP --name contoso-website.com`
 
@@ -80,11 +89,21 @@ az aks create \
 
 `kubectl apply -f service.yaml`
 
-### Update the "INGRESS.YAML" with the DNS ZONE RECENTLY CREATED.
+# Check service for KUBERNETES (system mode)
+
+`kubectl get service`
+
+# Check service for CONTOSO-WEBSITE (user mode)
+
+`kubectl get service -n costsavings`
 
 ### Deploy the ingress resource to the cluster using the "kubectl apply" command
 
 `kubectl apply -f ingress.yaml`
+
+### Check INGRESS in namespace COSTSAVINGS
+
+`kubectl get ingress -n costsavings`
 
 ### Create a HorizontalPodAutoscaler 
 

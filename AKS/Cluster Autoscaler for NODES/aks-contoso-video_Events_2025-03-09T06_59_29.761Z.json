@@ -1,0 +1,1578 @@
+[
+    {
+        "metadata": {
+            "name": "nginx-85497484cc-rvqrh.182b0cfdc98a3212",
+            "namespace": "app-routing-system",
+            "uid": "c5f73103-55f4-4754-b8f1-e4837aeccfc0",
+            "resourceVersion": "5139",
+            "creationTimestamp": "2025-03-09T05:59:25Z",
+            "managedFields": [
+                {
+                    "manager": "cluster-autoscaler",
+                    "operation": "Update",
+                    "apiVersion": "v1",
+                    "time": "2025-03-09T05:59:25Z",
+                    "fieldsType": "FieldsV1",
+                    "fieldsV1": {
+                        "f:count": {},
+                        "f:firstTimestamp": {},
+                        "f:involvedObject": {},
+                        "f:lastTimestamp": {},
+                        "f:message": {},
+                        "f:reason": {},
+                        "f:reportingComponent": {},
+                        "f:source": {
+                            "f:component": {}
+                        },
+                        "f:type": {}
+                    }
+                }
+            ]
+        },
+        "involvedObject": {
+            "kind": "Pod",
+            "namespace": "app-routing-system",
+            "name": "nginx-85497484cc-rvqrh",
+            "uid": "3a18b379-e28d-4354-a088-909381091320",
+            "apiVersion": "v1",
+            "resourceVersion": "1426"
+        },
+        "reason": "NotTriggerScaleUp",
+        "message": "pod didn't trigger scale-up: ",
+        "source": {
+            "component": "cluster-autoscaler"
+        },
+        "firstTimestamp": "2025-03-09T05:59:25Z",
+        "lastTimestamp": "2025-03-09T05:59:25Z",
+        "count": 1,
+        "type": "Normal",
+        "eventTime": null,
+        "reportingComponent": "cluster-autoscaler",
+        "reportingInstance": ""
+    },
+    {
+        "metadata": {
+            "name": "nginx-85497484cc-rvqrh.182b0d1315c75e5c",
+            "namespace": "app-routing-system",
+            "uid": "42723143-b0e3-4527-aad6-ce51a4dde927",
+            "resourceVersion": "21826",
+            "creationTimestamp": "2025-03-09T06:00:56Z",
+            "managedFields": [
+                {
+                    "manager": "cluster-autoscaler",
+                    "operation": "Update",
+                    "apiVersion": "v1",
+                    "time": "2025-03-09T06:56:24Z",
+                    "fieldsType": "FieldsV1",
+                    "fieldsV1": {
+                        "f:count": {},
+                        "f:firstTimestamp": {},
+                        "f:involvedObject": {},
+                        "f:lastTimestamp": {},
+                        "f:message": {},
+                        "f:reason": {},
+                        "f:reportingComponent": {},
+                        "f:source": {
+                            "f:component": {}
+                        },
+                        "f:type": {}
+                    }
+                }
+            ]
+        },
+        "involvedObject": {
+            "kind": "Pod",
+            "namespace": "app-routing-system",
+            "name": "nginx-85497484cc-rvqrh",
+            "uid": "3a18b379-e28d-4354-a088-909381091320",
+            "apiVersion": "v1",
+            "resourceVersion": "1426"
+        },
+        "reason": "NotTriggerScaleUp",
+        "message": "pod didn't trigger scale-up: 1 node(s) had untolerated taint {kubernetes.azure.com/scalesetpriority: spot}",
+        "source": {
+            "component": "cluster-autoscaler"
+        },
+        "firstTimestamp": "2025-03-09T06:00:56Z",
+        "lastTimestamp": "2025-03-09T06:56:24Z",
+        "count": 660,
+        "type": "Normal",
+        "eventTime": null,
+        "reportingComponent": "cluster-autoscaler",
+        "reportingInstance": ""
+    },
+    {
+        "metadata": {
+            "name": "nginx.182b0cf211245e72",
+            "namespace": "app-routing-system",
+            "uid": "5813d4df-09ef-4b20-9889-f3a078d3b64b",
+            "resourceVersion": "4882",
+            "creationTimestamp": "2025-03-09T05:58:34Z",
+            "managedFields": [
+                {
+                    "manager": "cloud-controller-manager",
+                    "operation": "Update",
+                    "apiVersion": "v1",
+                    "time": "2025-03-09T05:58:34Z",
+                    "fieldsType": "FieldsV1",
+                    "fieldsV1": {
+                        "f:count": {},
+                        "f:firstTimestamp": {},
+                        "f:involvedObject": {},
+                        "f:lastTimestamp": {},
+                        "f:message": {},
+                        "f:reason": {},
+                        "f:reportingComponent": {},
+                        "f:source": {
+                            "f:component": {}
+                        },
+                        "f:type": {}
+                    }
+                }
+            ]
+        },
+        "involvedObject": {
+            "kind": "Service",
+            "namespace": "app-routing-system",
+            "name": "nginx",
+            "uid": "dde92252-c333-4d1e-8c79-7a861daf9e0d",
+            "apiVersion": "v1",
+            "resourceVersion": "796"
+        },
+        "reason": "EnsuringLoadBalancer",
+        "message": "Ensuring load balancer",
+        "source": {
+            "component": "service-controller"
+        },
+        "firstTimestamp": "2025-03-09T05:58:34Z",
+        "lastTimestamp": "2025-03-09T05:58:34Z",
+        "count": 1,
+        "type": "Normal",
+        "eventTime": null,
+        "reportingComponent": "service-controller",
+        "reportingInstance": ""
+    },
+    {
+        "metadata": {
+            "name": "nginx.182b0cf245804751",
+            "namespace": "app-routing-system",
+            "uid": "d7b80e96-61b9-4e0d-81eb-829188e70a13",
+            "resourceVersion": "4889",
+            "creationTimestamp": "2025-03-09T05:58:35Z",
+            "managedFields": [
+                {
+                    "manager": "cloud-controller-manager",
+                    "operation": "Update",
+                    "apiVersion": "v1",
+                    "time": "2025-03-09T05:58:35Z",
+                    "fieldsType": "FieldsV1",
+                    "fieldsV1": {
+                        "f:count": {},
+                        "f:firstTimestamp": {},
+                        "f:involvedObject": {},
+                        "f:lastTimestamp": {},
+                        "f:message": {},
+                        "f:reason": {},
+                        "f:reportingComponent": {},
+                        "f:source": {
+                            "f:component": {}
+                        },
+                        "f:type": {}
+                    }
+                }
+            ]
+        },
+        "involvedObject": {
+            "kind": "Service",
+            "namespace": "app-routing-system",
+            "name": "nginx",
+            "uid": "dde92252-c333-4d1e-8c79-7a861daf9e0d",
+            "apiVersion": "v1",
+            "resourceVersion": "796"
+        },
+        "reason": "EnsuredLoadBalancer",
+        "message": "Ensured load balancer",
+        "source": {
+            "component": "service-controller"
+        },
+        "firstTimestamp": "2025-03-09T05:58:35Z",
+        "lastTimestamp": "2025-03-09T05:58:35Z",
+        "count": 1,
+        "type": "Normal",
+        "eventTime": null,
+        "reportingComponent": "service-controller",
+        "reportingInstance": ""
+    },
+    {
+        "metadata": {
+            "name": "nginx.182b0d038c206aed",
+            "namespace": "app-routing-system",
+            "uid": "905dac8a-8abb-4db8-ba8f-45a569919949",
+            "resourceVersion": "5242",
+            "creationTimestamp": "2025-03-09T05:59:49Z",
+            "managedFields": [
+                {
+                    "manager": "cloud-controller-manager",
+                    "operation": "Update",
+                    "apiVersion": "v1",
+                    "time": "2025-03-09T05:59:49Z",
+                    "fieldsType": "FieldsV1",
+                    "fieldsV1": {
+                        "f:count": {},
+                        "f:firstTimestamp": {},
+                        "f:involvedObject": {},
+                        "f:lastTimestamp": {},
+                        "f:message": {},
+                        "f:reason": {},
+                        "f:reportingComponent": {},
+                        "f:source": {
+                            "f:component": {}
+                        },
+                        "f:type": {}
+                    }
+                }
+            ]
+        },
+        "involvedObject": {
+            "kind": "Service",
+            "namespace": "app-routing-system",
+            "name": "nginx",
+            "uid": "dde92252-c333-4d1e-8c79-7a861daf9e0d",
+            "apiVersion": "v1",
+            "resourceVersion": "796"
+        },
+        "reason": "EnsuringLoadBalancer",
+        "message": "Ensuring load balancer",
+        "source": {
+            "component": "service-controller"
+        },
+        "firstTimestamp": "2025-03-09T05:59:49Z",
+        "lastTimestamp": "2025-03-09T05:59:49Z",
+        "count": 1,
+        "type": "Normal",
+        "eventTime": null,
+        "reportingComponent": "service-controller",
+        "reportingInstance": ""
+    },
+    {
+        "metadata": {
+            "name": "nginx.182b0d040aa7d21b",
+            "namespace": "app-routing-system",
+            "uid": "64799390-dbbc-43c2-9084-ec92fae0a8af",
+            "resourceVersion": "5253",
+            "creationTimestamp": "2025-03-09T05:59:51Z",
+            "managedFields": [
+                {
+                    "manager": "cloud-controller-manager",
+                    "operation": "Update",
+                    "apiVersion": "v1",
+                    "time": "2025-03-09T05:59:51Z",
+                    "fieldsType": "FieldsV1",
+                    "fieldsV1": {
+                        "f:count": {},
+                        "f:firstTimestamp": {},
+                        "f:involvedObject": {},
+                        "f:lastTimestamp": {},
+                        "f:message": {},
+                        "f:reason": {},
+                        "f:reportingComponent": {},
+                        "f:source": {
+                            "f:component": {}
+                        },
+                        "f:type": {}
+                    }
+                }
+            ]
+        },
+        "involvedObject": {
+            "kind": "Service",
+            "namespace": "app-routing-system",
+            "name": "nginx",
+            "uid": "dde92252-c333-4d1e-8c79-7a861daf9e0d",
+            "apiVersion": "v1",
+            "resourceVersion": "796"
+        },
+        "reason": "EnsuredLoadBalancer",
+        "message": "Ensured load balancer",
+        "source": {
+            "component": "service-controller"
+        },
+        "firstTimestamp": "2025-03-09T05:59:51Z",
+        "lastTimestamp": "2025-03-09T05:59:51Z",
+        "count": 1,
+        "type": "Normal",
+        "eventTime": null,
+        "reportingComponent": "service-controller",
+        "reportingInstance": ""
+    },
+    {
+        "metadata": {
+            "name": "nginx.182b0d173175ef6d",
+            "namespace": "app-routing-system",
+            "uid": "b44f0b4f-a3b6-4a13-b2c0-126aa25fd630",
+            "resourceVersion": "5788",
+            "creationTimestamp": "2025-03-09T06:01:14Z",
+            "managedFields": [
+                {
+                    "manager": "cloud-controller-manager",
+                    "operation": "Update",
+                    "apiVersion": "v1",
+                    "time": "2025-03-09T06:01:23Z",
+                    "fieldsType": "FieldsV1",
+                    "fieldsV1": {
+                        "f:count": {},
+                        "f:firstTimestamp": {},
+                        "f:involvedObject": {},
+                        "f:lastTimestamp": {},
+                        "f:message": {},
+                        "f:reason": {},
+                        "f:reportingComponent": {},
+                        "f:source": {
+                            "f:component": {}
+                        },
+                        "f:type": {}
+                    }
+                }
+            ]
+        },
+        "involvedObject": {
+            "kind": "Service",
+            "namespace": "app-routing-system",
+            "name": "nginx",
+            "uid": "dde92252-c333-4d1e-8c79-7a861daf9e0d",
+            "apiVersion": "v1",
+            "resourceVersion": "796"
+        },
+        "reason": "UpdatedLoadBalancer",
+        "message": "Updated load balancer with new hosts",
+        "source": {
+            "component": "service-controller"
+        },
+        "firstTimestamp": "2025-03-09T06:01:14Z",
+        "lastTimestamp": "2025-03-09T06:01:23Z",
+        "count": 2,
+        "type": "Normal",
+        "eventTime": null,
+        "reportingComponent": "service-controller",
+        "reportingInstance": ""
+    },
+    {
+        "metadata": {
+            "name": "contoso-website-9866b76f7-2kzhx.182b0e6750769c65",
+            "namespace": "costsavings",
+            "uid": "59b0eb75-d00a-4d20-94bb-51fa7652c8a4",
+            "resourceVersion": "12635",
+            "creationTimestamp": "2025-03-09T06:25:17Z",
+            "managedFields": [
+                {
+                    "manager": "kube-scheduler",
+                    "operation": "Update",
+                    "apiVersion": "events.k8s.io/v1",
+                    "time": "2025-03-09T06:25:17Z",
+                    "fieldsType": "FieldsV1",
+                    "fieldsV1": {
+                        "f:action": {},
+                        "f:eventTime": {},
+                        "f:note": {},
+                        "f:reason": {},
+                        "f:regarding": {},
+                        "f:reportingController": {},
+                        "f:reportingInstance": {},
+                        "f:type": {}
+                    }
+                }
+            ]
+        },
+        "involvedObject": {
+            "kind": "Pod",
+            "namespace": "costsavings",
+            "name": "contoso-website-9866b76f7-2kzhx",
+            "uid": "ee680ba7-1f96-4c33-a126-b8d7f0a5f0a3",
+            "apiVersion": "v1",
+            "resourceVersion": "12630"
+        },
+        "reason": "Scheduled",
+        "message": "Successfully assigned costsavings/contoso-website-9866b76f7-2kzhx to aks-batchprocpl2-91933748-vmss000000",
+        "source": {},
+        "firstTimestamp": null,
+        "lastTimestamp": null,
+        "type": "Normal",
+        "eventTime": "2025-03-09T06:25:17.803191Z",
+        "action": "Binding",
+        "reportingComponent": "default-scheduler",
+        "reportingInstance": "default-scheduler-kube-scheduler-v2-5f4fc694bf-qrks5"
+    },
+    {
+        "metadata": {
+            "name": "contoso-website-9866b76f7-2kzhx.182b0e6774236d1c",
+            "namespace": "costsavings",
+            "uid": "0faf040b-c453-497b-9d9a-ae46e4efc7ab",
+            "resourceVersion": "12639",
+            "creationTimestamp": "2025-03-09T06:25:18Z",
+            "managedFields": [
+                {
+                    "manager": "kubelet",
+                    "operation": "Update",
+                    "apiVersion": "v1",
+                    "time": "2025-03-09T06:25:18Z",
+                    "fieldsType": "FieldsV1",
+                    "fieldsV1": {
+                        "f:count": {},
+                        "f:firstTimestamp": {},
+                        "f:involvedObject": {},
+                        "f:lastTimestamp": {},
+                        "f:message": {},
+                        "f:reason": {},
+                        "f:reportingComponent": {},
+                        "f:reportingInstance": {},
+                        "f:source": {
+                            "f:component": {},
+                            "f:host": {}
+                        },
+                        "f:type": {}
+                    }
+                }
+            ]
+        },
+        "involvedObject": {
+            "kind": "Pod",
+            "namespace": "costsavings",
+            "name": "contoso-website-9866b76f7-2kzhx",
+            "uid": "ee680ba7-1f96-4c33-a126-b8d7f0a5f0a3",
+            "apiVersion": "v1",
+            "resourceVersion": "12632",
+            "fieldPath": "spec.containers{contoso-website}"
+        },
+        "reason": "Pulling",
+        "message": "Pulling image \"mcr.microsoft.com/mslearn/samples/contoso-website\"",
+        "source": {
+            "component": "kubelet",
+            "host": "aks-batchprocpl2-91933748-vmss000000"
+        },
+        "firstTimestamp": "2025-03-09T06:25:18Z",
+        "lastTimestamp": "2025-03-09T06:25:18Z",
+        "count": 1,
+        "type": "Normal",
+        "eventTime": null,
+        "reportingComponent": "kubelet",
+        "reportingInstance": "aks-batchprocpl2-91933748-vmss000000"
+    },
+    {
+        "metadata": {
+            "name": "contoso-website-9866b76f7-2kzhx.182b0e677cf939c2",
+            "namespace": "costsavings",
+            "uid": "843c5bef-150a-4050-9929-692b01e828fc",
+            "resourceVersion": "12640",
+            "creationTimestamp": "2025-03-09T06:25:18Z",
+            "managedFields": [
+                {
+                    "manager": "kubelet",
+                    "operation": "Update",
+                    "apiVersion": "v1",
+                    "time": "2025-03-09T06:25:18Z",
+                    "fieldsType": "FieldsV1",
+                    "fieldsV1": {
+                        "f:count": {},
+                        "f:firstTimestamp": {},
+                        "f:involvedObject": {},
+                        "f:lastTimestamp": {},
+                        "f:message": {},
+                        "f:reason": {},
+                        "f:reportingComponent": {},
+                        "f:reportingInstance": {},
+                        "f:source": {
+                            "f:component": {},
+                            "f:host": {}
+                        },
+                        "f:type": {}
+                    }
+                }
+            ]
+        },
+        "involvedObject": {
+            "kind": "Pod",
+            "namespace": "costsavings",
+            "name": "contoso-website-9866b76f7-2kzhx",
+            "uid": "ee680ba7-1f96-4c33-a126-b8d7f0a5f0a3",
+            "apiVersion": "v1",
+            "resourceVersion": "12632",
+            "fieldPath": "spec.containers{contoso-website}"
+        },
+        "reason": "Pulled",
+        "message": "Successfully pulled image \"mcr.microsoft.com/mslearn/samples/contoso-website\" in 148ms (148ms including waiting). Image size: 198400265 bytes.",
+        "source": {
+            "component": "kubelet",
+            "host": "aks-batchprocpl2-91933748-vmss000000"
+        },
+        "firstTimestamp": "2025-03-09T06:25:18Z",
+        "lastTimestamp": "2025-03-09T06:25:18Z",
+        "count": 1,
+        "type": "Normal",
+        "eventTime": null,
+        "reportingComponent": "kubelet",
+        "reportingInstance": "aks-batchprocpl2-91933748-vmss000000"
+    },
+    {
+        "metadata": {
+            "name": "contoso-website-9866b76f7-2kzhx.182b0e677f8a8b3e",
+            "namespace": "costsavings",
+            "uid": "8e737b79-f493-46a6-a4cf-f82655dcc16d",
+            "resourceVersion": "12642",
+            "creationTimestamp": "2025-03-09T06:25:18Z",
+            "managedFields": [
+                {
+                    "manager": "kubelet",
+                    "operation": "Update",
+                    "apiVersion": "v1",
+                    "time": "2025-03-09T06:25:18Z",
+                    "fieldsType": "FieldsV1",
+                    "fieldsV1": {
+                        "f:count": {},
+                        "f:firstTimestamp": {},
+                        "f:involvedObject": {},
+                        "f:lastTimestamp": {},
+                        "f:message": {},
+                        "f:reason": {},
+                        "f:reportingComponent": {},
+                        "f:reportingInstance": {},
+                        "f:source": {
+                            "f:component": {},
+                            "f:host": {}
+                        },
+                        "f:type": {}
+                    }
+                }
+            ]
+        },
+        "involvedObject": {
+            "kind": "Pod",
+            "namespace": "costsavings",
+            "name": "contoso-website-9866b76f7-2kzhx",
+            "uid": "ee680ba7-1f96-4c33-a126-b8d7f0a5f0a3",
+            "apiVersion": "v1",
+            "resourceVersion": "12632",
+            "fieldPath": "spec.containers{contoso-website}"
+        },
+        "reason": "Created",
+        "message": "Created container contoso-website",
+        "source": {
+            "component": "kubelet",
+            "host": "aks-batchprocpl2-91933748-vmss000000"
+        },
+        "firstTimestamp": "2025-03-09T06:25:18Z",
+        "lastTimestamp": "2025-03-09T06:25:18Z",
+        "count": 1,
+        "type": "Normal",
+        "eventTime": null,
+        "reportingComponent": "kubelet",
+        "reportingInstance": "aks-batchprocpl2-91933748-vmss000000"
+    },
+    {
+        "metadata": {
+            "name": "contoso-website-9866b76f7-2kzhx.182b0e67832667ac",
+            "namespace": "costsavings",
+            "uid": "3c2d4450-b41d-4082-bfa2-bb51b737c772",
+            "resourceVersion": "12643",
+            "creationTimestamp": "2025-03-09T06:25:18Z",
+            "managedFields": [
+                {
+                    "manager": "kubelet",
+                    "operation": "Update",
+                    "apiVersion": "v1",
+                    "time": "2025-03-09T06:25:18Z",
+                    "fieldsType": "FieldsV1",
+                    "fieldsV1": {
+                        "f:count": {},
+                        "f:firstTimestamp": {},
+                        "f:involvedObject": {},
+                        "f:lastTimestamp": {},
+                        "f:message": {},
+                        "f:reason": {},
+                        "f:reportingComponent": {},
+                        "f:reportingInstance": {},
+                        "f:source": {
+                            "f:component": {},
+                            "f:host": {}
+                        },
+                        "f:type": {}
+                    }
+                }
+            ]
+        },
+        "involvedObject": {
+            "kind": "Pod",
+            "namespace": "costsavings",
+            "name": "contoso-website-9866b76f7-2kzhx",
+            "uid": "ee680ba7-1f96-4c33-a126-b8d7f0a5f0a3",
+            "apiVersion": "v1",
+            "resourceVersion": "12632",
+            "fieldPath": "spec.containers{contoso-website}"
+        },
+        "reason": "Started",
+        "message": "Started container contoso-website",
+        "source": {
+            "component": "kubelet",
+            "host": "aks-batchprocpl2-91933748-vmss000000"
+        },
+        "firstTimestamp": "2025-03-09T06:25:18Z",
+        "lastTimestamp": "2025-03-09T06:25:18Z",
+        "count": 1,
+        "type": "Normal",
+        "eventTime": null,
+        "reportingComponent": "kubelet",
+        "reportingInstance": "aks-batchprocpl2-91933748-vmss000000"
+    },
+    {
+        "metadata": {
+            "name": "contoso-website-9866b76f7-2kzhx.182b0f27dff9ec5b",
+            "namespace": "costsavings",
+            "uid": "cf8316c0-ae29-4783-bf8d-ffacbc83cb30",
+            "resourceVersion": "16753",
+            "creationTimestamp": "2025-03-09T06:39:04Z",
+            "managedFields": [
+                {
+                    "manager": "kubelet",
+                    "operation": "Update",
+                    "apiVersion": "v1",
+                    "time": "2025-03-09T06:39:04Z",
+                    "fieldsType": "FieldsV1",
+                    "fieldsV1": {
+                        "f:count": {},
+                        "f:firstTimestamp": {},
+                        "f:involvedObject": {},
+                        "f:lastTimestamp": {},
+                        "f:message": {},
+                        "f:reason": {},
+                        "f:reportingComponent": {},
+                        "f:reportingInstance": {},
+                        "f:source": {
+                            "f:component": {},
+                            "f:host": {}
+                        },
+                        "f:type": {}
+                    }
+                }
+            ]
+        },
+        "involvedObject": {
+            "kind": "Pod",
+            "namespace": "costsavings",
+            "name": "contoso-website-9866b76f7-2kzhx",
+            "uid": "ee680ba7-1f96-4c33-a126-b8d7f0a5f0a3",
+            "apiVersion": "v1",
+            "resourceVersion": "12632",
+            "fieldPath": "spec.containers{contoso-website}"
+        },
+        "reason": "Killing",
+        "message": "Stopping container contoso-website",
+        "source": {
+            "component": "kubelet",
+            "host": "aks-batchprocpl2-91933748-vmss000000"
+        },
+        "firstTimestamp": "2025-03-09T06:39:04Z",
+        "lastTimestamp": "2025-03-09T06:39:04Z",
+        "count": 1,
+        "type": "Normal",
+        "eventTime": null,
+        "reportingComponent": "kubelet",
+        "reportingInstance": "aks-batchprocpl2-91933748-vmss000000"
+    },
+    {
+        "metadata": {
+            "name": "contoso-website-9866b76f7-4r78q.182b0e5950212443",
+            "namespace": "costsavings",
+            "uid": "69b172a0-efdd-42c2-ae42-f8b542ca84bd",
+            "resourceVersion": "12328",
+            "creationTimestamp": "2025-03-09T06:24:17Z",
+            "managedFields": [
+                {
+                    "manager": "kube-scheduler",
+                    "operation": "Update",
+                    "apiVersion": "events.k8s.io/v1",
+                    "time": "2025-03-09T06:24:17Z",
+                    "fieldsType": "FieldsV1",
+                    "fieldsV1": {
+                        "f:action": {},
+                        "f:eventTime": {},
+                        "f:note": {},
+                        "f:reason": {},
+                        "f:regarding": {},
+                        "f:reportingController": {},
+                        "f:reportingInstance": {},
+                        "f:type": {}
+                    }
+                }
+            ]
+        },
+        "involvedObject": {
+            "kind": "Pod",
+            "namespace": "costsavings",
+            "name": "contoso-website-9866b76f7-4r78q",
+            "uid": "7d5c335d-6c20-4192-aa18-856108f33fc8",
+            "apiVersion": "v1",
+            "resourceVersion": "12323"
+        },
+        "reason": "Scheduled",
+        "message": "Successfully assigned costsavings/contoso-website-9866b76f7-4r78q to aks-batchprocpl2-91933748-vmss000000",
+        "source": {},
+        "firstTimestamp": null,
+        "lastTimestamp": null,
+        "type": "Normal",
+        "eventTime": "2025-03-09T06:24:17.668047Z",
+        "action": "Binding",
+        "reportingComponent": "default-scheduler",
+        "reportingInstance": "default-scheduler-kube-scheduler-v2-5f4fc694bf-qrks5"
+    },
+    {
+        "metadata": {
+            "name": "contoso-website-9866b76f7-4r78q.182b0e596f6476eb",
+            "namespace": "costsavings",
+            "uid": "fcf06b93-ce87-47a2-8731-3020146cec15",
+            "resourceVersion": "12332",
+            "creationTimestamp": "2025-03-09T06:24:18Z",
+            "managedFields": [
+                {
+                    "manager": "kubelet",
+                    "operation": "Update",
+                    "apiVersion": "v1",
+                    "time": "2025-03-09T06:24:18Z",
+                    "fieldsType": "FieldsV1",
+                    "fieldsV1": {
+                        "f:count": {},
+                        "f:firstTimestamp": {},
+                        "f:involvedObject": {},
+                        "f:lastTimestamp": {},
+                        "f:message": {},
+                        "f:reason": {},
+                        "f:reportingComponent": {},
+                        "f:reportingInstance": {},
+                        "f:source": {
+                            "f:component": {},
+                            "f:host": {}
+                        },
+                        "f:type": {}
+                    }
+                }
+            ]
+        },
+        "involvedObject": {
+            "kind": "Pod",
+            "namespace": "costsavings",
+            "name": "contoso-website-9866b76f7-4r78q",
+            "uid": "7d5c335d-6c20-4192-aa18-856108f33fc8",
+            "apiVersion": "v1",
+            "resourceVersion": "12325",
+            "fieldPath": "spec.containers{contoso-website}"
+        },
+        "reason": "Pulling",
+        "message": "Pulling image \"mcr.microsoft.com/mslearn/samples/contoso-website\"",
+        "source": {
+            "component": "kubelet",
+            "host": "aks-batchprocpl2-91933748-vmss000000"
+        },
+        "firstTimestamp": "2025-03-09T06:24:18Z",
+        "lastTimestamp": "2025-03-09T06:24:18Z",
+        "count": 1,
+        "type": "Normal",
+        "eventTime": null,
+        "reportingComponent": "kubelet",
+        "reportingInstance": "aks-batchprocpl2-91933748-vmss000000"
+    },
+    {
+        "metadata": {
+            "name": "contoso-website-9866b76f7-4r78q.182b0e5979877f42",
+            "namespace": "costsavings",
+            "uid": "f83c5526-fb25-4257-9bba-310dd12fa5e4",
+            "resourceVersion": "12333",
+            "creationTimestamp": "2025-03-09T06:24:18Z",
+            "managedFields": [
+                {
+                    "manager": "kubelet",
+                    "operation": "Update",
+                    "apiVersion": "v1",
+                    "time": "2025-03-09T06:24:18Z",
+                    "fieldsType": "FieldsV1",
+                    "fieldsV1": {
+                        "f:count": {},
+                        "f:firstTimestamp": {},
+                        "f:involvedObject": {},
+                        "f:lastTimestamp": {},
+                        "f:message": {},
+                        "f:reason": {},
+                        "f:reportingComponent": {},
+                        "f:reportingInstance": {},
+                        "f:source": {
+                            "f:component": {},
+                            "f:host": {}
+                        },
+                        "f:type": {}
+                    }
+                }
+            ]
+        },
+        "involvedObject": {
+            "kind": "Pod",
+            "namespace": "costsavings",
+            "name": "contoso-website-9866b76f7-4r78q",
+            "uid": "7d5c335d-6c20-4192-aa18-856108f33fc8",
+            "apiVersion": "v1",
+            "resourceVersion": "12325",
+            "fieldPath": "spec.containers{contoso-website}"
+        },
+        "reason": "Pulled",
+        "message": "Successfully pulled image \"mcr.microsoft.com/mslearn/samples/contoso-website\" in 170ms (170ms including waiting). Image size: 198400265 bytes.",
+        "source": {
+            "component": "kubelet",
+            "host": "aks-batchprocpl2-91933748-vmss000000"
+        },
+        "firstTimestamp": "2025-03-09T06:24:18Z",
+        "lastTimestamp": "2025-03-09T06:24:18Z",
+        "count": 1,
+        "type": "Normal",
+        "eventTime": null,
+        "reportingComponent": "kubelet",
+        "reportingInstance": "aks-batchprocpl2-91933748-vmss000000"
+    },
+    {
+        "metadata": {
+            "name": "contoso-website-9866b76f7-4r78q.182b0e597bcf4893",
+            "namespace": "costsavings",
+            "uid": "c6264964-b5d7-4821-bf99-08a7b4beeced",
+            "resourceVersion": "12334",
+            "creationTimestamp": "2025-03-09T06:24:18Z",
+            "managedFields": [
+                {
+                    "manager": "kubelet",
+                    "operation": "Update",
+                    "apiVersion": "v1",
+                    "time": "2025-03-09T06:24:18Z",
+                    "fieldsType": "FieldsV1",
+                    "fieldsV1": {
+                        "f:count": {},
+                        "f:firstTimestamp": {},
+                        "f:involvedObject": {},
+                        "f:lastTimestamp": {},
+                        "f:message": {},
+                        "f:reason": {},
+                        "f:reportingComponent": {},
+                        "f:reportingInstance": {},
+                        "f:source": {
+                            "f:component": {},
+                            "f:host": {}
+                        },
+                        "f:type": {}
+                    }
+                }
+            ]
+        },
+        "involvedObject": {
+            "kind": "Pod",
+            "namespace": "costsavings",
+            "name": "contoso-website-9866b76f7-4r78q",
+            "uid": "7d5c335d-6c20-4192-aa18-856108f33fc8",
+            "apiVersion": "v1",
+            "resourceVersion": "12325",
+            "fieldPath": "spec.containers{contoso-website}"
+        },
+        "reason": "Created",
+        "message": "Created container contoso-website",
+        "source": {
+            "component": "kubelet",
+            "host": "aks-batchprocpl2-91933748-vmss000000"
+        },
+        "firstTimestamp": "2025-03-09T06:24:18Z",
+        "lastTimestamp": "2025-03-09T06:24:18Z",
+        "count": 1,
+        "type": "Normal",
+        "eventTime": null,
+        "reportingComponent": "kubelet",
+        "reportingInstance": "aks-batchprocpl2-91933748-vmss000000"
+    },
+    {
+        "metadata": {
+            "name": "contoso-website-9866b76f7-4r78q.182b0e598114facc",
+            "namespace": "costsavings",
+            "uid": "3101f25f-6f90-4c40-be8e-ca49927ffa49",
+            "resourceVersion": "12337",
+            "creationTimestamp": "2025-03-09T06:24:18Z",
+            "managedFields": [
+                {
+                    "manager": "kubelet",
+                    "operation": "Update",
+                    "apiVersion": "v1",
+                    "time": "2025-03-09T06:24:18Z",
+                    "fieldsType": "FieldsV1",
+                    "fieldsV1": {
+                        "f:count": {},
+                        "f:firstTimestamp": {},
+                        "f:involvedObject": {},
+                        "f:lastTimestamp": {},
+                        "f:message": {},
+                        "f:reason": {},
+                        "f:reportingComponent": {},
+                        "f:reportingInstance": {},
+                        "f:source": {
+                            "f:component": {},
+                            "f:host": {}
+                        },
+                        "f:type": {}
+                    }
+                }
+            ]
+        },
+        "involvedObject": {
+            "kind": "Pod",
+            "namespace": "costsavings",
+            "name": "contoso-website-9866b76f7-4r78q",
+            "uid": "7d5c335d-6c20-4192-aa18-856108f33fc8",
+            "apiVersion": "v1",
+            "resourceVersion": "12325",
+            "fieldPath": "spec.containers{contoso-website}"
+        },
+        "reason": "Started",
+        "message": "Started container contoso-website",
+        "source": {
+            "component": "kubelet",
+            "host": "aks-batchprocpl2-91933748-vmss000000"
+        },
+        "firstTimestamp": "2025-03-09T06:24:18Z",
+        "lastTimestamp": "2025-03-09T06:24:18Z",
+        "count": 1,
+        "type": "Normal",
+        "eventTime": null,
+        "reportingComponent": "kubelet",
+        "reportingInstance": "aks-batchprocpl2-91933748-vmss000000"
+    },
+    {
+        "metadata": {
+            "name": "contoso-website-9866b76f7-4r78q.182b0f27de0fb58b",
+            "namespace": "costsavings",
+            "uid": "be3bd922-094d-49da-ad07-2b55bde374d6",
+            "resourceVersion": "16750",
+            "creationTimestamp": "2025-03-09T06:39:04Z",
+            "managedFields": [
+                {
+                    "manager": "kubelet",
+                    "operation": "Update",
+                    "apiVersion": "v1",
+                    "time": "2025-03-09T06:39:04Z",
+                    "fieldsType": "FieldsV1",
+                    "fieldsV1": {
+                        "f:count": {},
+                        "f:firstTimestamp": {},
+                        "f:involvedObject": {},
+                        "f:lastTimestamp": {},
+                        "f:message": {},
+                        "f:reason": {},
+                        "f:reportingComponent": {},
+                        "f:reportingInstance": {},
+                        "f:source": {
+                            "f:component": {},
+                            "f:host": {}
+                        },
+                        "f:type": {}
+                    }
+                }
+            ]
+        },
+        "involvedObject": {
+            "kind": "Pod",
+            "namespace": "costsavings",
+            "name": "contoso-website-9866b76f7-4r78q",
+            "uid": "7d5c335d-6c20-4192-aa18-856108f33fc8",
+            "apiVersion": "v1",
+            "resourceVersion": "12325",
+            "fieldPath": "spec.containers{contoso-website}"
+        },
+        "reason": "Killing",
+        "message": "Stopping container contoso-website",
+        "source": {
+            "component": "kubelet",
+            "host": "aks-batchprocpl2-91933748-vmss000000"
+        },
+        "firstTimestamp": "2025-03-09T06:39:04Z",
+        "lastTimestamp": "2025-03-09T06:39:04Z",
+        "count": 1,
+        "type": "Normal",
+        "eventTime": null,
+        "reportingComponent": "kubelet",
+        "reportingInstance": "aks-batchprocpl2-91933748-vmss000000"
+    },
+    {
+        "metadata": {
+            "name": "contoso-website-9866b76f7-fb5fl.182b0e6e513eac43",
+            "namespace": "costsavings",
+            "uid": "08097cf5-96e8-4e48-a62b-fda41941438d",
+            "resourceVersion": "12801",
+            "creationTimestamp": "2025-03-09T06:25:47Z",
+            "managedFields": [
+                {
+                    "manager": "kube-scheduler",
+                    "operation": "Update",
+                    "apiVersion": "events.k8s.io/v1",
+                    "time": "2025-03-09T06:25:47Z",
+                    "fieldsType": "FieldsV1",
+                    "fieldsV1": {
+                        "f:action": {},
+                        "f:eventTime": {},
+                        "f:note": {},
+                        "f:reason": {},
+                        "f:regarding": {},
+                        "f:reportingController": {},
+                        "f:reportingInstance": {},
+                        "f:type": {}
+                    }
+                }
+            ]
+        },
+        "involvedObject": {
+            "kind": "Pod",
+            "namespace": "costsavings",
+            "name": "contoso-website-9866b76f7-fb5fl",
+            "uid": "65b94655-97d0-4808-a7c1-8239824ffa1d",
+            "apiVersion": "v1",
+            "resourceVersion": "12796"
+        },
+        "reason": "Scheduled",
+        "message": "Successfully assigned costsavings/contoso-website-9866b76f7-fb5fl to aks-batchprocpl2-91933748-vmss000000",
+        "source": {},
+        "firstTimestamp": null,
+        "lastTimestamp": null,
+        "type": "Normal",
+        "eventTime": "2025-03-09T06:25:47.881073Z",
+        "action": "Binding",
+        "reportingComponent": "default-scheduler",
+        "reportingInstance": "default-scheduler-kube-scheduler-v2-5f4fc694bf-qrks5"
+    },
+    {
+        "metadata": {
+            "name": "contoso-website-9866b76f7-fb5fl.182b0e6e81d50f96",
+            "namespace": "costsavings",
+            "uid": "952924ca-1bd0-4230-b08b-c40d94bf3878",
+            "resourceVersion": "12808",
+            "creationTimestamp": "2025-03-09T06:25:48Z",
+            "managedFields": [
+                {
+                    "manager": "kubelet",
+                    "operation": "Update",
+                    "apiVersion": "v1",
+                    "time": "2025-03-09T06:25:48Z",
+                    "fieldsType": "FieldsV1",
+                    "fieldsV1": {
+                        "f:count": {},
+                        "f:firstTimestamp": {},
+                        "f:involvedObject": {},
+                        "f:lastTimestamp": {},
+                        "f:message": {},
+                        "f:reason": {},
+                        "f:reportingComponent": {},
+                        "f:reportingInstance": {},
+                        "f:source": {
+                            "f:component": {},
+                            "f:host": {}
+                        },
+                        "f:type": {}
+                    }
+                }
+            ]
+        },
+        "involvedObject": {
+            "kind": "Pod",
+            "namespace": "costsavings",
+            "name": "contoso-website-9866b76f7-fb5fl",
+            "uid": "65b94655-97d0-4808-a7c1-8239824ffa1d",
+            "apiVersion": "v1",
+            "resourceVersion": "12798",
+            "fieldPath": "spec.containers{contoso-website}"
+        },
+        "reason": "Pulling",
+        "message": "Pulling image \"mcr.microsoft.com/mslearn/samples/contoso-website\"",
+        "source": {
+            "component": "kubelet",
+            "host": "aks-batchprocpl2-91933748-vmss000000"
+        },
+        "firstTimestamp": "2025-03-09T06:25:48Z",
+        "lastTimestamp": "2025-03-09T06:25:48Z",
+        "count": 1,
+        "type": "Normal",
+        "eventTime": null,
+        "reportingComponent": "kubelet",
+        "reportingInstance": "aks-batchprocpl2-91933748-vmss000000"
+    },
+    {
+        "metadata": {
+            "name": "contoso-website-9866b76f7-fb5fl.182b0e6e89942d10",
+            "namespace": "costsavings",
+            "uid": "82b636a1-213b-4e3a-88e3-d9306d1382ac",
+            "resourceVersion": "12810",
+            "creationTimestamp": "2025-03-09T06:25:48Z",
+            "managedFields": [
+                {
+                    "manager": "kubelet",
+                    "operation": "Update",
+                    "apiVersion": "v1",
+                    "time": "2025-03-09T06:25:48Z",
+                    "fieldsType": "FieldsV1",
+                    "fieldsV1": {
+                        "f:count": {},
+                        "f:firstTimestamp": {},
+                        "f:involvedObject": {},
+                        "f:lastTimestamp": {},
+                        "f:message": {},
+                        "f:reason": {},
+                        "f:reportingComponent": {},
+                        "f:reportingInstance": {},
+                        "f:source": {
+                            "f:component": {},
+                            "f:host": {}
+                        },
+                        "f:type": {}
+                    }
+                }
+            ]
+        },
+        "involvedObject": {
+            "kind": "Pod",
+            "namespace": "costsavings",
+            "name": "contoso-website-9866b76f7-fb5fl",
+            "uid": "65b94655-97d0-4808-a7c1-8239824ffa1d",
+            "apiVersion": "v1",
+            "resourceVersion": "12798",
+            "fieldPath": "spec.containers{contoso-website}"
+        },
+        "reason": "Pulled",
+        "message": "Successfully pulled image \"mcr.microsoft.com/mslearn/samples/contoso-website\" in 129ms (129ms including waiting). Image size: 198400265 bytes.",
+        "source": {
+            "component": "kubelet",
+            "host": "aks-batchprocpl2-91933748-vmss000000"
+        },
+        "firstTimestamp": "2025-03-09T06:25:48Z",
+        "lastTimestamp": "2025-03-09T06:25:48Z",
+        "count": 1,
+        "type": "Normal",
+        "eventTime": null,
+        "reportingComponent": "kubelet",
+        "reportingInstance": "aks-batchprocpl2-91933748-vmss000000"
+    },
+    {
+        "metadata": {
+            "name": "contoso-website-9866b76f7-fb5fl.182b0e6e8d595ba2",
+            "namespace": "costsavings",
+            "uid": "3aa46692-a035-4ddf-887d-d4185dee9c94",
+            "resourceVersion": "12811",
+            "creationTimestamp": "2025-03-09T06:25:48Z",
+            "managedFields": [
+                {
+                    "manager": "kubelet",
+                    "operation": "Update",
+                    "apiVersion": "v1",
+                    "time": "2025-03-09T06:25:48Z",
+                    "fieldsType": "FieldsV1",
+                    "fieldsV1": {
+                        "f:count": {},
+                        "f:firstTimestamp": {},
+                        "f:involvedObject": {},
+                        "f:lastTimestamp": {},
+                        "f:message": {},
+                        "f:reason": {},
+                        "f:reportingComponent": {},
+                        "f:reportingInstance": {},
+                        "f:source": {
+                            "f:component": {},
+                            "f:host": {}
+                        },
+                        "f:type": {}
+                    }
+                }
+            ]
+        },
+        "involvedObject": {
+            "kind": "Pod",
+            "namespace": "costsavings",
+            "name": "contoso-website-9866b76f7-fb5fl",
+            "uid": "65b94655-97d0-4808-a7c1-8239824ffa1d",
+            "apiVersion": "v1",
+            "resourceVersion": "12798",
+            "fieldPath": "spec.containers{contoso-website}"
+        },
+        "reason": "Created",
+        "message": "Created container contoso-website",
+        "source": {
+            "component": "kubelet",
+            "host": "aks-batchprocpl2-91933748-vmss000000"
+        },
+        "firstTimestamp": "2025-03-09T06:25:48Z",
+        "lastTimestamp": "2025-03-09T06:25:48Z",
+        "count": 1,
+        "type": "Normal",
+        "eventTime": null,
+        "reportingComponent": "kubelet",
+        "reportingInstance": "aks-batchprocpl2-91933748-vmss000000"
+    },
+    {
+        "metadata": {
+            "name": "contoso-website-9866b76f7-fb5fl.182b0e6e90fd3b9f",
+            "namespace": "costsavings",
+            "uid": "5b2745bd-ae5f-4500-90ff-23d969ff03cf",
+            "resourceVersion": "12813",
+            "creationTimestamp": "2025-03-09T06:25:48Z",
+            "managedFields": [
+                {
+                    "manager": "kubelet",
+                    "operation": "Update",
+                    "apiVersion": "v1",
+                    "time": "2025-03-09T06:25:48Z",
+                    "fieldsType": "FieldsV1",
+                    "fieldsV1": {
+                        "f:count": {},
+                        "f:firstTimestamp": {},
+                        "f:involvedObject": {},
+                        "f:lastTimestamp": {},
+                        "f:message": {},
+                        "f:reason": {},
+                        "f:reportingComponent": {},
+                        "f:reportingInstance": {},
+                        "f:source": {
+                            "f:component": {},
+                            "f:host": {}
+                        },
+                        "f:type": {}
+                    }
+                }
+            ]
+        },
+        "involvedObject": {
+            "kind": "Pod",
+            "namespace": "costsavings",
+            "name": "contoso-website-9866b76f7-fb5fl",
+            "uid": "65b94655-97d0-4808-a7c1-8239824ffa1d",
+            "apiVersion": "v1",
+            "resourceVersion": "12798",
+            "fieldPath": "spec.containers{contoso-website}"
+        },
+        "reason": "Started",
+        "message": "Started container contoso-website",
+        "source": {
+            "component": "kubelet",
+            "host": "aks-batchprocpl2-91933748-vmss000000"
+        },
+        "firstTimestamp": "2025-03-09T06:25:48Z",
+        "lastTimestamp": "2025-03-09T06:25:48Z",
+        "count": 1,
+        "type": "Normal",
+        "eventTime": null,
+        "reportingComponent": "kubelet",
+        "reportingInstance": "aks-batchprocpl2-91933748-vmss000000"
+    },
+    {
+        "metadata": {
+            "name": "contoso-website-9866b76f7-fb5fl.182b0f27dffcb090",
+            "namespace": "costsavings",
+            "uid": "9cb2b118-9499-4d5b-b0a1-693f18c0b841",
+            "resourceVersion": "16756",
+            "creationTimestamp": "2025-03-09T06:39:04Z",
+            "managedFields": [
+                {
+                    "manager": "kubelet",
+                    "operation": "Update",
+                    "apiVersion": "v1",
+                    "time": "2025-03-09T06:39:04Z",
+                    "fieldsType": "FieldsV1",
+                    "fieldsV1": {
+                        "f:count": {},
+                        "f:firstTimestamp": {},
+                        "f:involvedObject": {},
+                        "f:lastTimestamp": {},
+                        "f:message": {},
+                        "f:reason": {},
+                        "f:reportingComponent": {},
+                        "f:reportingInstance": {},
+                        "f:source": {
+                            "f:component": {},
+                            "f:host": {}
+                        },
+                        "f:type": {}
+                    }
+                }
+            ]
+        },
+        "involvedObject": {
+            "kind": "Pod",
+            "namespace": "costsavings",
+            "name": "contoso-website-9866b76f7-fb5fl",
+            "uid": "65b94655-97d0-4808-a7c1-8239824ffa1d",
+            "apiVersion": "v1",
+            "resourceVersion": "12798",
+            "fieldPath": "spec.containers{contoso-website}"
+        },
+        "reason": "Killing",
+        "message": "Stopping container contoso-website",
+        "source": {
+            "component": "kubelet",
+            "host": "aks-batchprocpl2-91933748-vmss000000"
+        },
+        "firstTimestamp": "2025-03-09T06:39:04Z",
+        "lastTimestamp": "2025-03-09T06:39:04Z",
+        "count": 1,
+        "type": "Normal",
+        "eventTime": null,
+        "reportingComponent": "kubelet",
+        "reportingInstance": "aks-batchprocpl2-91933748-vmss000000"
+    },
+    {
+        "metadata": {
+            "name": "contoso-website-9866b76f7-fn2v6.182b0cfdc98a792a",
+            "namespace": "costsavings",
+            "uid": "98139016-073c-4613-b074-3bcab8edaa64",
+            "resourceVersion": "5141",
+            "creationTimestamp": "2025-03-09T05:59:25Z",
+            "managedFields": [
+                {
+                    "manager": "cluster-autoscaler",
+                    "operation": "Update",
+                    "apiVersion": "v1",
+                    "time": "2025-03-09T05:59:25Z",
+                    "fieldsType": "FieldsV1",
+                    "fieldsV1": {
+                        "f:count": {},
+                        "f:firstTimestamp": {},
+                        "f:involvedObject": {},
+                        "f:lastTimestamp": {},
+                        "f:message": {},
+                        "f:reason": {},
+                        "f:reportingComponent": {},
+                        "f:source": {
+                            "f:component": {}
+                        },
+                        "f:type": {}
+                    }
+                }
+            ]
+        },
+        "involvedObject": {
+            "kind": "Pod",
+            "namespace": "costsavings",
+            "name": "contoso-website-9866b76f7-fn2v6",
+            "uid": "adc69e7e-5251-4e5b-bc6a-51bc35e579b1",
+            "apiVersion": "v1",
+            "resourceVersion": "3371"
+        },
+        "reason": "NotTriggerScaleUp",
+        "message": "pod didn't trigger scale-up: ",
+        "source": {
+            "component": "cluster-autoscaler"
+        },
+        "firstTimestamp": "2025-03-09T05:59:25Z",
+        "lastTimestamp": "2025-03-09T05:59:25Z",
+        "count": 1,
+        "type": "Normal",
+        "eventTime": null,
+        "reportingComponent": "cluster-autoscaler",
+        "reportingInstance": ""
+    },
+    {
+        "metadata": {
+            "name": "contoso-website-9866b76f7-fn2v6.182b0d1b95318764",
+            "namespace": "costsavings",
+            "uid": "85147541-acd5-435f-91c5-058292d9d573",
+            "resourceVersion": "5848",
+            "creationTimestamp": "2025-03-09T06:01:33Z",
+            "managedFields": [
+                {
+                    "manager": "kube-scheduler",
+                    "operation": "Update",
+                    "apiVersion": "events.k8s.io/v1",
+                    "time": "2025-03-09T06:01:33Z",
+                    "fieldsType": "FieldsV1",
+                    "fieldsV1": {
+                        "f:action": {},
+                        "f:eventTime": {},
+                        "f:note": {},
+                        "f:reason": {},
+                        "f:regarding": {},
+                        "f:reportingController": {},
+                        "f:reportingInstance": {},
+                        "f:type": {}
+                    }
+                }
+            ]
+        },
+        "involvedObject": {
+            "kind": "Pod",
+            "namespace": "costsavings",
+            "name": "contoso-website-9866b76f7-fn2v6",
+            "uid": "adc69e7e-5251-4e5b-bc6a-51bc35e579b1",
+            "apiVersion": "v1",
+            "resourceVersion": "3371"
+        },
+        "reason": "Scheduled",
+        "message": "Successfully assigned costsavings/contoso-website-9866b76f7-fn2v6 to aks-batchprocpl2-91933748-vmss000000",
+        "source": {},
+        "firstTimestamp": null,
+        "lastTimestamp": null,
+        "type": "Normal",
+        "eventTime": "2025-03-09T06:01:33.027150Z",
+        "action": "Binding",
+        "reportingComponent": "default-scheduler",
+        "reportingInstance": "default-scheduler-kube-scheduler-v2-5f4fc694bf-qrks5"
+    },
+    {
+        "metadata": {
+            "name": "contoso-website-9866b76f7-fn2v6.182b0d1bce2300ac",
+            "namespace": "costsavings",
+            "uid": "4fbbe553-b890-4f05-9f34-d8f14a54a328",
+            "resourceVersion": "5853",
+            "creationTimestamp": "2025-03-09T06:01:33Z",
+            "managedFields": [
+                {
+                    "manager": "kubelet",
+                    "operation": "Update",
+                    "apiVersion": "v1",
+                    "time": "2025-03-09T06:01:33Z",
+                    "fieldsType": "FieldsV1",
+                    "fieldsV1": {
+                        "f:count": {},
+                        "f:firstTimestamp": {},
+                        "f:involvedObject": {},
+                        "f:lastTimestamp": {},
+                        "f:message": {},
+                        "f:reason": {},
+                        "f:reportingComponent": {},
+                        "f:reportingInstance": {},
+                        "f:source": {
+                            "f:component": {},
+                            "f:host": {}
+                        },
+                        "f:type": {}
+                    }
+                }
+            ]
+        },
+        "involvedObject": {
+            "kind": "Pod",
+            "namespace": "costsavings",
+            "name": "contoso-website-9866b76f7-fn2v6",
+            "uid": "adc69e7e-5251-4e5b-bc6a-51bc35e579b1",
+            "apiVersion": "v1",
+            "resourceVersion": "5847",
+            "fieldPath": "spec.containers{contoso-website}"
+        },
+        "reason": "Pulling",
+        "message": "Pulling image \"mcr.microsoft.com/mslearn/samples/contoso-website\"",
+        "source": {
+            "component": "kubelet",
+            "host": "aks-batchprocpl2-91933748-vmss000000"
+        },
+        "firstTimestamp": "2025-03-09T06:01:33Z",
+        "lastTimestamp": "2025-03-09T06:01:33Z",
+        "count": 1,
+        "type": "Normal",
+        "eventTime": null,
+        "reportingComponent": "kubelet",
+        "reportingInstance": "aks-batchprocpl2-91933748-vmss000000"
+    },
+    {
+        "metadata": {
+            "name": "contoso-website-9866b76f7-fn2v6.182b0d1c0b554a09",
+            "namespace": "costsavings",
+            "uid": "889bf81d-f803-4555-b022-cc177b359721",
+            "resourceVersion": "5861",
+            "creationTimestamp": "2025-03-09T06:01:35Z",
+            "managedFields": [
+                {
+                    "manager": "kube-controller-manager",
+                    "operation": "Update",
+                    "apiVersion": "v1",
+                    "time": "2025-03-09T06:01:35Z",
+                    "fieldsType": "FieldsV1",
+                    "fieldsV1": {
+                        "f:count": {},
+                        "f:firstTimestamp": {},
+                        "f:involvedObject": {},
+                        "f:lastTimestamp": {},
+                        "f:message": {},
+                        "f:reason": {},
+                        "f:reportingComponent": {},
+                        "f:source": {
+                            "f:component": {}
+                        },
+                        "f:type": {}
+                    }
+                }
+            ]
+        },
+        "involvedObject": {
+            "kind": "Pod",
+            "namespace": "costsavings",
+            "name": "contoso-website-9866b76f7-fn2v6",
+            "apiVersion": "v1"
+        },
+        "reason": "TaintManagerEviction",
+        "message": "Cancelling deletion of Pod costsavings/contoso-website-9866b76f7-fn2v6",
+        "source": {
+            "component": "taint-eviction-controller"
+        },
+        "firstTimestamp": "2025-03-09T06:01:35Z",
+        "lastTimestamp": "2025-03-09T06:01:35Z",
+        "count": 1,
+        "type": "Normal",
+        "eventTime": null,
+        "reportingComponent": "taint-eviction-controller",
+        "reportingInstance": ""
+    },
+    {
+        "metadata": {
+            "name": "contoso-website-9866b76f7-fn2v6.182b0d1e18515f0c",
+            "namespace": "costsavings",
+            "uid": "8dd6477b-1ace-4b5c-9616-59d62d737ad2",
+            "resourceVersion": "5905",
+            "creationTimestamp": "2025-03-09T06:01:43Z",
+            "managedFields": [
+                {
+                    "manager": "kubelet",
+                    "operation": "Update",
+                    "apiVersion": "v1",
+                    "time": "2025-03-09T06:01:43Z",
+                    "fieldsType": "FieldsV1",
+                    "fieldsV1": {
+                        "f:count": {},
+                        "f:firstTimestamp": {},
+                        "f:involvedObject": {},
+                        "f:lastTimestamp": {},
+                        "f:message": {},
+                        "f:reason": {},
+                        "f:reportingComponent": {},
+                        "f:reportingInstance": {},
+                        "f:source": {
+                            "f:component": {},
+                            "f:host": {}
+                        },
+                        "f:type": {}
+                    }
+                }
+            ]
+        },
+        "involvedObject": {
+            "kind": "Pod",
+            "namespace": "costsavings",
+            "name": "contoso-website-9866b76f7-fn2v6",
+            "uid": "adc69e7e-5251-4e5b-bc6a-51bc35e579b1",
+            "apiVersion": "v1",
+            "resourceVersion": "5847",
+            "fieldPath": "spec.containers{contoso-website}"
+        },
+        "reason": "Pulled",
+        "message": "Successfully pulled image \"mcr.microsoft.com/mslearn/samples/contoso-website\" in 9.834s (9.834s including waiting). Image size: 198400265 bytes.",
+        "source": {
+            "component": "kubelet",
+            "host": "aks-batchprocpl2-91933748-vmss000000"
+        },
+        "firstTimestamp": "2025-03-09T06:01:43Z",
+        "lastTimestamp": "2025-03-09T06:01:43Z",
+        "count": 1,
+        "type": "Normal",
+        "eventTime": null,
+        "reportingComponent": "kubelet",
+        "reportingInstance": "aks-batchprocpl2-91933748-vmss000000"
+    }
+]
