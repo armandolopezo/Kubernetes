@@ -1,0 +1,3338 @@
+[
+    {
+        "metadata": {
+            "name": "external-dns-8f7dfbcc8-8q4ww.182ac03f091a4c5d",
+            "namespace": "app-routing-system",
+            "uid": "6760f4a8-33cc-4083-b9c7-2f7d305d147d",
+            "resourceVersion": "12922",
+            "creationTimestamp": "2025-03-08T06:33:02Z",
+            "managedFields": [
+                {
+                    "manager": "kube-scheduler",
+                    "operation": "Update",
+                    "apiVersion": "events.k8s.io/v1",
+                    "time": "2025-03-08T06:33:02Z",
+                    "fieldsType": "FieldsV1",
+                    "fieldsV1": {
+                        "f:action": {},
+                        "f:eventTime": {},
+                        "f:note": {},
+                        "f:reason": {},
+                        "f:regarding": {},
+                        "f:reportingController": {},
+                        "f:reportingInstance": {},
+                        "f:type": {}
+                    }
+                }
+            ]
+        },
+        "involvedObject": {
+            "kind": "Pod",
+            "namespace": "app-routing-system",
+            "name": "external-dns-8f7dfbcc8-8q4ww",
+            "uid": "822f53f4-7dcc-4807-88bd-c5c0ce3faf53",
+            "apiVersion": "v1",
+            "resourceVersion": "12918"
+        },
+        "reason": "Scheduled",
+        "message": "Successfully assigned app-routing-system/external-dns-8f7dfbcc8-8q4ww to aks-nodepool1-23131335-vmss000000",
+        "source": {},
+        "firstTimestamp": null,
+        "lastTimestamp": null,
+        "type": "Normal",
+        "eventTime": "2025-03-08T06:33:02.900303Z",
+        "action": "Binding",
+        "reportingComponent": "default-scheduler",
+        "reportingInstance": "default-scheduler-kube-scheduler-v2-5d49d5cdcf-rqq9g"
+    },
+    {
+        "metadata": {
+            "name": "external-dns-8f7dfbcc8-8q4ww.182ac03f3600405c",
+            "namespace": "app-routing-system",
+            "uid": "44a84d13-dbaa-4531-aa28-061726ccfcd9",
+            "resourceVersion": "12930",
+            "creationTimestamp": "2025-03-08T06:33:03Z",
+            "managedFields": [
+                {
+                    "manager": "kubelet",
+                    "operation": "Update",
+                    "apiVersion": "v1",
+                    "time": "2025-03-08T06:33:03Z",
+                    "fieldsType": "FieldsV1",
+                    "fieldsV1": {
+                        "f:count": {},
+                        "f:firstTimestamp": {},
+                        "f:involvedObject": {},
+                        "f:lastTimestamp": {},
+                        "f:message": {},
+                        "f:reason": {},
+                        "f:reportingComponent": {},
+                        "f:reportingInstance": {},
+                        "f:source": {
+                            "f:component": {},
+                            "f:host": {}
+                        },
+                        "f:type": {}
+                    }
+                }
+            ]
+        },
+        "involvedObject": {
+            "kind": "Pod",
+            "namespace": "app-routing-system",
+            "name": "external-dns-8f7dfbcc8-8q4ww",
+            "uid": "822f53f4-7dcc-4807-88bd-c5c0ce3faf53",
+            "apiVersion": "v1",
+            "resourceVersion": "12919",
+            "fieldPath": "spec.containers{controller}"
+        },
+        "reason": "Pulling",
+        "message": "Pulling image \"mcr.microsoft.com/oss/v2/kubernetes/external-dns:v0.15.0\"",
+        "source": {
+            "component": "kubelet",
+            "host": "aks-nodepool1-23131335-vmss000000"
+        },
+        "firstTimestamp": "2025-03-08T06:33:03Z",
+        "lastTimestamp": "2025-03-08T06:33:03Z",
+        "count": 1,
+        "type": "Normal",
+        "eventTime": null,
+        "reportingComponent": "kubelet",
+        "reportingInstance": "aks-nodepool1-23131335-vmss000000"
+    },
+    {
+        "metadata": {
+            "name": "external-dns-8f7dfbcc8-8q4ww.182ac03fc136f615",
+            "namespace": "app-routing-system",
+            "uid": "f604e3f2-89ad-4c0d-8b7e-639967035f2b",
+            "resourceVersion": "12938",
+            "creationTimestamp": "2025-03-08T06:33:05Z",
+            "managedFields": [
+                {
+                    "manager": "kubelet",
+                    "operation": "Update",
+                    "apiVersion": "v1",
+                    "time": "2025-03-08T06:33:05Z",
+                    "fieldsType": "FieldsV1",
+                    "fieldsV1": {
+                        "f:count": {},
+                        "f:firstTimestamp": {},
+                        "f:involvedObject": {},
+                        "f:lastTimestamp": {},
+                        "f:message": {},
+                        "f:reason": {},
+                        "f:reportingComponent": {},
+                        "f:reportingInstance": {},
+                        "f:source": {
+                            "f:component": {},
+                            "f:host": {}
+                        },
+                        "f:type": {}
+                    }
+                }
+            ]
+        },
+        "involvedObject": {
+            "kind": "Pod",
+            "namespace": "app-routing-system",
+            "name": "external-dns-8f7dfbcc8-8q4ww",
+            "uid": "822f53f4-7dcc-4807-88bd-c5c0ce3faf53",
+            "apiVersion": "v1",
+            "resourceVersion": "12919",
+            "fieldPath": "spec.containers{controller}"
+        },
+        "reason": "Pulled",
+        "message": "Successfully pulled image \"mcr.microsoft.com/oss/v2/kubernetes/external-dns:v0.15.0\" in 2.335s (2.335s including waiting). Image size: 38663572 bytes.",
+        "source": {
+            "component": "kubelet",
+            "host": "aks-nodepool1-23131335-vmss000000"
+        },
+        "firstTimestamp": "2025-03-08T06:33:05Z",
+        "lastTimestamp": "2025-03-08T06:33:05Z",
+        "count": 1,
+        "type": "Normal",
+        "eventTime": null,
+        "reportingComponent": "kubelet",
+        "reportingInstance": "aks-nodepool1-23131335-vmss000000"
+    },
+    {
+        "metadata": {
+            "name": "external-dns-8f7dfbcc8-8q4ww.182ac03fc3a62736",
+            "namespace": "app-routing-system",
+            "uid": "c4bc3a58-51d9-4717-acb7-c9ebc9abf34a",
+            "resourceVersion": "12939",
+            "creationTimestamp": "2025-03-08T06:33:06Z",
+            "managedFields": [
+                {
+                    "manager": "kubelet",
+                    "operation": "Update",
+                    "apiVersion": "v1",
+                    "time": "2025-03-08T06:33:06Z",
+                    "fieldsType": "FieldsV1",
+                    "fieldsV1": {
+                        "f:count": {},
+                        "f:firstTimestamp": {},
+                        "f:involvedObject": {},
+                        "f:lastTimestamp": {},
+                        "f:message": {},
+                        "f:reason": {},
+                        "f:reportingComponent": {},
+                        "f:reportingInstance": {},
+                        "f:source": {
+                            "f:component": {},
+                            "f:host": {}
+                        },
+                        "f:type": {}
+                    }
+                }
+            ]
+        },
+        "involvedObject": {
+            "kind": "Pod",
+            "namespace": "app-routing-system",
+            "name": "external-dns-8f7dfbcc8-8q4ww",
+            "uid": "822f53f4-7dcc-4807-88bd-c5c0ce3faf53",
+            "apiVersion": "v1",
+            "resourceVersion": "12919",
+            "fieldPath": "spec.containers{controller}"
+        },
+        "reason": "Created",
+        "message": "Created container controller",
+        "source": {
+            "component": "kubelet",
+            "host": "aks-nodepool1-23131335-vmss000000"
+        },
+        "firstTimestamp": "2025-03-08T06:33:06Z",
+        "lastTimestamp": "2025-03-08T06:33:06Z",
+        "count": 1,
+        "type": "Normal",
+        "eventTime": null,
+        "reportingComponent": "kubelet",
+        "reportingInstance": "aks-nodepool1-23131335-vmss000000"
+    },
+    {
+        "metadata": {
+            "name": "external-dns-8f7dfbcc8-8q4ww.182ac03fcbe5f15f",
+            "namespace": "app-routing-system",
+            "uid": "bd23f700-7e86-4794-8f2e-c73550557fdb",
+            "resourceVersion": "12940",
+            "creationTimestamp": "2025-03-08T06:33:06Z",
+            "managedFields": [
+                {
+                    "manager": "kubelet",
+                    "operation": "Update",
+                    "apiVersion": "v1",
+                    "time": "2025-03-08T06:33:06Z",
+                    "fieldsType": "FieldsV1",
+                    "fieldsV1": {
+                        "f:count": {},
+                        "f:firstTimestamp": {},
+                        "f:involvedObject": {},
+                        "f:lastTimestamp": {},
+                        "f:message": {},
+                        "f:reason": {},
+                        "f:reportingComponent": {},
+                        "f:reportingInstance": {},
+                        "f:source": {
+                            "f:component": {},
+                            "f:host": {}
+                        },
+                        "f:type": {}
+                    }
+                }
+            ]
+        },
+        "involvedObject": {
+            "kind": "Pod",
+            "namespace": "app-routing-system",
+            "name": "external-dns-8f7dfbcc8-8q4ww",
+            "uid": "822f53f4-7dcc-4807-88bd-c5c0ce3faf53",
+            "apiVersion": "v1",
+            "resourceVersion": "12919",
+            "fieldPath": "spec.containers{controller}"
+        },
+        "reason": "Started",
+        "message": "Started container controller",
+        "source": {
+            "component": "kubelet",
+            "host": "aks-nodepool1-23131335-vmss000000"
+        },
+        "firstTimestamp": "2025-03-08T06:33:06Z",
+        "lastTimestamp": "2025-03-08T06:33:06Z",
+        "count": 1,
+        "type": "Normal",
+        "eventTime": null,
+        "reportingComponent": "kubelet",
+        "reportingInstance": "aks-nodepool1-23131335-vmss000000"
+    },
+    {
+        "metadata": {
+            "name": "external-dns-8f7dfbcc8.182ac03f084440d8",
+            "namespace": "app-routing-system",
+            "uid": "b1be0bc3-7a94-4a37-862b-9dcb8dc08905",
+            "resourceVersion": "12921",
+            "creationTimestamp": "2025-03-08T06:33:02Z",
+            "managedFields": [
+                {
+                    "manager": "kube-controller-manager",
+                    "operation": "Update",
+                    "apiVersion": "v1",
+                    "time": "2025-03-08T06:33:02Z",
+                    "fieldsType": "FieldsV1",
+                    "fieldsV1": {
+                        "f:count": {},
+                        "f:firstTimestamp": {},
+                        "f:involvedObject": {},
+                        "f:lastTimestamp": {},
+                        "f:message": {},
+                        "f:reason": {},
+                        "f:reportingComponent": {},
+                        "f:source": {
+                            "f:component": {}
+                        },
+                        "f:type": {}
+                    }
+                }
+            ]
+        },
+        "involvedObject": {
+            "kind": "ReplicaSet",
+            "namespace": "app-routing-system",
+            "name": "external-dns-8f7dfbcc8",
+            "uid": "cf11a197-0b05-4f77-b034-a0b0500af138",
+            "apiVersion": "apps/v1",
+            "resourceVersion": "12913"
+        },
+        "reason": "SuccessfulCreate",
+        "message": "Created pod: external-dns-8f7dfbcc8-8q4ww",
+        "source": {
+            "component": "replicaset-controller"
+        },
+        "firstTimestamp": "2025-03-08T06:33:02Z",
+        "lastTimestamp": "2025-03-08T06:33:02Z",
+        "count": 1,
+        "type": "Normal",
+        "eventTime": null,
+        "reportingComponent": "replicaset-controller",
+        "reportingInstance": ""
+    },
+    {
+        "metadata": {
+            "name": "external-dns.182ac03ef3ce4100",
+            "namespace": "app-routing-system",
+            "uid": "d13cb73d-ef31-4de0-8566-61a39803fcbd",
+            "resourceVersion": "12914",
+            "creationTimestamp": "2025-03-08T06:33:02Z",
+            "managedFields": [
+                {
+                    "manager": "kube-controller-manager",
+                    "operation": "Update",
+                    "apiVersion": "v1",
+                    "time": "2025-03-08T06:33:02Z",
+                    "fieldsType": "FieldsV1",
+                    "fieldsV1": {
+                        "f:count": {},
+                        "f:firstTimestamp": {},
+                        "f:involvedObject": {},
+                        "f:lastTimestamp": {},
+                        "f:message": {},
+                        "f:reason": {},
+                        "f:reportingComponent": {},
+                        "f:source": {
+                            "f:component": {}
+                        },
+                        "f:type": {}
+                    }
+                }
+            ]
+        },
+        "involvedObject": {
+            "kind": "Deployment",
+            "namespace": "app-routing-system",
+            "name": "external-dns",
+            "uid": "f6e6bd57-264c-4b0e-bd53-ce0c164d0651",
+            "apiVersion": "apps/v1",
+            "resourceVersion": "12889"
+        },
+        "reason": "ScalingReplicaSet",
+        "message": "Scaled up replica set external-dns-8f7dfbcc8 to 1",
+        "source": {
+            "component": "deployment-controller"
+        },
+        "firstTimestamp": "2025-03-08T06:33:02Z",
+        "lastTimestamp": "2025-03-08T06:33:02Z",
+        "count": 1,
+        "type": "Normal",
+        "eventTime": null,
+        "reportingComponent": "deployment-controller",
+        "reportingInstance": ""
+    },
+    {
+        "metadata": {
+            "name": "nginx.182ac04098611f8c",
+            "namespace": "app-routing-system",
+            "uid": "33b20fbe-d631-4aac-b578-8ef659348a65",
+            "resourceVersion": "12961",
+            "creationTimestamp": "2025-03-08T06:33:09Z",
+            "managedFields": [
+                {
+                    "manager": "cloud-controller-manager",
+                    "operation": "Update",
+                    "apiVersion": "v1",
+                    "time": "2025-03-08T06:33:09Z",
+                    "fieldsType": "FieldsV1",
+                    "fieldsV1": {
+                        "f:count": {},
+                        "f:firstTimestamp": {},
+                        "f:involvedObject": {},
+                        "f:lastTimestamp": {},
+                        "f:message": {},
+                        "f:reason": {},
+                        "f:reportingComponent": {},
+                        "f:source": {
+                            "f:component": {}
+                        },
+                        "f:type": {}
+                    }
+                }
+            ]
+        },
+        "involvedObject": {
+            "kind": "Service",
+            "namespace": "app-routing-system",
+            "name": "nginx",
+            "uid": "d08e623b-3382-49df-8dc2-bbd149dbfff7",
+            "apiVersion": "v1",
+            "resourceVersion": "877"
+        },
+        "reason": "EnsuringLoadBalancer",
+        "message": "Ensuring load balancer",
+        "source": {
+            "component": "service-controller"
+        },
+        "firstTimestamp": "2025-03-08T06:33:09Z",
+        "lastTimestamp": "2025-03-08T06:33:09Z",
+        "count": 1,
+        "type": "Normal",
+        "eventTime": null,
+        "reportingComponent": "service-controller",
+        "reportingInstance": ""
+    },
+    {
+        "metadata": {
+            "name": "nginx.182ac040ec40f679",
+            "namespace": "app-routing-system",
+            "uid": "1433a428-af26-4e38-94a3-076a09fc4f3e",
+            "resourceVersion": "12965",
+            "creationTimestamp": "2025-03-08T06:33:11Z",
+            "managedFields": [
+                {
+                    "manager": "cloud-controller-manager",
+                    "operation": "Update",
+                    "apiVersion": "v1",
+                    "time": "2025-03-08T06:33:11Z",
+                    "fieldsType": "FieldsV1",
+                    "fieldsV1": {
+                        "f:count": {},
+                        "f:firstTimestamp": {},
+                        "f:involvedObject": {},
+                        "f:lastTimestamp": {},
+                        "f:message": {},
+                        "f:reason": {},
+                        "f:reportingComponent": {},
+                        "f:source": {
+                            "f:component": {}
+                        },
+                        "f:type": {}
+                    }
+                }
+            ]
+        },
+        "involvedObject": {
+            "kind": "Service",
+            "namespace": "app-routing-system",
+            "name": "nginx",
+            "uid": "d08e623b-3382-49df-8dc2-bbd149dbfff7",
+            "apiVersion": "v1",
+            "resourceVersion": "877"
+        },
+        "reason": "EnsuredLoadBalancer",
+        "message": "Ensured load balancer",
+        "source": {
+            "component": "service-controller"
+        },
+        "firstTimestamp": "2025-03-08T06:33:11Z",
+        "lastTimestamp": "2025-03-08T06:33:11Z",
+        "count": 1,
+        "type": "Normal",
+        "eventTime": null,
+        "reportingComponent": "service-controller",
+        "reportingInstance": ""
+    },
+    {
+        "metadata": {
+            "name": "aks-nodepool1-23131335-vmss000000.182ac03ef2560bb9",
+            "namespace": "default",
+            "uid": "225e2129-8d61-4bb9-a51c-0e442c61908f",
+            "resourceVersion": "12917",
+            "creationTimestamp": "2025-03-08T06:33:02Z",
+            "managedFields": [
+                {
+                    "manager": "kube-controller-manager",
+                    "operation": "Update",
+                    "apiVersion": "v1",
+                    "time": "2025-03-08T06:33:02Z",
+                    "fieldsType": "FieldsV1",
+                    "fieldsV1": {
+                        "f:count": {},
+                        "f:firstTimestamp": {},
+                        "f:involvedObject": {},
+                        "f:lastTimestamp": {},
+                        "f:message": {},
+                        "f:reason": {},
+                        "f:reportingComponent": {},
+                        "f:source": {
+                            "f:component": {}
+                        },
+                        "f:type": {}
+                    }
+                }
+            ]
+        },
+        "involvedObject": {
+            "kind": "Node",
+            "name": "aks-nodepool1-23131335-vmss000000",
+            "uid": "5f57c0d8-a315-4a3d-8c40-40b376f6b74c",
+            "apiVersion": "v1"
+        },
+        "reason": "RegisteredNode",
+        "message": "Node aks-nodepool1-23131335-vmss000000 event: Registered Node aks-nodepool1-23131335-vmss000000 in Controller",
+        "source": {
+            "component": "node-controller"
+        },
+        "firstTimestamp": "2025-03-08T06:33:02Z",
+        "lastTimestamp": "2025-03-08T06:33:02Z",
+        "count": 1,
+        "type": "Normal",
+        "eventTime": null,
+        "reportingComponent": "node-controller",
+        "reportingInstance": ""
+    },
+    {
+        "metadata": {
+            "name": "contoso-website-78c7c9db65-jv92k.182ac213a422ee99",
+            "namespace": "default",
+            "uid": "0874f178-d625-48b1-9810-741c05b3a3da",
+            "resourceVersion": "21838",
+            "creationTimestamp": "2025-03-08T07:06:35Z",
+            "managedFields": [
+                {
+                    "manager": "kube-scheduler",
+                    "operation": "Update",
+                    "apiVersion": "events.k8s.io/v1",
+                    "time": "2025-03-08T07:06:35Z",
+                    "fieldsType": "FieldsV1",
+                    "fieldsV1": {
+                        "f:action": {},
+                        "f:eventTime": {},
+                        "f:note": {},
+                        "f:reason": {},
+                        "f:regarding": {},
+                        "f:reportingController": {},
+                        "f:reportingInstance": {},
+                        "f:type": {}
+                    }
+                }
+            ]
+        },
+        "involvedObject": {
+            "kind": "Pod",
+            "namespace": "default",
+            "name": "contoso-website-78c7c9db65-jv92k",
+            "uid": "1511951b-2c1a-4949-9be1-e276b9371011",
+            "apiVersion": "v1",
+            "resourceVersion": "21834"
+        },
+        "reason": "Scheduled",
+        "message": "Successfully assigned default/contoso-website-78c7c9db65-jv92k to aks-nodepool1-23131335-vmss000000",
+        "source": {},
+        "firstTimestamp": null,
+        "lastTimestamp": null,
+        "type": "Normal",
+        "eventTime": "2025-03-08T07:06:35.546028Z",
+        "action": "Binding",
+        "reportingComponent": "default-scheduler",
+        "reportingInstance": "default-scheduler-kube-scheduler-v2-5d49d5cdcf-rqq9g"
+    },
+    {
+        "metadata": {
+            "name": "contoso-website-78c7c9db65-jv92k.182ac213c8e974e6",
+            "namespace": "default",
+            "uid": "f1f49f66-7f81-4b11-94b1-2c334bb5c2ac",
+            "resourceVersion": "21850",
+            "creationTimestamp": "2025-03-08T07:06:36Z",
+            "managedFields": [
+                {
+                    "manager": "kubelet",
+                    "operation": "Update",
+                    "apiVersion": "v1",
+                    "time": "2025-03-08T07:06:36Z",
+                    "fieldsType": "FieldsV1",
+                    "fieldsV1": {
+                        "f:count": {},
+                        "f:firstTimestamp": {},
+                        "f:involvedObject": {},
+                        "f:lastTimestamp": {},
+                        "f:message": {},
+                        "f:reason": {},
+                        "f:reportingComponent": {},
+                        "f:reportingInstance": {},
+                        "f:source": {
+                            "f:component": {},
+                            "f:host": {}
+                        },
+                        "f:type": {}
+                    }
+                }
+            ]
+        },
+        "involvedObject": {
+            "kind": "Pod",
+            "namespace": "default",
+            "name": "contoso-website-78c7c9db65-jv92k",
+            "uid": "1511951b-2c1a-4949-9be1-e276b9371011",
+            "apiVersion": "v1",
+            "resourceVersion": "21836",
+            "fieldPath": "spec.containers{contoso-website}"
+        },
+        "reason": "Pulling",
+        "message": "Pulling image \"mcr.microsoft.com/mslearn/samples/contoso-website\"",
+        "source": {
+            "component": "kubelet",
+            "host": "aks-nodepool1-23131335-vmss000000"
+        },
+        "firstTimestamp": "2025-03-08T07:06:36Z",
+        "lastTimestamp": "2025-03-08T07:06:36Z",
+        "count": 1,
+        "type": "Normal",
+        "eventTime": null,
+        "reportingComponent": "kubelet",
+        "reportingInstance": "aks-nodepool1-23131335-vmss000000"
+    },
+    {
+        "metadata": {
+            "name": "contoso-website-78c7c9db65-jv92k.182ac213d3675c4f",
+            "namespace": "default",
+            "uid": "e929e656-09f9-4457-b10d-9023b558d7a1",
+            "resourceVersion": "21851",
+            "creationTimestamp": "2025-03-08T07:06:36Z",
+            "managedFields": [
+                {
+                    "manager": "kubelet",
+                    "operation": "Update",
+                    "apiVersion": "v1",
+                    "time": "2025-03-08T07:06:36Z",
+                    "fieldsType": "FieldsV1",
+                    "fieldsV1": {
+                        "f:count": {},
+                        "f:firstTimestamp": {},
+                        "f:involvedObject": {},
+                        "f:lastTimestamp": {},
+                        "f:message": {},
+                        "f:reason": {},
+                        "f:reportingComponent": {},
+                        "f:reportingInstance": {},
+                        "f:source": {
+                            "f:component": {},
+                            "f:host": {}
+                        },
+                        "f:type": {}
+                    }
+                }
+            ]
+        },
+        "involvedObject": {
+            "kind": "Pod",
+            "namespace": "default",
+            "name": "contoso-website-78c7c9db65-jv92k",
+            "uid": "1511951b-2c1a-4949-9be1-e276b9371011",
+            "apiVersion": "v1",
+            "resourceVersion": "21836",
+            "fieldPath": "spec.containers{contoso-website}"
+        },
+        "reason": "Pulled",
+        "message": "Successfully pulled image \"mcr.microsoft.com/mslearn/samples/contoso-website\" in 176ms (176ms including waiting). Image size: 198400265 bytes.",
+        "source": {
+            "component": "kubelet",
+            "host": "aks-nodepool1-23131335-vmss000000"
+        },
+        "firstTimestamp": "2025-03-08T07:06:36Z",
+        "lastTimestamp": "2025-03-08T07:06:36Z",
+        "count": 1,
+        "type": "Normal",
+        "eventTime": null,
+        "reportingComponent": "kubelet",
+        "reportingInstance": "aks-nodepool1-23131335-vmss000000"
+    },
+    {
+        "metadata": {
+            "name": "contoso-website-78c7c9db65-jv92k.182ac213d70f4ee5",
+            "namespace": "default",
+            "uid": "6db6da1a-e2b1-4119-a37c-88e1cc1ff786",
+            "resourceVersion": "21853",
+            "creationTimestamp": "2025-03-08T07:06:36Z",
+            "managedFields": [
+                {
+                    "manager": "kubelet",
+                    "operation": "Update",
+                    "apiVersion": "v1",
+                    "time": "2025-03-08T07:06:36Z",
+                    "fieldsType": "FieldsV1",
+                    "fieldsV1": {
+                        "f:count": {},
+                        "f:firstTimestamp": {},
+                        "f:involvedObject": {},
+                        "f:lastTimestamp": {},
+                        "f:message": {},
+                        "f:reason": {},
+                        "f:reportingComponent": {},
+                        "f:reportingInstance": {},
+                        "f:source": {
+                            "f:component": {},
+                            "f:host": {}
+                        },
+                        "f:type": {}
+                    }
+                }
+            ]
+        },
+        "involvedObject": {
+            "kind": "Pod",
+            "namespace": "default",
+            "name": "contoso-website-78c7c9db65-jv92k",
+            "uid": "1511951b-2c1a-4949-9be1-e276b9371011",
+            "apiVersion": "v1",
+            "resourceVersion": "21836",
+            "fieldPath": "spec.containers{contoso-website}"
+        },
+        "reason": "Created",
+        "message": "Created container contoso-website",
+        "source": {
+            "component": "kubelet",
+            "host": "aks-nodepool1-23131335-vmss000000"
+        },
+        "firstTimestamp": "2025-03-08T07:06:36Z",
+        "lastTimestamp": "2025-03-08T07:06:36Z",
+        "count": 1,
+        "type": "Normal",
+        "eventTime": null,
+        "reportingComponent": "kubelet",
+        "reportingInstance": "aks-nodepool1-23131335-vmss000000"
+    },
+    {
+        "metadata": {
+            "name": "contoso-website-78c7c9db65-jv92k.182ac213db1363ac",
+            "namespace": "default",
+            "uid": "96e30bbf-48c6-4c27-93fd-946feb756e02",
+            "resourceVersion": "21854",
+            "creationTimestamp": "2025-03-08T07:06:36Z",
+            "managedFields": [
+                {
+                    "manager": "kubelet",
+                    "operation": "Update",
+                    "apiVersion": "v1",
+                    "time": "2025-03-08T07:06:36Z",
+                    "fieldsType": "FieldsV1",
+                    "fieldsV1": {
+                        "f:count": {},
+                        "f:firstTimestamp": {},
+                        "f:involvedObject": {},
+                        "f:lastTimestamp": {},
+                        "f:message": {},
+                        "f:reason": {},
+                        "f:reportingComponent": {},
+                        "f:reportingInstance": {},
+                        "f:source": {
+                            "f:component": {},
+                            "f:host": {}
+                        },
+                        "f:type": {}
+                    }
+                }
+            ]
+        },
+        "involvedObject": {
+            "kind": "Pod",
+            "namespace": "default",
+            "name": "contoso-website-78c7c9db65-jv92k",
+            "uid": "1511951b-2c1a-4949-9be1-e276b9371011",
+            "apiVersion": "v1",
+            "resourceVersion": "21836",
+            "fieldPath": "spec.containers{contoso-website}"
+        },
+        "reason": "Started",
+        "message": "Started container contoso-website",
+        "source": {
+            "component": "kubelet",
+            "host": "aks-nodepool1-23131335-vmss000000"
+        },
+        "firstTimestamp": "2025-03-08T07:06:36Z",
+        "lastTimestamp": "2025-03-08T07:06:36Z",
+        "count": 1,
+        "type": "Normal",
+        "eventTime": null,
+        "reportingComponent": "kubelet",
+        "reportingInstance": "aks-nodepool1-23131335-vmss000000"
+    },
+    {
+        "metadata": {
+            "name": "contoso-website-78c7c9db65-jv92k.182ac2a6b55f5e24",
+            "namespace": "default",
+            "uid": "ab39b8c4-dad6-4916-a4d2-a6dec9283925",
+            "resourceVersion": "24724",
+            "creationTimestamp": "2025-03-08T07:17:07Z",
+            "managedFields": [
+                {
+                    "manager": "kubelet",
+                    "operation": "Update",
+                    "apiVersion": "v1",
+                    "time": "2025-03-08T07:17:07Z",
+                    "fieldsType": "FieldsV1",
+                    "fieldsV1": {
+                        "f:count": {},
+                        "f:firstTimestamp": {},
+                        "f:involvedObject": {},
+                        "f:lastTimestamp": {},
+                        "f:message": {},
+                        "f:reason": {},
+                        "f:reportingComponent": {},
+                        "f:reportingInstance": {},
+                        "f:source": {
+                            "f:component": {},
+                            "f:host": {}
+                        },
+                        "f:type": {}
+                    }
+                }
+            ]
+        },
+        "involvedObject": {
+            "kind": "Pod",
+            "namespace": "default",
+            "name": "contoso-website-78c7c9db65-jv92k",
+            "uid": "1511951b-2c1a-4949-9be1-e276b9371011",
+            "apiVersion": "v1",
+            "resourceVersion": "21836",
+            "fieldPath": "spec.containers{contoso-website}"
+        },
+        "reason": "Killing",
+        "message": "Stopping container contoso-website",
+        "source": {
+            "component": "kubelet",
+            "host": "aks-nodepool1-23131335-vmss000000"
+        },
+        "firstTimestamp": "2025-03-08T07:17:07Z",
+        "lastTimestamp": "2025-03-08T07:17:07Z",
+        "count": 1,
+        "type": "Normal",
+        "eventTime": null,
+        "reportingComponent": "kubelet",
+        "reportingInstance": "aks-nodepool1-23131335-vmss000000"
+    },
+    {
+        "metadata": {
+            "name": "contoso-website-78c7c9db65.182ac213a35fe9fd",
+            "namespace": "default",
+            "uid": "e6511282-899f-4794-847e-38aabdc0e20b",
+            "resourceVersion": "21835",
+            "creationTimestamp": "2025-03-08T07:06:35Z",
+            "managedFields": [
+                {
+                    "manager": "kube-controller-manager",
+                    "operation": "Update",
+                    "apiVersion": "v1",
+                    "time": "2025-03-08T07:06:35Z",
+                    "fieldsType": "FieldsV1",
+                    "fieldsV1": {
+                        "f:count": {},
+                        "f:firstTimestamp": {},
+                        "f:involvedObject": {},
+                        "f:lastTimestamp": {},
+                        "f:message": {},
+                        "f:reason": {},
+                        "f:reportingComponent": {},
+                        "f:source": {
+                            "f:component": {}
+                        },
+                        "f:type": {}
+                    }
+                }
+            ]
+        },
+        "involvedObject": {
+            "kind": "ReplicaSet",
+            "namespace": "default",
+            "name": "contoso-website-78c7c9db65",
+            "uid": "006dad98-0a25-48e0-b14b-2466148da349",
+            "apiVersion": "apps/v1",
+            "resourceVersion": "21829"
+        },
+        "reason": "SuccessfulCreate",
+        "message": "Created pod: contoso-website-78c7c9db65-jv92k",
+        "source": {
+            "component": "replicaset-controller"
+        },
+        "firstTimestamp": "2025-03-08T07:06:35Z",
+        "lastTimestamp": "2025-03-08T07:06:35Z",
+        "count": 1,
+        "type": "Normal",
+        "eventTime": null,
+        "reportingComponent": "replicaset-controller",
+        "reportingInstance": ""
+    },
+    {
+        "metadata": {
+            "name": "contoso-website-78c7c9db65.182ac213a50ab4f4",
+            "namespace": "default",
+            "uid": "680909f5-c973-46f9-8674-c9efebe93762",
+            "resourceVersion": "21839",
+            "creationTimestamp": "2025-03-08T07:06:35Z",
+            "managedFields": [
+                {
+                    "manager": "kube-controller-manager",
+                    "operation": "Update",
+                    "apiVersion": "v1",
+                    "time": "2025-03-08T07:06:35Z",
+                    "fieldsType": "FieldsV1",
+                    "fieldsV1": {
+                        "f:count": {},
+                        "f:firstTimestamp": {},
+                        "f:involvedObject": {},
+                        "f:lastTimestamp": {},
+                        "f:message": {},
+                        "f:reason": {},
+                        "f:reportingComponent": {},
+                        "f:source": {
+                            "f:component": {}
+                        },
+                        "f:type": {}
+                    }
+                }
+            ]
+        },
+        "involvedObject": {
+            "kind": "ReplicaSet",
+            "namespace": "default",
+            "name": "contoso-website-78c7c9db65",
+            "uid": "006dad98-0a25-48e0-b14b-2466148da349",
+            "apiVersion": "apps/v1",
+            "resourceVersion": "21829"
+        },
+        "reason": "SuccessfulCreate",
+        "message": "Created pod: contoso-website-78c7c9db65-xrw6s",
+        "source": {
+            "component": "replicaset-controller"
+        },
+        "firstTimestamp": "2025-03-08T07:06:35Z",
+        "lastTimestamp": "2025-03-08T07:06:35Z",
+        "count": 1,
+        "type": "Normal",
+        "eventTime": null,
+        "reportingComponent": "replicaset-controller",
+        "reportingInstance": ""
+    },
+    {
+        "metadata": {
+            "name": "contoso-website-78c7c9db65.182ac221a6800f9f",
+            "namespace": "default",
+            "uid": "8510f764-06f7-4135-b79a-4d15cf21f415",
+            "resourceVersion": "22121",
+            "creationTimestamp": "2025-03-08T07:07:35Z",
+            "managedFields": [
+                {
+                    "manager": "kube-controller-manager",
+                    "operation": "Update",
+                    "apiVersion": "v1",
+                    "time": "2025-03-08T07:07:35Z",
+                    "fieldsType": "FieldsV1",
+                    "fieldsV1": {
+                        "f:count": {},
+                        "f:firstTimestamp": {},
+                        "f:involvedObject": {},
+                        "f:lastTimestamp": {},
+                        "f:message": {},
+                        "f:reason": {},
+                        "f:reportingComponent": {},
+                        "f:source": {
+                            "f:component": {}
+                        },
+                        "f:type": {}
+                    }
+                }
+            ]
+        },
+        "involvedObject": {
+            "kind": "ReplicaSet",
+            "namespace": "default",
+            "name": "contoso-website-78c7c9db65",
+            "uid": "006dad98-0a25-48e0-b14b-2466148da349",
+            "apiVersion": "apps/v1",
+            "resourceVersion": "22114"
+        },
+        "reason": "SuccessfulCreate",
+        "message": "Created pod: contoso-website-78c7c9db65-vzqgz",
+        "source": {
+            "component": "replicaset-controller"
+        },
+        "firstTimestamp": "2025-03-08T07:07:35Z",
+        "lastTimestamp": "2025-03-08T07:07:35Z",
+        "count": 1,
+        "type": "Normal",
+        "eventTime": null,
+        "reportingComponent": "replicaset-controller",
+        "reportingInstance": ""
+    },
+    {
+        "metadata": {
+            "name": "contoso-website-78c7c9db65.182ac221a73b607d",
+            "namespace": "default",
+            "uid": "273b5039-640b-48e9-be62-059b9e757f4c",
+            "resourceVersion": "22126",
+            "creationTimestamp": "2025-03-08T07:07:35Z",
+            "managedFields": [
+                {
+                    "manager": "kube-controller-manager",
+                    "operation": "Update",
+                    "apiVersion": "v1",
+                    "time": "2025-03-08T07:07:35Z",
+                    "fieldsType": "FieldsV1",
+                    "fieldsV1": {
+                        "f:count": {},
+                        "f:firstTimestamp": {},
+                        "f:involvedObject": {},
+                        "f:lastTimestamp": {},
+                        "f:message": {},
+                        "f:reason": {},
+                        "f:reportingComponent": {},
+                        "f:source": {
+                            "f:component": {}
+                        },
+                        "f:type": {}
+                    }
+                }
+            ]
+        },
+        "involvedObject": {
+            "kind": "ReplicaSet",
+            "namespace": "default",
+            "name": "contoso-website-78c7c9db65",
+            "uid": "006dad98-0a25-48e0-b14b-2466148da349",
+            "apiVersion": "apps/v1",
+            "resourceVersion": "22114"
+        },
+        "reason": "SuccessfulCreate",
+        "message": "Created pod: contoso-website-78c7c9db65-88thg",
+        "source": {
+            "component": "replicaset-controller"
+        },
+        "firstTimestamp": "2025-03-08T07:07:35Z",
+        "lastTimestamp": "2025-03-08T07:07:35Z",
+        "count": 1,
+        "type": "Normal",
+        "eventTime": null,
+        "reportingComponent": "replicaset-controller",
+        "reportingInstance": ""
+    },
+    {
+        "metadata": {
+            "name": "contoso-website-78c7c9db65.182ac221a799b97c",
+            "namespace": "default",
+            "uid": "b96518b2-faee-43fd-87d1-e1e52273ecb9",
+            "resourceVersion": "22130",
+            "creationTimestamp": "2025-03-08T07:07:35Z",
+            "managedFields": [
+                {
+                    "manager": "kube-controller-manager",
+                    "operation": "Update",
+                    "apiVersion": "v1",
+                    "time": "2025-03-08T07:07:35Z",
+                    "fieldsType": "FieldsV1",
+                    "fieldsV1": {
+                        "f:count": {},
+                        "f:firstTimestamp": {},
+                        "f:involvedObject": {},
+                        "f:lastTimestamp": {},
+                        "f:message": {},
+                        "f:reason": {},
+                        "f:reportingComponent": {},
+                        "f:source": {
+                            "f:component": {}
+                        },
+                        "f:type": {}
+                    }
+                }
+            ]
+        },
+        "involvedObject": {
+            "kind": "ReplicaSet",
+            "namespace": "default",
+            "name": "contoso-website-78c7c9db65",
+            "uid": "006dad98-0a25-48e0-b14b-2466148da349",
+            "apiVersion": "apps/v1",
+            "resourceVersion": "22114"
+        },
+        "reason": "SuccessfulCreate",
+        "message": "Created pod: contoso-website-78c7c9db65-4s6jd",
+        "source": {
+            "component": "replicaset-controller"
+        },
+        "firstTimestamp": "2025-03-08T07:07:35Z",
+        "lastTimestamp": "2025-03-08T07:07:35Z",
+        "count": 1,
+        "type": "Normal",
+        "eventTime": null,
+        "reportingComponent": "replicaset-controller",
+        "reportingInstance": ""
+    },
+    {
+        "metadata": {
+            "name": "contoso-website-78c7c9db65.182ac29fb1af268d",
+            "namespace": "default",
+            "uid": "447ed249-bc00-4739-a6b3-d6747bc493e2",
+            "resourceVersion": "24573",
+            "creationTimestamp": "2025-03-08T07:16:37Z",
+            "managedFields": [
+                {
+                    "manager": "kube-controller-manager",
+                    "operation": "Update",
+                    "apiVersion": "v1",
+                    "time": "2025-03-08T07:16:37Z",
+                    "fieldsType": "FieldsV1",
+                    "fieldsV1": {
+                        "f:count": {},
+                        "f:firstTimestamp": {},
+                        "f:involvedObject": {},
+                        "f:lastTimestamp": {},
+                        "f:message": {},
+                        "f:reason": {},
+                        "f:reportingComponent": {},
+                        "f:source": {
+                            "f:component": {}
+                        },
+                        "f:type": {}
+                    }
+                }
+            ]
+        },
+        "involvedObject": {
+            "kind": "ReplicaSet",
+            "namespace": "default",
+            "name": "contoso-website-78c7c9db65",
+            "uid": "006dad98-0a25-48e0-b14b-2466148da349",
+            "apiVersion": "apps/v1",
+            "resourceVersion": "24558"
+        },
+        "reason": "SuccessfulDelete",
+        "message": "Deleted pod: contoso-website-78c7c9db65-vzqgz",
+        "source": {
+            "component": "replicaset-controller"
+        },
+        "firstTimestamp": "2025-03-08T07:16:37Z",
+        "lastTimestamp": "2025-03-08T07:16:37Z",
+        "count": 1,
+        "type": "Normal",
+        "eventTime": null,
+        "reportingComponent": "replicaset-controller",
+        "reportingInstance": ""
+    },
+    {
+        "metadata": {
+            "name": "contoso-website-78c7c9db65.182ac29fb2038b07",
+            "namespace": "default",
+            "uid": "76bc5197-2874-40a1-99ca-684d14e1e2f6",
+            "resourceVersion": "24577",
+            "creationTimestamp": "2025-03-08T07:16:37Z",
+            "managedFields": [
+                {
+                    "manager": "kube-controller-manager",
+                    "operation": "Update",
+                    "apiVersion": "v1",
+                    "time": "2025-03-08T07:16:37Z",
+                    "fieldsType": "FieldsV1",
+                    "fieldsV1": {
+                        "f:count": {},
+                        "f:firstTimestamp": {},
+                        "f:involvedObject": {},
+                        "f:lastTimestamp": {},
+                        "f:message": {},
+                        "f:reason": {},
+                        "f:reportingComponent": {},
+                        "f:source": {
+                            "f:component": {}
+                        },
+                        "f:type": {}
+                    }
+                }
+            ]
+        },
+        "involvedObject": {
+            "kind": "ReplicaSet",
+            "namespace": "default",
+            "name": "contoso-website-78c7c9db65",
+            "uid": "006dad98-0a25-48e0-b14b-2466148da349",
+            "apiVersion": "apps/v1",
+            "resourceVersion": "24558"
+        },
+        "reason": "SuccessfulDelete",
+        "message": "Deleted pod: contoso-website-78c7c9db65-4s6jd",
+        "source": {
+            "component": "replicaset-controller"
+        },
+        "firstTimestamp": "2025-03-08T07:16:37Z",
+        "lastTimestamp": "2025-03-08T07:16:37Z",
+        "count": 1,
+        "type": "Normal",
+        "eventTime": null,
+        "reportingComponent": "replicaset-controller",
+        "reportingInstance": ""
+    },
+    {
+        "metadata": {
+            "name": "contoso-website-78c7c9db65.182ac29fb20394cb",
+            "namespace": "default",
+            "uid": "49e263bd-238f-4c8f-a202-619befd7ea1d",
+            "resourceVersion": "24579",
+            "creationTimestamp": "2025-03-08T07:16:37Z",
+            "managedFields": [
+                {
+                    "manager": "kube-controller-manager",
+                    "operation": "Update",
+                    "apiVersion": "v1",
+                    "time": "2025-03-08T07:16:37Z",
+                    "fieldsType": "FieldsV1",
+                    "fieldsV1": {
+                        "f:count": {},
+                        "f:firstTimestamp": {},
+                        "f:involvedObject": {},
+                        "f:lastTimestamp": {},
+                        "f:message": {},
+                        "f:reason": {},
+                        "f:reportingComponent": {},
+                        "f:source": {
+                            "f:component": {}
+                        },
+                        "f:type": {}
+                    }
+                }
+            ]
+        },
+        "involvedObject": {
+            "kind": "ReplicaSet",
+            "namespace": "default",
+            "name": "contoso-website-78c7c9db65",
+            "uid": "006dad98-0a25-48e0-b14b-2466148da349",
+            "apiVersion": "apps/v1",
+            "resourceVersion": "24558"
+        },
+        "reason": "SuccessfulDelete",
+        "message": "Deleted pod: contoso-website-78c7c9db65-88thg",
+        "source": {
+            "component": "replicaset-controller"
+        },
+        "firstTimestamp": "2025-03-08T07:16:37Z",
+        "lastTimestamp": "2025-03-08T07:16:37Z",
+        "count": 1,
+        "type": "Normal",
+        "eventTime": null,
+        "reportingComponent": "replicaset-controller",
+        "reportingInstance": ""
+    },
+    {
+        "metadata": {
+            "name": "contoso-website-78c7c9db65.182ac29fb25710d8",
+            "namespace": "default",
+            "uid": "eb7a33b1-130f-443f-b72c-fc628468be76",
+            "resourceVersion": "24582",
+            "creationTimestamp": "2025-03-08T07:16:37Z",
+            "managedFields": [
+                {
+                    "manager": "kube-controller-manager",
+                    "operation": "Update",
+                    "apiVersion": "v1",
+                    "time": "2025-03-08T07:16:37Z",
+                    "fieldsType": "FieldsV1",
+                    "fieldsV1": {
+                        "f:count": {},
+                        "f:firstTimestamp": {},
+                        "f:involvedObject": {},
+                        "f:lastTimestamp": {},
+                        "f:message": {},
+                        "f:reason": {},
+                        "f:reportingComponent": {},
+                        "f:source": {
+                            "f:component": {}
+                        },
+                        "f:type": {}
+                    }
+                }
+            ]
+        },
+        "involvedObject": {
+            "kind": "ReplicaSet",
+            "namespace": "default",
+            "name": "contoso-website-78c7c9db65",
+            "uid": "006dad98-0a25-48e0-b14b-2466148da349",
+            "apiVersion": "apps/v1",
+            "resourceVersion": "24558"
+        },
+        "reason": "SuccessfulDelete",
+        "message": "Deleted pod: contoso-website-78c7c9db65-xrw6s",
+        "source": {
+            "component": "replicaset-controller"
+        },
+        "firstTimestamp": "2025-03-08T07:16:37Z",
+        "lastTimestamp": "2025-03-08T07:16:37Z",
+        "count": 1,
+        "type": "Normal",
+        "eventTime": null,
+        "reportingComponent": "replicaset-controller",
+        "reportingInstance": ""
+    },
+    {
+        "metadata": {
+            "name": "contoso-website-78c7c9db65.182ac2a6b5462111",
+            "namespace": "default",
+            "uid": "d87c6f8f-ebd4-4c2a-867a-41b4703aebe0",
+            "resourceVersion": "24722",
+            "creationTimestamp": "2025-03-08T07:17:07Z",
+            "managedFields": [
+                {
+                    "manager": "kube-controller-manager",
+                    "operation": "Update",
+                    "apiVersion": "v1",
+                    "time": "2025-03-08T07:17:07Z",
+                    "fieldsType": "FieldsV1",
+                    "fieldsV1": {
+                        "f:count": {},
+                        "f:firstTimestamp": {},
+                        "f:involvedObject": {},
+                        "f:lastTimestamp": {},
+                        "f:message": {},
+                        "f:reason": {},
+                        "f:reportingComponent": {},
+                        "f:source": {
+                            "f:component": {}
+                        },
+                        "f:type": {}
+                    }
+                }
+            ]
+        },
+        "involvedObject": {
+            "kind": "ReplicaSet",
+            "namespace": "default",
+            "name": "contoso-website-78c7c9db65",
+            "uid": "006dad98-0a25-48e0-b14b-2466148da349",
+            "apiVersion": "apps/v1",
+            "resourceVersion": "24717"
+        },
+        "reason": "SuccessfulDelete",
+        "message": "Deleted pod: contoso-website-78c7c9db65-jv92k",
+        "source": {
+            "component": "replicaset-controller"
+        },
+        "firstTimestamp": "2025-03-08T07:17:07Z",
+        "lastTimestamp": "2025-03-08T07:17:07Z",
+        "count": 1,
+        "type": "Normal",
+        "eventTime": null,
+        "reportingComponent": "replicaset-controller",
+        "reportingInstance": ""
+    },
+    {
+        "metadata": {
+            "name": "contoso-website.182ac2139ed0c6db",
+            "namespace": "default",
+            "uid": "3b699688-0bbd-4844-ae41-69cb402f5d5f",
+            "resourceVersion": "21830",
+            "creationTimestamp": "2025-03-08T07:06:35Z",
+            "managedFields": [
+                {
+                    "manager": "kube-controller-manager",
+                    "operation": "Update",
+                    "apiVersion": "v1",
+                    "time": "2025-03-08T07:06:35Z",
+                    "fieldsType": "FieldsV1",
+                    "fieldsV1": {
+                        "f:count": {},
+                        "f:firstTimestamp": {},
+                        "f:involvedObject": {},
+                        "f:lastTimestamp": {},
+                        "f:message": {},
+                        "f:reason": {},
+                        "f:reportingComponent": {},
+                        "f:source": {
+                            "f:component": {}
+                        },
+                        "f:type": {}
+                    }
+                }
+            ]
+        },
+        "involvedObject": {
+            "kind": "HorizontalPodAutoscaler",
+            "namespace": "default",
+            "name": "contoso-website",
+            "uid": "48e4cbb3-c601-40a1-9a14-1e3e430c70e7",
+            "apiVersion": "autoscaling/v2",
+            "resourceVersion": "20239"
+        },
+        "reason": "SuccessfulRescale",
+        "message": "New size: 3; reason: cpu resource utilization (percentage of request) above target",
+        "source": {
+            "component": "horizontal-pod-autoscaler"
+        },
+        "firstTimestamp": "2025-03-08T07:06:35Z",
+        "lastTimestamp": "2025-03-08T07:06:35Z",
+        "count": 1,
+        "type": "Normal",
+        "eventTime": null,
+        "reportingComponent": "horizontal-pod-autoscaler",
+        "reportingInstance": ""
+    },
+    {
+        "metadata": {
+            "name": "contoso-website.182ac2139f90ea7c",
+            "namespace": "default",
+            "uid": "afba1e61-9ecb-4529-a5b5-d8ca23cf1ac0",
+            "resourceVersion": "21831",
+            "creationTimestamp": "2025-03-08T07:06:35Z",
+            "managedFields": [
+                {
+                    "manager": "kube-controller-manager",
+                    "operation": "Update",
+                    "apiVersion": "v1",
+                    "time": "2025-03-08T07:06:35Z",
+                    "fieldsType": "FieldsV1",
+                    "fieldsV1": {
+                        "f:count": {},
+                        "f:firstTimestamp": {},
+                        "f:involvedObject": {},
+                        "f:lastTimestamp": {},
+                        "f:message": {},
+                        "f:reason": {},
+                        "f:reportingComponent": {},
+                        "f:source": {
+                            "f:component": {}
+                        },
+                        "f:type": {}
+                    }
+                }
+            ]
+        },
+        "involvedObject": {
+            "kind": "Deployment",
+            "namespace": "default",
+            "name": "contoso-website",
+            "uid": "8600cfd4-abc8-417f-bbe4-d15203f896e5",
+            "apiVersion": "apps/v1",
+            "resourceVersion": "21827"
+        },
+        "reason": "ScalingReplicaSet",
+        "message": "Scaled up replica set contoso-website-78c7c9db65 to 3 from 1",
+        "source": {
+            "component": "deployment-controller"
+        },
+        "firstTimestamp": "2025-03-08T07:06:35Z",
+        "lastTimestamp": "2025-03-08T07:06:35Z",
+        "count": 1,
+        "type": "Normal",
+        "eventTime": null,
+        "reportingComponent": "deployment-controller",
+        "reportingInstance": ""
+    },
+    {
+        "metadata": {
+            "name": "contoso-website.182ac221a23722cb",
+            "namespace": "default",
+            "uid": "b9c29120-1b9b-4523-b2f3-557f04f2bc61",
+            "resourceVersion": "22116",
+            "creationTimestamp": "2025-03-08T07:07:35Z",
+            "managedFields": [
+                {
+                    "manager": "kube-controller-manager",
+                    "operation": "Update",
+                    "apiVersion": "v1",
+                    "time": "2025-03-08T07:07:35Z",
+                    "fieldsType": "FieldsV1",
+                    "fieldsV1": {
+                        "f:count": {},
+                        "f:firstTimestamp": {},
+                        "f:involvedObject": {},
+                        "f:lastTimestamp": {},
+                        "f:message": {},
+                        "f:reason": {},
+                        "f:reportingComponent": {},
+                        "f:source": {
+                            "f:component": {}
+                        },
+                        "f:type": {}
+                    }
+                }
+            ]
+        },
+        "involvedObject": {
+            "kind": "HorizontalPodAutoscaler",
+            "namespace": "default",
+            "name": "contoso-website",
+            "uid": "48e4cbb3-c601-40a1-9a14-1e3e430c70e7",
+            "apiVersion": "autoscaling/v2",
+            "resourceVersion": "22048"
+        },
+        "reason": "SuccessfulRescale",
+        "message": "New size: 6; reason: cpu resource utilization (percentage of request) above target",
+        "source": {
+            "component": "horizontal-pod-autoscaler"
+        },
+        "firstTimestamp": "2025-03-08T07:07:35Z",
+        "lastTimestamp": "2025-03-08T07:07:35Z",
+        "count": 1,
+        "type": "Normal",
+        "eventTime": null,
+        "reportingComponent": "horizontal-pod-autoscaler",
+        "reportingInstance": ""
+    },
+    {
+        "metadata": {
+            "name": "contoso-website.182ac221a2f1ee74",
+            "namespace": "default",
+            "uid": "5d6caca0-1ad3-42fe-8917-f7bcec75aaed",
+            "resourceVersion": "22117",
+            "creationTimestamp": "2025-03-08T07:07:35Z",
+            "managedFields": [
+                {
+                    "manager": "kube-controller-manager",
+                    "operation": "Update",
+                    "apiVersion": "v1",
+                    "time": "2025-03-08T07:07:35Z",
+                    "fieldsType": "FieldsV1",
+                    "fieldsV1": {
+                        "f:count": {},
+                        "f:firstTimestamp": {},
+                        "f:involvedObject": {},
+                        "f:lastTimestamp": {},
+                        "f:message": {},
+                        "f:reason": {},
+                        "f:reportingComponent": {},
+                        "f:source": {
+                            "f:component": {}
+                        },
+                        "f:type": {}
+                    }
+                }
+            ]
+        },
+        "involvedObject": {
+            "kind": "Deployment",
+            "namespace": "default",
+            "name": "contoso-website",
+            "uid": "8600cfd4-abc8-417f-bbe4-d15203f896e5",
+            "apiVersion": "apps/v1",
+            "resourceVersion": "22113"
+        },
+        "reason": "ScalingReplicaSet",
+        "message": "Scaled up replica set contoso-website-78c7c9db65 to 6 from 3",
+        "source": {
+            "component": "deployment-controller"
+        },
+        "firstTimestamp": "2025-03-08T07:07:35Z",
+        "lastTimestamp": "2025-03-08T07:07:35Z",
+        "count": 1,
+        "type": "Normal",
+        "eventTime": null,
+        "reportingComponent": "deployment-controller",
+        "reportingInstance": ""
+    },
+    {
+        "metadata": {
+            "name": "contoso-website.182ac29faed191b2",
+            "namespace": "default",
+            "uid": "bf10a3fb-5edb-42c3-813b-d982057f8663",
+            "resourceVersion": "24560",
+            "creationTimestamp": "2025-03-08T07:16:37Z",
+            "managedFields": [
+                {
+                    "manager": "kube-controller-manager",
+                    "operation": "Update",
+                    "apiVersion": "v1",
+                    "time": "2025-03-08T07:16:37Z",
+                    "fieldsType": "FieldsV1",
+                    "fieldsV1": {
+                        "f:count": {},
+                        "f:firstTimestamp": {},
+                        "f:involvedObject": {},
+                        "f:lastTimestamp": {},
+                        "f:message": {},
+                        "f:reason": {},
+                        "f:reportingComponent": {},
+                        "f:source": {
+                            "f:component": {}
+                        },
+                        "f:type": {}
+                    }
+                }
+            ]
+        },
+        "involvedObject": {
+            "kind": "HorizontalPodAutoscaler",
+            "namespace": "default",
+            "name": "contoso-website",
+            "uid": "48e4cbb3-c601-40a1-9a14-1e3e430c70e7",
+            "apiVersion": "autoscaling/v2",
+            "resourceVersion": "23784"
+        },
+        "reason": "SuccessfulRescale",
+        "message": "New size: 2; reason: All metrics below target",
+        "source": {
+            "component": "horizontal-pod-autoscaler"
+        },
+        "firstTimestamp": "2025-03-08T07:16:37Z",
+        "lastTimestamp": "2025-03-08T07:16:37Z",
+        "count": 1,
+        "type": "Normal",
+        "eventTime": null,
+        "reportingComponent": "horizontal-pod-autoscaler",
+        "reportingInstance": ""
+    },
+    {
+        "metadata": {
+            "name": "contoso-website.182ac29fb023ff20",
+            "namespace": "default",
+            "uid": "a64804b3-2670-4a94-8c11-3fa5fbf21648",
+            "resourceVersion": "24561",
+            "creationTimestamp": "2025-03-08T07:16:37Z",
+            "managedFields": [
+                {
+                    "manager": "kube-controller-manager",
+                    "operation": "Update",
+                    "apiVersion": "v1",
+                    "time": "2025-03-08T07:16:37Z",
+                    "fieldsType": "FieldsV1",
+                    "fieldsV1": {
+                        "f:count": {},
+                        "f:firstTimestamp": {},
+                        "f:involvedObject": {},
+                        "f:lastTimestamp": {},
+                        "f:message": {},
+                        "f:reason": {},
+                        "f:reportingComponent": {},
+                        "f:source": {
+                            "f:component": {}
+                        },
+                        "f:type": {}
+                    }
+                }
+            ]
+        },
+        "involvedObject": {
+            "kind": "Deployment",
+            "namespace": "default",
+            "name": "contoso-website",
+            "uid": "8600cfd4-abc8-417f-bbe4-d15203f896e5",
+            "apiVersion": "apps/v1",
+            "resourceVersion": "24556"
+        },
+        "reason": "ScalingReplicaSet",
+        "message": "Scaled down replica set contoso-website-78c7c9db65 to 2 from 6",
+        "source": {
+            "component": "deployment-controller"
+        },
+        "firstTimestamp": "2025-03-08T07:16:37Z",
+        "lastTimestamp": "2025-03-08T07:16:37Z",
+        "count": 1,
+        "type": "Normal",
+        "eventTime": null,
+        "reportingComponent": "deployment-controller",
+        "reportingInstance": ""
+    },
+    {
+        "metadata": {
+            "name": "contoso-website.182ac2a6b33a279e",
+            "namespace": "default",
+            "uid": "f5427689-b8dd-4c96-a105-96deb903965a",
+            "resourceVersion": "24715",
+            "creationTimestamp": "2025-03-08T07:17:07Z",
+            "managedFields": [
+                {
+                    "manager": "kube-controller-manager",
+                    "operation": "Update",
+                    "apiVersion": "v1",
+                    "time": "2025-03-08T07:17:07Z",
+                    "fieldsType": "FieldsV1",
+                    "fieldsV1": {
+                        "f:count": {},
+                        "f:firstTimestamp": {},
+                        "f:involvedObject": {},
+                        "f:lastTimestamp": {},
+                        "f:message": {},
+                        "f:reason": {},
+                        "f:reportingComponent": {},
+                        "f:source": {
+                            "f:component": {}
+                        },
+                        "f:type": {}
+                    }
+                }
+            ]
+        },
+        "involvedObject": {
+            "kind": "HorizontalPodAutoscaler",
+            "namespace": "default",
+            "name": "contoso-website",
+            "uid": "48e4cbb3-c601-40a1-9a14-1e3e430c70e7",
+            "apiVersion": "autoscaling/v2",
+            "resourceVersion": "24649"
+        },
+        "reason": "SuccessfulRescale",
+        "message": "New size: 1; reason: All metrics below target",
+        "source": {
+            "component": "horizontal-pod-autoscaler"
+        },
+        "firstTimestamp": "2025-03-08T07:17:07Z",
+        "lastTimestamp": "2025-03-08T07:17:07Z",
+        "count": 1,
+        "type": "Normal",
+        "eventTime": null,
+        "reportingComponent": "horizontal-pod-autoscaler",
+        "reportingInstance": ""
+    },
+    {
+        "metadata": {
+            "name": "contoso-website.182ac2a6b3e8a3f6",
+            "namespace": "default",
+            "uid": "83252e54-323c-47b9-9f26-b2a9be67bf62",
+            "resourceVersion": "24719",
+            "creationTimestamp": "2025-03-08T07:17:07Z",
+            "managedFields": [
+                {
+                    "manager": "kube-controller-manager",
+                    "operation": "Update",
+                    "apiVersion": "v1",
+                    "time": "2025-03-08T07:17:07Z",
+                    "fieldsType": "FieldsV1",
+                    "fieldsV1": {
+                        "f:count": {},
+                        "f:firstTimestamp": {},
+                        "f:involvedObject": {},
+                        "f:lastTimestamp": {},
+                        "f:message": {},
+                        "f:reason": {},
+                        "f:reportingComponent": {},
+                        "f:source": {
+                            "f:component": {}
+                        },
+                        "f:type": {}
+                    }
+                }
+            ]
+        },
+        "involvedObject": {
+            "kind": "Deployment",
+            "namespace": "default",
+            "name": "contoso-website",
+            "uid": "8600cfd4-abc8-417f-bbe4-d15203f896e5",
+            "apiVersion": "apps/v1",
+            "resourceVersion": "24714"
+        },
+        "reason": "ScalingReplicaSet",
+        "message": "Scaled down replica set contoso-website-78c7c9db65 to 1 from 2",
+        "source": {
+            "component": "deployment-controller"
+        },
+        "firstTimestamp": "2025-03-08T07:17:07Z",
+        "lastTimestamp": "2025-03-08T07:17:07Z",
+        "count": 1,
+        "type": "Normal",
+        "eventTime": null,
+        "reportingComponent": "deployment-controller",
+        "reportingInstance": ""
+    },
+    {
+        "metadata": {
+            "name": "contoso-website-78c7c9db65-6ptb6.182ac0120d234fc0",
+            "namespace": "hpa-contoso",
+            "uid": "98d09607-e086-4ed4-bbc5-61e1fe23cd19",
+            "resourceVersion": "12089",
+            "creationTimestamp": "2025-03-08T06:29:49Z",
+            "managedFields": [
+                {
+                    "manager": "kube-scheduler",
+                    "operation": "Update",
+                    "apiVersion": "v1",
+                    "time": "2025-03-08T06:29:49Z",
+                    "fieldsType": "FieldsV1",
+                    "fieldsV1": {
+                        "f:count": {},
+                        "f:firstTimestamp": {},
+                        "f:involvedObject": {},
+                        "f:lastTimestamp": {},
+                        "f:message": {},
+                        "f:reason": {},
+                        "f:reportingComponent": {},
+                        "f:source": {
+                            "f:component": {}
+                        },
+                        "f:type": {}
+                    }
+                }
+            ]
+        },
+        "involvedObject": {
+            "kind": "Pod",
+            "namespace": "hpa-contoso",
+            "name": "contoso-website-78c7c9db65-6ptb6",
+            "uid": "81069c2f-304b-4bac-820a-1ee785fd8f2b",
+            "apiVersion": "v1",
+            "resourceVersion": "12085"
+        },
+        "reason": "Scheduled",
+        "message": "Successfully assigned hpa-contoso/contoso-website-78c7c9db65-6ptb6 to aks-nodepool1-23131335-vmss000000",
+        "source": {
+            "component": "default-scheduler"
+        },
+        "firstTimestamp": "2025-03-08T06:29:49Z",
+        "lastTimestamp": "2025-03-08T06:29:49Z",
+        "count": 1,
+        "type": "Normal",
+        "eventTime": null,
+        "reportingComponent": "default-scheduler",
+        "reportingInstance": ""
+    },
+    {
+        "metadata": {
+            "name": "contoso-website-78c7c9db65-6ptb6.182ac0122e9e5a24",
+            "namespace": "hpa-contoso",
+            "uid": "8f7026e7-a8ad-491c-9a4f-8c85cd2b5c67",
+            "resourceVersion": "12095",
+            "creationTimestamp": "2025-03-08T06:29:50Z",
+            "managedFields": [
+                {
+                    "manager": "kubelet",
+                    "operation": "Update",
+                    "apiVersion": "v1",
+                    "time": "2025-03-08T06:29:50Z",
+                    "fieldsType": "FieldsV1",
+                    "fieldsV1": {
+                        "f:count": {},
+                        "f:firstTimestamp": {},
+                        "f:involvedObject": {},
+                        "f:lastTimestamp": {},
+                        "f:message": {},
+                        "f:reason": {},
+                        "f:reportingComponent": {},
+                        "f:reportingInstance": {},
+                        "f:source": {
+                            "f:component": {},
+                            "f:host": {}
+                        },
+                        "f:type": {}
+                    }
+                }
+            ]
+        },
+        "involvedObject": {
+            "kind": "Pod",
+            "namespace": "hpa-contoso",
+            "name": "contoso-website-78c7c9db65-6ptb6",
+            "uid": "81069c2f-304b-4bac-820a-1ee785fd8f2b",
+            "apiVersion": "v1",
+            "resourceVersion": "12086",
+            "fieldPath": "spec.containers{contoso-website}"
+        },
+        "reason": "Pulling",
+        "message": "Pulling image \"mcr.microsoft.com/mslearn/samples/contoso-website\"",
+        "source": {
+            "component": "kubelet",
+            "host": "aks-nodepool1-23131335-vmss000000"
+        },
+        "firstTimestamp": "2025-03-08T06:29:50Z",
+        "lastTimestamp": "2025-03-08T06:29:50Z",
+        "count": 1,
+        "type": "Normal",
+        "eventTime": null,
+        "reportingComponent": "kubelet",
+        "reportingInstance": "aks-nodepool1-23131335-vmss000000"
+    },
+    {
+        "metadata": {
+            "name": "contoso-website-78c7c9db65-6ptb6.182ac01238eea5ea",
+            "namespace": "hpa-contoso",
+            "uid": "a490756a-f00b-4c80-b0cc-105a750dd7b5",
+            "resourceVersion": "12096",
+            "creationTimestamp": "2025-03-08T06:29:50Z",
+            "managedFields": [
+                {
+                    "manager": "kubelet",
+                    "operation": "Update",
+                    "apiVersion": "v1",
+                    "time": "2025-03-08T06:29:50Z",
+                    "fieldsType": "FieldsV1",
+                    "fieldsV1": {
+                        "f:count": {},
+                        "f:firstTimestamp": {},
+                        "f:involvedObject": {},
+                        "f:lastTimestamp": {},
+                        "f:message": {},
+                        "f:reason": {},
+                        "f:reportingComponent": {},
+                        "f:reportingInstance": {},
+                        "f:source": {
+                            "f:component": {},
+                            "f:host": {}
+                        },
+                        "f:type": {}
+                    }
+                }
+            ]
+        },
+        "involvedObject": {
+            "kind": "Pod",
+            "namespace": "hpa-contoso",
+            "name": "contoso-website-78c7c9db65-6ptb6",
+            "uid": "81069c2f-304b-4bac-820a-1ee785fd8f2b",
+            "apiVersion": "v1",
+            "resourceVersion": "12086",
+            "fieldPath": "spec.containers{contoso-website}"
+        },
+        "reason": "Pulled",
+        "message": "Successfully pulled image \"mcr.microsoft.com/mslearn/samples/contoso-website\" in 173ms (173ms including waiting). Image size: 198400265 bytes.",
+        "source": {
+            "component": "kubelet",
+            "host": "aks-nodepool1-23131335-vmss000000"
+        },
+        "firstTimestamp": "2025-03-08T06:29:50Z",
+        "lastTimestamp": "2025-03-08T06:29:50Z",
+        "count": 1,
+        "type": "Normal",
+        "eventTime": null,
+        "reportingComponent": "kubelet",
+        "reportingInstance": "aks-nodepool1-23131335-vmss000000"
+    },
+    {
+        "metadata": {
+            "name": "contoso-website-78c7c9db65-6ptb6.182ac0123b12ff61",
+            "namespace": "hpa-contoso",
+            "uid": "1f901df5-c38e-4ee2-9918-7f1dd423bed3",
+            "resourceVersion": "12097",
+            "creationTimestamp": "2025-03-08T06:29:50Z",
+            "managedFields": [
+                {
+                    "manager": "kubelet",
+                    "operation": "Update",
+                    "apiVersion": "v1",
+                    "time": "2025-03-08T06:29:50Z",
+                    "fieldsType": "FieldsV1",
+                    "fieldsV1": {
+                        "f:count": {},
+                        "f:firstTimestamp": {},
+                        "f:involvedObject": {},
+                        "f:lastTimestamp": {},
+                        "f:message": {},
+                        "f:reason": {},
+                        "f:reportingComponent": {},
+                        "f:reportingInstance": {},
+                        "f:source": {
+                            "f:component": {},
+                            "f:host": {}
+                        },
+                        "f:type": {}
+                    }
+                }
+            ]
+        },
+        "involvedObject": {
+            "kind": "Pod",
+            "namespace": "hpa-contoso",
+            "name": "contoso-website-78c7c9db65-6ptb6",
+            "uid": "81069c2f-304b-4bac-820a-1ee785fd8f2b",
+            "apiVersion": "v1",
+            "resourceVersion": "12086",
+            "fieldPath": "spec.containers{contoso-website}"
+        },
+        "reason": "Created",
+        "message": "Created container contoso-website",
+        "source": {
+            "component": "kubelet",
+            "host": "aks-nodepool1-23131335-vmss000000"
+        },
+        "firstTimestamp": "2025-03-08T06:29:50Z",
+        "lastTimestamp": "2025-03-08T06:29:50Z",
+        "count": 1,
+        "type": "Normal",
+        "eventTime": null,
+        "reportingComponent": "kubelet",
+        "reportingInstance": "aks-nodepool1-23131335-vmss000000"
+    },
+    {
+        "metadata": {
+            "name": "contoso-website-78c7c9db65-6ptb6.182ac0123e803da3",
+            "namespace": "hpa-contoso",
+            "uid": "2352b328-639e-401e-a006-22038c7b0d59",
+            "resourceVersion": "12098",
+            "creationTimestamp": "2025-03-08T06:29:50Z",
+            "managedFields": [
+                {
+                    "manager": "kubelet",
+                    "operation": "Update",
+                    "apiVersion": "v1",
+                    "time": "2025-03-08T06:29:50Z",
+                    "fieldsType": "FieldsV1",
+                    "fieldsV1": {
+                        "f:count": {},
+                        "f:firstTimestamp": {},
+                        "f:involvedObject": {},
+                        "f:lastTimestamp": {},
+                        "f:message": {},
+                        "f:reason": {},
+                        "f:reportingComponent": {},
+                        "f:reportingInstance": {},
+                        "f:source": {
+                            "f:component": {},
+                            "f:host": {}
+                        },
+                        "f:type": {}
+                    }
+                }
+            ]
+        },
+        "involvedObject": {
+            "kind": "Pod",
+            "namespace": "hpa-contoso",
+            "name": "contoso-website-78c7c9db65-6ptb6",
+            "uid": "81069c2f-304b-4bac-820a-1ee785fd8f2b",
+            "apiVersion": "v1",
+            "resourceVersion": "12086",
+            "fieldPath": "spec.containers{contoso-website}"
+        },
+        "reason": "Started",
+        "message": "Started container contoso-website",
+        "source": {
+            "component": "kubelet",
+            "host": "aks-nodepool1-23131335-vmss000000"
+        },
+        "firstTimestamp": "2025-03-08T06:29:50Z",
+        "lastTimestamp": "2025-03-08T06:29:50Z",
+        "count": 1,
+        "type": "Normal",
+        "eventTime": null,
+        "reportingComponent": "kubelet",
+        "reportingInstance": "aks-nodepool1-23131335-vmss000000"
+    },
+    {
+        "metadata": {
+            "name": "contoso-website-78c7c9db65.182ac0120d00e560",
+            "namespace": "hpa-contoso",
+            "uid": "6ea24615-f72b-46db-a8d1-308cbea4424e",
+            "resourceVersion": "12087",
+            "creationTimestamp": "2025-03-08T06:29:49Z",
+            "managedFields": [
+                {
+                    "manager": "kube-controller-manager",
+                    "operation": "Update",
+                    "apiVersion": "v1",
+                    "time": "2025-03-08T06:29:49Z",
+                    "fieldsType": "FieldsV1",
+                    "fieldsV1": {
+                        "f:count": {},
+                        "f:firstTimestamp": {},
+                        "f:involvedObject": {},
+                        "f:lastTimestamp": {},
+                        "f:message": {},
+                        "f:reason": {},
+                        "f:reportingComponent": {},
+                        "f:source": {
+                            "f:component": {}
+                        },
+                        "f:type": {}
+                    }
+                }
+            ]
+        },
+        "involvedObject": {
+            "kind": "ReplicaSet",
+            "namespace": "hpa-contoso",
+            "name": "contoso-website-78c7c9db65",
+            "uid": "419d30c2-edbe-4296-bddf-8942d2369c1a",
+            "apiVersion": "apps/v1",
+            "resourceVersion": "12081"
+        },
+        "reason": "SuccessfulCreate",
+        "message": "Created pod: contoso-website-78c7c9db65-6ptb6",
+        "source": {
+            "component": "replicaset-controller"
+        },
+        "firstTimestamp": "2025-03-08T06:29:49Z",
+        "lastTimestamp": "2025-03-08T06:29:49Z",
+        "count": 1,
+        "type": "Normal",
+        "eventTime": null,
+        "reportingComponent": "replicaset-controller",
+        "reportingInstance": ""
+    },
+    {
+        "metadata": {
+            "name": "contoso-website.182ac0120801e578",
+            "namespace": "hpa-contoso",
+            "uid": "44ad0a6d-24b5-4c92-b2e6-19f9fe424c80",
+            "resourceVersion": "12083",
+            "creationTimestamp": "2025-03-08T06:29:49Z",
+            "managedFields": [
+                {
+                    "manager": "kube-controller-manager",
+                    "operation": "Update",
+                    "apiVersion": "v1",
+                    "time": "2025-03-08T06:29:49Z",
+                    "fieldsType": "FieldsV1",
+                    "fieldsV1": {
+                        "f:count": {},
+                        "f:firstTimestamp": {},
+                        "f:involvedObject": {},
+                        "f:lastTimestamp": {},
+                        "f:message": {},
+                        "f:reason": {},
+                        "f:reportingComponent": {},
+                        "f:source": {
+                            "f:component": {}
+                        },
+                        "f:type": {}
+                    }
+                }
+            ]
+        },
+        "involvedObject": {
+            "kind": "Deployment",
+            "namespace": "hpa-contoso",
+            "name": "contoso-website",
+            "uid": "79e54ad8-1d58-4e8e-9330-2ca98dadf4f5",
+            "apiVersion": "apps/v1",
+            "resourceVersion": "12080"
+        },
+        "reason": "ScalingReplicaSet",
+        "message": "Scaled up replica set contoso-website-78c7c9db65 to 1",
+        "source": {
+            "component": "deployment-controller"
+        },
+        "firstTimestamp": "2025-03-08T06:29:49Z",
+        "lastTimestamp": "2025-03-08T06:29:49Z",
+        "count": 1,
+        "type": "Normal",
+        "eventTime": null,
+        "reportingComponent": "deployment-controller",
+        "reportingInstance": ""
+    },
+    {
+        "metadata": {
+            "name": "contoso-website.182ac067a579a6e3",
+            "namespace": "hpa-contoso",
+            "uid": "2361251d-74a1-4548-9330-66453352bb6c",
+            "resourceVersion": "13762",
+            "creationTimestamp": "2025-03-08T06:35:57Z",
+            "managedFields": [
+                {
+                    "manager": "nginx-ingress-controller",
+                    "operation": "Update",
+                    "apiVersion": "v1",
+                    "time": "2025-03-08T06:36:04Z",
+                    "fieldsType": "FieldsV1",
+                    "fieldsV1": {
+                        "f:count": {},
+                        "f:firstTimestamp": {},
+                        "f:involvedObject": {},
+                        "f:lastTimestamp": {},
+                        "f:message": {},
+                        "f:reason": {},
+                        "f:reportingComponent": {},
+                        "f:source": {
+                            "f:component": {}
+                        },
+                        "f:type": {}
+                    }
+                }
+            ]
+        },
+        "involvedObject": {
+            "kind": "Ingress",
+            "namespace": "hpa-contoso",
+            "name": "contoso-website",
+            "uid": "fec8c5b9-fb1c-4f2c-8761-7d676800d54d",
+            "apiVersion": "networking.k8s.io/v1",
+            "resourceVersion": "13726"
+        },
+        "reason": "Sync",
+        "message": "Scheduled for sync",
+        "source": {
+            "component": "nginx-ingress-controller"
+        },
+        "firstTimestamp": "2025-03-08T06:35:57Z",
+        "lastTimestamp": "2025-03-08T06:36:04Z",
+        "count": 2,
+        "type": "Normal",
+        "eventTime": null,
+        "reportingComponent": "nginx-ingress-controller",
+        "reportingInstance": ""
+    },
+    {
+        "metadata": {
+            "name": "aks-app-routing-operator-leader.182ac03da14df591",
+            "namespace": "kube-system",
+            "uid": "7843ab21-1afe-47fc-9bad-96b401f8e76b",
+            "resourceVersion": "12882",
+            "creationTimestamp": "2025-03-08T06:32:56Z",
+            "managedFields": [
+                {
+                    "manager": "aks-app-routing-operator",
+                    "operation": "Update",
+                    "apiVersion": "v1",
+                    "time": "2025-03-08T06:32:56Z",
+                    "fieldsType": "FieldsV1",
+                    "fieldsV1": {
+                        "f:count": {},
+                        "f:firstTimestamp": {},
+                        "f:involvedObject": {},
+                        "f:lastTimestamp": {},
+                        "f:message": {},
+                        "f:reason": {},
+                        "f:reportingComponent": {},
+                        "f:source": {
+                            "f:component": {}
+                        },
+                        "f:type": {}
+                    }
+                }
+            ]
+        },
+        "involvedObject": {
+            "kind": "Lease",
+            "namespace": "kube-system",
+            "name": "aks-app-routing-operator-leader",
+            "uid": "3a59aa5d-4720-4708-b6f6-c530202e5380",
+            "apiVersion": "coordination.k8s.io/v1",
+            "resourceVersion": "12881"
+        },
+        "reason": "LeaderElection",
+        "message": "app-routing-operator-f649bc8c4-qbzsb_f7f52325-98d3-4c4b-a1a3-d8e1a8e7e578 became leader",
+        "source": {
+            "component": "app-routing-operator-f649bc8c4-qbzsb_f7f52325-98d3-4c4b-a1a3-d8e1a8e7e578"
+        },
+        "firstTimestamp": "2025-03-08T06:32:56Z",
+        "lastTimestamp": "2025-03-08T06:32:56Z",
+        "count": 1,
+        "type": "Normal",
+        "eventTime": null,
+        "reportingComponent": "app-routing-operator-f649bc8c4-qbzsb_f7f52325-98d3-4c4b-a1a3-d8e1a8e7e578",
+        "reportingInstance": ""
+    },
+    {
+        "metadata": {
+            "name": "cloud-controller-manager.182ac03ffca94188",
+            "namespace": "kube-system",
+            "uid": "1e6f24cd-9aba-4b0b-b34e-eb7f8958d634",
+            "resourceVersion": "12948",
+            "creationTimestamp": "2025-03-08T06:33:06Z",
+            "managedFields": [
+                {
+                    "manager": "cloud-controller-manager",
+                    "operation": "Update",
+                    "apiVersion": "v1",
+                    "time": "2025-03-08T06:33:06Z",
+                    "fieldsType": "FieldsV1",
+                    "fieldsV1": {
+                        "f:count": {},
+                        "f:firstTimestamp": {},
+                        "f:involvedObject": {},
+                        "f:lastTimestamp": {},
+                        "f:message": {},
+                        "f:reason": {},
+                        "f:reportingComponent": {},
+                        "f:source": {
+                            "f:component": {}
+                        },
+                        "f:type": {}
+                    }
+                }
+            ]
+        },
+        "involvedObject": {
+            "kind": "Lease",
+            "namespace": "kube-system",
+            "name": "cloud-controller-manager",
+            "uid": "5ae35659-3351-4efc-9f76-1e1ff8641449",
+            "apiVersion": "coordination.k8s.io/v1",
+            "resourceVersion": "12946"
+        },
+        "reason": "LeaderElection",
+        "message": "cloud-controller-manager-76957b49d6-98756_91a5ba89-a0b5-4fa4-9352-14486f8aa2dd became leader",
+        "source": {
+            "component": "cloud-controller-manager"
+        },
+        "firstTimestamp": "2025-03-08T06:33:06Z",
+        "lastTimestamp": "2025-03-08T06:33:06Z",
+        "count": 1,
+        "type": "Normal",
+        "eventTime": null,
+        "reportingComponent": "cloud-controller-manager",
+        "reportingInstance": ""
+    },
+    {
+        "metadata": {
+            "name": "konnectivity-agent-5d4c9cc7f-fg2st.182abfedf56251eb",
+            "namespace": "kube-system",
+            "uid": "d90ba260-ac7b-483d-953d-7f66a04d0c0a",
+            "resourceVersion": "11325",
+            "creationTimestamp": "2025-03-08T06:27:14Z",
+            "managedFields": [
+                {
+                    "manager": "kubelet",
+                    "operation": "Update",
+                    "apiVersion": "v1",
+                    "time": "2025-03-08T06:27:14Z",
+                    "fieldsType": "FieldsV1",
+                    "fieldsV1": {
+                        "f:count": {},
+                        "f:firstTimestamp": {},
+                        "f:involvedObject": {},
+                        "f:lastTimestamp": {},
+                        "f:message": {},
+                        "f:reason": {},
+                        "f:reportingComponent": {},
+                        "f:reportingInstance": {},
+                        "f:source": {
+                            "f:component": {},
+                            "f:host": {}
+                        },
+                        "f:type": {}
+                    }
+                }
+            ]
+        },
+        "involvedObject": {
+            "kind": "Pod",
+            "namespace": "kube-system",
+            "name": "konnectivity-agent-5d4c9cc7f-fg2st",
+            "uid": "12440595-751e-461d-82bf-063a082fd992",
+            "apiVersion": "v1",
+            "resourceVersion": "1073",
+            "fieldPath": "spec.containers{konnectivity-agent}"
+        },
+        "reason": "Killing",
+        "message": "Stopping container konnectivity-agent",
+        "source": {
+            "component": "kubelet",
+            "host": "aks-nodepool1-23131335-vmss000000"
+        },
+        "firstTimestamp": "2025-03-08T06:27:14Z",
+        "lastTimestamp": "2025-03-08T06:27:14Z",
+        "count": 1,
+        "type": "Normal",
+        "eventTime": null,
+        "reportingComponent": "kubelet",
+        "reportingInstance": "aks-nodepool1-23131335-vmss000000"
+    },
+    {
+        "metadata": {
+            "name": "konnectivity-agent-5d4c9cc7f-txcbf.182abfee2b379fa5",
+            "namespace": "kube-system",
+            "uid": "5cc78008-5db3-483d-8faf-4c65c6548aba",
+            "resourceVersion": "11364",
+            "creationTimestamp": "2025-03-08T06:27:15Z",
+            "managedFields": [
+                {
+                    "manager": "kubelet",
+                    "operation": "Update",
+                    "apiVersion": "v1",
+                    "time": "2025-03-08T06:27:15Z",
+                    "fieldsType": "FieldsV1",
+                    "fieldsV1": {
+                        "f:count": {},
+                        "f:firstTimestamp": {},
+                        "f:involvedObject": {},
+                        "f:lastTimestamp": {},
+                        "f:message": {},
+                        "f:reason": {},
+                        "f:reportingComponent": {},
+                        "f:reportingInstance": {},
+                        "f:source": {
+                            "f:component": {},
+                            "f:host": {}
+                        },
+                        "f:type": {}
+                    }
+                }
+            ]
+        },
+        "involvedObject": {
+            "kind": "Pod",
+            "namespace": "kube-system",
+            "name": "konnectivity-agent-5d4c9cc7f-txcbf",
+            "uid": "e8809b01-d6e9-49b1-b4be-7b9565d897ec",
+            "apiVersion": "v1",
+            "resourceVersion": "1071",
+            "fieldPath": "spec.containers{konnectivity-agent}"
+        },
+        "reason": "Killing",
+        "message": "Stopping container konnectivity-agent",
+        "source": {
+            "component": "kubelet",
+            "host": "aks-nodepool1-23131335-vmss000000"
+        },
+        "firstTimestamp": "2025-03-08T06:27:15Z",
+        "lastTimestamp": "2025-03-08T06:27:15Z",
+        "count": 1,
+        "type": "Normal",
+        "eventTime": null,
+        "reportingComponent": "kubelet",
+        "reportingInstance": "aks-nodepool1-23131335-vmss000000"
+    },
+    {
+        "metadata": {
+            "name": "konnectivity-agent-5d4c9cc7f.182abfedf61d8d5a",
+            "namespace": "kube-system",
+            "uid": "d7a259b2-1fca-4e93-a487-0a7755b1e36f",
+            "resourceVersion": "11326",
+            "creationTimestamp": "2025-03-08T06:27:14Z",
+            "managedFields": [
+                {
+                    "manager": "kube-controller-manager",
+                    "operation": "Update",
+                    "apiVersion": "v1",
+                    "time": "2025-03-08T06:27:14Z",
+                    "fieldsType": "FieldsV1",
+                    "fieldsV1": {
+                        "f:count": {},
+                        "f:firstTimestamp": {},
+                        "f:involvedObject": {},
+                        "f:lastTimestamp": {},
+                        "f:message": {},
+                        "f:reason": {},
+                        "f:reportingComponent": {},
+                        "f:source": {
+                            "f:component": {}
+                        },
+                        "f:type": {}
+                    }
+                }
+            ]
+        },
+        "involvedObject": {
+            "kind": "ReplicaSet",
+            "namespace": "kube-system",
+            "name": "konnectivity-agent-5d4c9cc7f",
+            "uid": "6f6da879-2529-40cd-9f50-ed178fdeefee",
+            "apiVersion": "apps/v1",
+            "resourceVersion": "11321"
+        },
+        "reason": "SuccessfulDelete",
+        "message": "Deleted pod: konnectivity-agent-5d4c9cc7f-fg2st",
+        "source": {
+            "component": "replicaset-controller"
+        },
+        "firstTimestamp": "2025-03-08T06:27:14Z",
+        "lastTimestamp": "2025-03-08T06:27:14Z",
+        "count": 1,
+        "type": "Normal",
+        "eventTime": null,
+        "reportingComponent": "replicaset-controller",
+        "reportingInstance": ""
+    },
+    {
+        "metadata": {
+            "name": "konnectivity-agent-5d4c9cc7f.182abfee2b616dcc",
+            "namespace": "kube-system",
+            "uid": "e554a067-a68e-40b3-a18b-045db3657afb",
+            "resourceVersion": "11361",
+            "creationTimestamp": "2025-03-08T06:27:15Z",
+            "managedFields": [
+                {
+                    "manager": "kube-controller-manager",
+                    "operation": "Update",
+                    "apiVersion": "v1",
+                    "time": "2025-03-08T06:27:15Z",
+                    "fieldsType": "FieldsV1",
+                    "fieldsV1": {
+                        "f:count": {},
+                        "f:firstTimestamp": {},
+                        "f:involvedObject": {},
+                        "f:lastTimestamp": {},
+                        "f:message": {},
+                        "f:reason": {},
+                        "f:reportingComponent": {},
+                        "f:source": {
+                            "f:component": {}
+                        },
+                        "f:type": {}
+                    }
+                }
+            ]
+        },
+        "involvedObject": {
+            "kind": "ReplicaSet",
+            "namespace": "kube-system",
+            "name": "konnectivity-agent-5d4c9cc7f",
+            "uid": "6f6da879-2529-40cd-9f50-ed178fdeefee",
+            "apiVersion": "apps/v1",
+            "resourceVersion": "11353"
+        },
+        "reason": "SuccessfulDelete",
+        "message": "Deleted pod: konnectivity-agent-5d4c9cc7f-txcbf",
+        "source": {
+            "component": "replicaset-controller"
+        },
+        "firstTimestamp": "2025-03-08T06:27:15Z",
+        "lastTimestamp": "2025-03-08T06:27:15Z",
+        "count": 1,
+        "type": "Normal",
+        "eventTime": null,
+        "reportingComponent": "replicaset-controller",
+        "reportingInstance": ""
+    },
+    {
+        "metadata": {
+            "name": "konnectivity-agent-679bd6ddf5-4wlmb.182abfedfadbef40",
+            "namespace": "kube-system",
+            "uid": "f9bc4ffc-964d-4e35-ba62-133ef9844908",
+            "resourceVersion": "11338",
+            "creationTimestamp": "2025-03-08T06:27:14Z",
+            "managedFields": [
+                {
+                    "manager": "kube-scheduler",
+                    "operation": "Update",
+                    "apiVersion": "v1",
+                    "time": "2025-03-08T06:27:14Z",
+                    "fieldsType": "FieldsV1",
+                    "fieldsV1": {
+                        "f:count": {},
+                        "f:firstTimestamp": {},
+                        "f:involvedObject": {},
+                        "f:lastTimestamp": {},
+                        "f:message": {},
+                        "f:reason": {},
+                        "f:reportingComponent": {},
+                        "f:source": {
+                            "f:component": {}
+                        },
+                        "f:type": {}
+                    }
+                }
+            ]
+        },
+        "involvedObject": {
+            "kind": "Pod",
+            "namespace": "kube-system",
+            "name": "konnectivity-agent-679bd6ddf5-4wlmb",
+            "uid": "c12b87eb-2cf8-4021-ae10-5be736b6796a",
+            "apiVersion": "v1",
+            "resourceVersion": "11333"
+        },
+        "reason": "Scheduled",
+        "message": "Successfully assigned kube-system/konnectivity-agent-679bd6ddf5-4wlmb to aks-nodepool1-23131335-vmss000000",
+        "source": {
+            "component": "default-scheduler"
+        },
+        "firstTimestamp": "2025-03-08T06:27:14Z",
+        "lastTimestamp": "2025-03-08T06:27:14Z",
+        "count": 1,
+        "type": "Normal",
+        "eventTime": null,
+        "reportingComponent": "default-scheduler",
+        "reportingInstance": ""
+    },
+    {
+        "metadata": {
+            "name": "konnectivity-agent-679bd6ddf5-4wlmb.182abfee1a34725d",
+            "namespace": "kube-system",
+            "uid": "ff94be18-615d-438e-96b0-4a7c06f4855c",
+            "resourceVersion": "11345",
+            "creationTimestamp": "2025-03-08T06:27:15Z",
+            "managedFields": [
+                {
+                    "manager": "kubelet",
+                    "operation": "Update",
+                    "apiVersion": "v1",
+                    "time": "2025-03-08T06:27:15Z",
+                    "fieldsType": "FieldsV1",
+                    "fieldsV1": {
+                        "f:count": {},
+                        "f:firstTimestamp": {},
+                        "f:involvedObject": {},
+                        "f:lastTimestamp": {},
+                        "f:message": {},
+                        "f:reason": {},
+                        "f:reportingComponent": {},
+                        "f:reportingInstance": {},
+                        "f:source": {
+                            "f:component": {},
+                            "f:host": {}
+                        },
+                        "f:type": {}
+                    }
+                }
+            ]
+        },
+        "involvedObject": {
+            "kind": "Pod",
+            "namespace": "kube-system",
+            "name": "konnectivity-agent-679bd6ddf5-4wlmb",
+            "uid": "c12b87eb-2cf8-4021-ae10-5be736b6796a",
+            "apiVersion": "v1",
+            "resourceVersion": "11334",
+            "fieldPath": "spec.containers{konnectivity-agent}"
+        },
+        "reason": "Pulled",
+        "message": "Container image \"mcr.microsoft.com/oss/kubernetes/apiserver-network-proxy/agent:v0.30.3-hotfix.20240819\" already present on machine",
+        "source": {
+            "component": "kubelet",
+            "host": "aks-nodepool1-23131335-vmss000000"
+        },
+        "firstTimestamp": "2025-03-08T06:27:15Z",
+        "lastTimestamp": "2025-03-08T06:27:15Z",
+        "count": 1,
+        "type": "Normal",
+        "eventTime": null,
+        "reportingComponent": "kubelet",
+        "reportingInstance": "aks-nodepool1-23131335-vmss000000"
+    },
+    {
+        "metadata": {
+            "name": "konnectivity-agent-679bd6ddf5-4wlmb.182abfee1db66031",
+            "namespace": "kube-system",
+            "uid": "fb9d2ce1-3376-4cfe-8413-a7666dec1096",
+            "resourceVersion": "11346",
+            "creationTimestamp": "2025-03-08T06:27:15Z",
+            "managedFields": [
+                {
+                    "manager": "kubelet",
+                    "operation": "Update",
+                    "apiVersion": "v1",
+                    "time": "2025-03-08T06:27:15Z",
+                    "fieldsType": "FieldsV1",
+                    "fieldsV1": {
+                        "f:count": {},
+                        "f:firstTimestamp": {},
+                        "f:involvedObject": {},
+                        "f:lastTimestamp": {},
+                        "f:message": {},
+                        "f:reason": {},
+                        "f:reportingComponent": {},
+                        "f:reportingInstance": {},
+                        "f:source": {
+                            "f:component": {},
+                            "f:host": {}
+                        },
+                        "f:type": {}
+                    }
+                }
+            ]
+        },
+        "involvedObject": {
+            "kind": "Pod",
+            "namespace": "kube-system",
+            "name": "konnectivity-agent-679bd6ddf5-4wlmb",
+            "uid": "c12b87eb-2cf8-4021-ae10-5be736b6796a",
+            "apiVersion": "v1",
+            "resourceVersion": "11334",
+            "fieldPath": "spec.containers{konnectivity-agent}"
+        },
+        "reason": "Created",
+        "message": "Created container konnectivity-agent",
+        "source": {
+            "component": "kubelet",
+            "host": "aks-nodepool1-23131335-vmss000000"
+        },
+        "firstTimestamp": "2025-03-08T06:27:15Z",
+        "lastTimestamp": "2025-03-08T06:27:15Z",
+        "count": 1,
+        "type": "Normal",
+        "eventTime": null,
+        "reportingComponent": "kubelet",
+        "reportingInstance": "aks-nodepool1-23131335-vmss000000"
+    },
+    {
+        "metadata": {
+            "name": "konnectivity-agent-679bd6ddf5-4wlmb.182abfee21ce66be",
+            "namespace": "kube-system",
+            "uid": "5b705eec-c088-4d6f-a2c4-c846d7c7cf2e",
+            "resourceVersion": "11347",
+            "creationTimestamp": "2025-03-08T06:27:15Z",
+            "managedFields": [
+                {
+                    "manager": "kubelet",
+                    "operation": "Update",
+                    "apiVersion": "v1",
+                    "time": "2025-03-08T06:27:15Z",
+                    "fieldsType": "FieldsV1",
+                    "fieldsV1": {
+                        "f:count": {},
+                        "f:firstTimestamp": {},
+                        "f:involvedObject": {},
+                        "f:lastTimestamp": {},
+                        "f:message": {},
+                        "f:reason": {},
+                        "f:reportingComponent": {},
+                        "f:reportingInstance": {},
+                        "f:source": {
+                            "f:component": {},
+                            "f:host": {}
+                        },
+                        "f:type": {}
+                    }
+                }
+            ]
+        },
+        "involvedObject": {
+            "kind": "Pod",
+            "namespace": "kube-system",
+            "name": "konnectivity-agent-679bd6ddf5-4wlmb",
+            "uid": "c12b87eb-2cf8-4021-ae10-5be736b6796a",
+            "apiVersion": "v1",
+            "resourceVersion": "11334",
+            "fieldPath": "spec.containers{konnectivity-agent}"
+        },
+        "reason": "Started",
+        "message": "Started container konnectivity-agent",
+        "source": {
+            "component": "kubelet",
+            "host": "aks-nodepool1-23131335-vmss000000"
+        },
+        "firstTimestamp": "2025-03-08T06:27:15Z",
+        "lastTimestamp": "2025-03-08T06:27:15Z",
+        "count": 1,
+        "type": "Normal",
+        "eventTime": null,
+        "reportingComponent": "kubelet",
+        "reportingInstance": "aks-nodepool1-23131335-vmss000000"
+    },
+    {
+        "metadata": {
+            "name": "konnectivity-agent-679bd6ddf5-cc4b9.182abfee2ce4048b",
+            "namespace": "kube-system",
+            "uid": "dda36341-d85a-4c8b-83fa-4b6e9e3ab323",
+            "resourceVersion": "11372",
+            "creationTimestamp": "2025-03-08T06:27:15Z",
+            "managedFields": [
+                {
+                    "manager": "kube-scheduler",
+                    "operation": "Update",
+                    "apiVersion": "v1",
+                    "time": "2025-03-08T06:27:15Z",
+                    "fieldsType": "FieldsV1",
+                    "fieldsV1": {
+                        "f:count": {},
+                        "f:firstTimestamp": {},
+                        "f:involvedObject": {},
+                        "f:lastTimestamp": {},
+                        "f:message": {},
+                        "f:reason": {},
+                        "f:reportingComponent": {},
+                        "f:source": {
+                            "f:component": {}
+                        },
+                        "f:type": {}
+                    }
+                }
+            ]
+        },
+        "involvedObject": {
+            "kind": "Pod",
+            "namespace": "kube-system",
+            "name": "konnectivity-agent-679bd6ddf5-cc4b9",
+            "uid": "4b116566-bc7a-493c-b84e-2b7c62e48a85",
+            "apiVersion": "v1",
+            "resourceVersion": "11366"
+        },
+        "reason": "Scheduled",
+        "message": "Successfully assigned kube-system/konnectivity-agent-679bd6ddf5-cc4b9 to aks-nodepool1-23131335-vmss000000",
+        "source": {
+            "component": "default-scheduler"
+        },
+        "firstTimestamp": "2025-03-08T06:27:15Z",
+        "lastTimestamp": "2025-03-08T06:27:15Z",
+        "count": 1,
+        "type": "Normal",
+        "eventTime": null,
+        "reportingComponent": "default-scheduler",
+        "reportingInstance": ""
+    },
+    {
+        "metadata": {
+            "name": "konnectivity-agent-679bd6ddf5-cc4b9.182abfee4c8e72c9",
+            "namespace": "kube-system",
+            "uid": "b8a2c98a-c50e-4c6a-ab0d-62e599d5193c",
+            "resourceVersion": "11383",
+            "creationTimestamp": "2025-03-08T06:27:16Z",
+            "managedFields": [
+                {
+                    "manager": "kubelet",
+                    "operation": "Update",
+                    "apiVersion": "v1",
+                    "time": "2025-03-08T06:27:16Z",
+                    "fieldsType": "FieldsV1",
+                    "fieldsV1": {
+                        "f:count": {},
+                        "f:firstTimestamp": {},
+                        "f:involvedObject": {},
+                        "f:lastTimestamp": {},
+                        "f:message": {},
+                        "f:reason": {},
+                        "f:reportingComponent": {},
+                        "f:reportingInstance": {},
+                        "f:source": {
+                            "f:component": {},
+                            "f:host": {}
+                        },
+                        "f:type": {}
+                    }
+                }
+            ]
+        },
+        "involvedObject": {
+            "kind": "Pod",
+            "namespace": "kube-system",
+            "name": "konnectivity-agent-679bd6ddf5-cc4b9",
+            "uid": "4b116566-bc7a-493c-b84e-2b7c62e48a85",
+            "apiVersion": "v1",
+            "resourceVersion": "11367",
+            "fieldPath": "spec.containers{konnectivity-agent}"
+        },
+        "reason": "Pulled",
+        "message": "Container image \"mcr.microsoft.com/oss/kubernetes/apiserver-network-proxy/agent:v0.30.3-hotfix.20240819\" already present on machine",
+        "source": {
+            "component": "kubelet",
+            "host": "aks-nodepool1-23131335-vmss000000"
+        },
+        "firstTimestamp": "2025-03-08T06:27:16Z",
+        "lastTimestamp": "2025-03-08T06:27:16Z",
+        "count": 1,
+        "type": "Normal",
+        "eventTime": null,
+        "reportingComponent": "kubelet",
+        "reportingInstance": "aks-nodepool1-23131335-vmss000000"
+    },
+    {
+        "metadata": {
+            "name": "konnectivity-agent-679bd6ddf5-cc4b9.182abfee4ee3b228",
+            "namespace": "kube-system",
+            "uid": "da8412a9-4a6c-4ff0-a558-972505e9885b",
+            "resourceVersion": "11384",
+            "creationTimestamp": "2025-03-08T06:27:16Z",
+            "managedFields": [
+                {
+                    "manager": "kubelet",
+                    "operation": "Update",
+                    "apiVersion": "v1",
+                    "time": "2025-03-08T06:27:16Z",
+                    "fieldsType": "FieldsV1",
+                    "fieldsV1": {
+                        "f:count": {},
+                        "f:firstTimestamp": {},
+                        "f:involvedObject": {},
+                        "f:lastTimestamp": {},
+                        "f:message": {},
+                        "f:reason": {},
+                        "f:reportingComponent": {},
+                        "f:reportingInstance": {},
+                        "f:source": {
+                            "f:component": {},
+                            "f:host": {}
+                        },
+                        "f:type": {}
+                    }
+                }
+            ]
+        },
+        "involvedObject": {
+            "kind": "Pod",
+            "namespace": "kube-system",
+            "name": "konnectivity-agent-679bd6ddf5-cc4b9",
+            "uid": "4b116566-bc7a-493c-b84e-2b7c62e48a85",
+            "apiVersion": "v1",
+            "resourceVersion": "11367",
+            "fieldPath": "spec.containers{konnectivity-agent}"
+        },
+        "reason": "Created",
+        "message": "Created container konnectivity-agent",
+        "source": {
+            "component": "kubelet",
+            "host": "aks-nodepool1-23131335-vmss000000"
+        },
+        "firstTimestamp": "2025-03-08T06:27:16Z",
+        "lastTimestamp": "2025-03-08T06:27:16Z",
+        "count": 1,
+        "type": "Normal",
+        "eventTime": null,
+        "reportingComponent": "kubelet",
+        "reportingInstance": "aks-nodepool1-23131335-vmss000000"
+    },
+    {
+        "metadata": {
+            "name": "konnectivity-agent-679bd6ddf5-cc4b9.182abfee5259b96e",
+            "namespace": "kube-system",
+            "uid": "a3e7d4f8-664f-4322-af9b-8b09cdd5d198",
+            "resourceVersion": "11385",
+            "creationTimestamp": "2025-03-08T06:27:16Z",
+            "managedFields": [
+                {
+                    "manager": "kubelet",
+                    "operation": "Update",
+                    "apiVersion": "v1",
+                    "time": "2025-03-08T06:27:16Z",
+                    "fieldsType": "FieldsV1",
+                    "fieldsV1": {
+                        "f:count": {},
+                        "f:firstTimestamp": {},
+                        "f:involvedObject": {},
+                        "f:lastTimestamp": {},
+                        "f:message": {},
+                        "f:reason": {},
+                        "f:reportingComponent": {},
+                        "f:reportingInstance": {},
+                        "f:source": {
+                            "f:component": {},
+                            "f:host": {}
+                        },
+                        "f:type": {}
+                    }
+                }
+            ]
+        },
+        "involvedObject": {
+            "kind": "Pod",
+            "namespace": "kube-system",
+            "name": "konnectivity-agent-679bd6ddf5-cc4b9",
+            "uid": "4b116566-bc7a-493c-b84e-2b7c62e48a85",
+            "apiVersion": "v1",
+            "resourceVersion": "11367",
+            "fieldPath": "spec.containers{konnectivity-agent}"
+        },
+        "reason": "Started",
+        "message": "Started container konnectivity-agent",
+        "source": {
+            "component": "kubelet",
+            "host": "aks-nodepool1-23131335-vmss000000"
+        },
+        "firstTimestamp": "2025-03-08T06:27:16Z",
+        "lastTimestamp": "2025-03-08T06:27:16Z",
+        "count": 1,
+        "type": "Normal",
+        "eventTime": null,
+        "reportingComponent": "kubelet",
+        "reportingInstance": "aks-nodepool1-23131335-vmss000000"
+    },
+    {
+        "metadata": {
+            "name": "konnectivity-agent-679bd6ddf5.182abfedfa58597f",
+            "namespace": "kube-system",
+            "uid": "a3fe047e-392c-4b5f-8e14-df2a0caf469e",
+            "resourceVersion": "11335",
+            "creationTimestamp": "2025-03-08T06:27:14Z",
+            "managedFields": [
+                {
+                    "manager": "kube-controller-manager",
+                    "operation": "Update",
+                    "apiVersion": "v1",
+                    "time": "2025-03-08T06:27:14Z",
+                    "fieldsType": "FieldsV1",
+                    "fieldsV1": {
+                        "f:count": {},
+                        "f:firstTimestamp": {},
+                        "f:involvedObject": {},
+                        "f:lastTimestamp": {},
+                        "f:message": {},
+                        "f:reason": {},
+                        "f:reportingComponent": {},
+                        "f:source": {
+                            "f:component": {}
+                        },
+                        "f:type": {}
+                    }
+                }
+            ]
+        },
+        "involvedObject": {
+            "kind": "ReplicaSet",
+            "namespace": "kube-system",
+            "name": "konnectivity-agent-679bd6ddf5",
+            "uid": "cbb9562b-5b8c-4bc7-a660-082b72cc2363",
+            "apiVersion": "apps/v1",
+            "resourceVersion": "11324"
+        },
+        "reason": "SuccessfulCreate",
+        "message": "Created pod: konnectivity-agent-679bd6ddf5-4wlmb",
+        "source": {
+            "component": "replicaset-controller"
+        },
+        "firstTimestamp": "2025-03-08T06:27:14Z",
+        "lastTimestamp": "2025-03-08T06:27:14Z",
+        "count": 1,
+        "type": "Normal",
+        "eventTime": null,
+        "reportingComponent": "replicaset-controller",
+        "reportingInstance": ""
+    },
+    {
+        "metadata": {
+            "name": "konnectivity-agent-679bd6ddf5.182abfee2c8ac279",
+            "namespace": "kube-system",
+            "uid": "2ead0c5d-4850-44cd-86c3-df0d00d179c4",
+            "resourceVersion": "11369",
+            "creationTimestamp": "2025-03-08T06:27:15Z",
+            "managedFields": [
+                {
+                    "manager": "kube-controller-manager",
+                    "operation": "Update",
+                    "apiVersion": "v1",
+                    "time": "2025-03-08T06:27:15Z",
+                    "fieldsType": "FieldsV1",
+                    "fieldsV1": {
+                        "f:count": {},
+                        "f:firstTimestamp": {},
+                        "f:involvedObject": {},
+                        "f:lastTimestamp": {},
+                        "f:message": {},
+                        "f:reason": {},
+                        "f:reportingComponent": {},
+                        "f:source": {
+                            "f:component": {}
+                        },
+                        "f:type": {}
+                    }
+                }
+            ]
+        },
+        "involvedObject": {
+            "kind": "ReplicaSet",
+            "namespace": "kube-system",
+            "name": "konnectivity-agent-679bd6ddf5",
+            "uid": "cbb9562b-5b8c-4bc7-a660-082b72cc2363",
+            "apiVersion": "apps/v1",
+            "resourceVersion": "11360"
+        },
+        "reason": "SuccessfulCreate",
+        "message": "Created pod: konnectivity-agent-679bd6ddf5-cc4b9",
+        "source": {
+            "component": "replicaset-controller"
+        },
+        "firstTimestamp": "2025-03-08T06:27:15Z",
+        "lastTimestamp": "2025-03-08T06:27:15Z",
+        "count": 1,
+        "type": "Normal",
+        "eventTime": null,
+        "reportingComponent": "replicaset-controller",
+        "reportingInstance": ""
+    },
+    {
+        "metadata": {
+            "name": "konnectivity-agent.182abfedf4682ada",
+            "namespace": "kube-system",
+            "uid": "0d60b602-99d8-4501-90b2-1a0eb1983667",
+            "resourceVersion": "11322",
+            "creationTimestamp": "2025-03-08T06:27:14Z",
+            "managedFields": [
+                {
+                    "manager": "kube-controller-manager",
+                    "operation": "Update",
+                    "apiVersion": "v1",
+                    "time": "2025-03-08T06:27:14Z",
+                    "fieldsType": "FieldsV1",
+                    "fieldsV1": {
+                        "f:count": {},
+                        "f:firstTimestamp": {},
+                        "f:involvedObject": {},
+                        "f:lastTimestamp": {},
+                        "f:message": {},
+                        "f:reason": {},
+                        "f:reportingComponent": {},
+                        "f:source": {
+                            "f:component": {}
+                        },
+                        "f:type": {}
+                    }
+                }
+            ]
+        },
+        "involvedObject": {
+            "kind": "Deployment",
+            "namespace": "kube-system",
+            "name": "konnectivity-agent",
+            "uid": "a8663a8d-801c-47d9-951f-c860c89c1f9f",
+            "apiVersion": "apps/v1",
+            "resourceVersion": "11317"
+        },
+        "reason": "ScalingReplicaSet",
+        "message": "Scaled down replica set konnectivity-agent-5d4c9cc7f to 1 from 2",
+        "source": {
+            "component": "deployment-controller"
+        },
+        "firstTimestamp": "2025-03-08T06:27:14Z",
+        "lastTimestamp": "2025-03-08T06:27:14Z",
+        "count": 1,
+        "type": "Normal",
+        "eventTime": null,
+        "reportingComponent": "deployment-controller",
+        "reportingInstance": ""
+    },
+    {
+        "metadata": {
+            "name": "konnectivity-agent.182abfedf6590167",
+            "namespace": "kube-system",
+            "uid": "364b30be-fb38-4727-b8fe-fe39518242c5",
+            "resourceVersion": "11329",
+            "creationTimestamp": "2025-03-08T06:27:14Z",
+            "managedFields": [
+                {
+                    "manager": "kube-controller-manager",
+                    "operation": "Update",
+                    "apiVersion": "v1",
+                    "time": "2025-03-08T06:27:14Z",
+                    "fieldsType": "FieldsV1",
+                    "fieldsV1": {
+                        "f:count": {},
+                        "f:firstTimestamp": {},
+                        "f:involvedObject": {},
+                        "f:lastTimestamp": {},
+                        "f:message": {},
+                        "f:reason": {},
+                        "f:reportingComponent": {},
+                        "f:source": {
+                            "f:component": {}
+                        },
+                        "f:type": {}
+                    }
+                }
+            ]
+        },
+        "involvedObject": {
+            "kind": "Deployment",
+            "namespace": "kube-system",
+            "name": "konnectivity-agent",
+            "uid": "a8663a8d-801c-47d9-951f-c860c89c1f9f",
+            "apiVersion": "apps/v1",
+            "resourceVersion": "11320"
+        },
+        "reason": "ScalingReplicaSet",
+        "message": "Scaled up replica set konnectivity-agent-679bd6ddf5 to 1 from 0",
+        "source": {
+            "component": "deployment-controller"
+        },
+        "firstTimestamp": "2025-03-08T06:27:14Z",
+        "lastTimestamp": "2025-03-08T06:27:14Z",
+        "count": 1,
+        "type": "Normal",
+        "eventTime": null,
+        "reportingComponent": "deployment-controller",
+        "reportingInstance": ""
+    },
+    {
+        "metadata": {
+            "name": "konnectivity-agent.182abfee2a19d9b3",
+            "namespace": "kube-system",
+            "uid": "5469aa4a-2191-4c5c-a417-67e272e27c9d",
+            "resourceVersion": "11357",
+            "creationTimestamp": "2025-03-08T06:27:15Z",
+            "managedFields": [
+                {
+                    "manager": "kube-controller-manager",
+                    "operation": "Update",
+                    "apiVersion": "v1",
+                    "time": "2025-03-08T06:27:15Z",
+                    "fieldsType": "FieldsV1",
+                    "fieldsV1": {
+                        "f:count": {},
+                        "f:firstTimestamp": {},
+                        "f:involvedObject": {},
+                        "f:lastTimestamp": {},
+                        "f:message": {},
+                        "f:reason": {},
+                        "f:reportingComponent": {},
+                        "f:source": {
+                            "f:component": {}
+                        },
+                        "f:type": {}
+                    }
+                }
+            ]
+        },
+        "involvedObject": {
+            "kind": "Deployment",
+            "namespace": "kube-system",
+            "name": "konnectivity-agent",
+            "uid": "a8663a8d-801c-47d9-951f-c860c89c1f9f",
+            "apiVersion": "apps/v1",
+            "resourceVersion": "11342"
+        },
+        "reason": "ScalingReplicaSet",
+        "message": "Scaled down replica set konnectivity-agent-5d4c9cc7f to 0 from 1",
+        "source": {
+            "component": "deployment-controller"
+        },
+        "firstTimestamp": "2025-03-08T06:27:15Z",
+        "lastTimestamp": "2025-03-08T06:27:15Z",
+        "count": 1,
+        "type": "Normal",
+        "eventTime": null,
+        "reportingComponent": "deployment-controller",
+        "reportingInstance": ""
+    },
+    {
+        "metadata": {
+            "name": "konnectivity-agent.182abfee2bacf1ff",
+            "namespace": "kube-system",
+            "uid": "fa9ae77f-3e03-48ff-8c87-8e3bf76763e6",
+            "resourceVersion": "11365",
+            "creationTimestamp": "2025-03-08T06:27:15Z",
+            "managedFields": [
+                {
+                    "manager": "kube-controller-manager",
+                    "operation": "Update",
+                    "apiVersion": "v1",
+                    "time": "2025-03-08T06:27:15Z",
+                    "fieldsType": "FieldsV1",
+                    "fieldsV1": {
+                        "f:count": {},
+                        "f:firstTimestamp": {},
+                        "f:involvedObject": {},
+                        "f:lastTimestamp": {},
+                        "f:message": {},
+                        "f:reason": {},
+                        "f:reportingComponent": {},
+                        "f:source": {
+                            "f:component": {}
+                        },
+                        "f:type": {}
+                    }
+                }
+            ]
+        },
+        "involvedObject": {
+            "kind": "Deployment",
+            "namespace": "kube-system",
+            "name": "konnectivity-agent",
+            "uid": "a8663a8d-801c-47d9-951f-c860c89c1f9f",
+            "apiVersion": "apps/v1",
+            "resourceVersion": "11356"
+        },
+        "reason": "ScalingReplicaSet",
+        "message": "Scaled up replica set konnectivity-agent-679bd6ddf5 to 2 from 1",
+        "source": {
+            "component": "deployment-controller"
+        },
+        "firstTimestamp": "2025-03-08T06:27:15Z",
+        "lastTimestamp": "2025-03-08T06:27:15Z",
+        "count": 1,
+        "type": "Normal",
+        "eventTime": null,
+        "reportingComponent": "deployment-controller",
+        "reportingInstance": ""
+    },
+    {
+        "metadata": {
+            "name": "kube-controller-manager.182ac03ead1b8711",
+            "namespace": "kube-system",
+            "uid": "38fb20f4-c184-48fe-acab-41926791dab7",
+            "resourceVersion": "12906",
+            "creationTimestamp": "2025-03-08T06:33:01Z",
+            "managedFields": [
+                {
+                    "manager": "kube-controller-manager",
+                    "operation": "Update",
+                    "apiVersion": "v1",
+                    "time": "2025-03-08T06:33:01Z",
+                    "fieldsType": "FieldsV1",
+                    "fieldsV1": {
+                        "f:count": {},
+                        "f:firstTimestamp": {},
+                        "f:involvedObject": {},
+                        "f:lastTimestamp": {},
+                        "f:message": {},
+                        "f:reason": {},
+                        "f:reportingComponent": {},
+                        "f:source": {
+                            "f:component": {}
+                        },
+                        "f:type": {}
+                    }
+                }
+            ]
+        },
+        "involvedObject": {
+            "kind": "Lease",
+            "namespace": "kube-system",
+            "name": "kube-controller-manager",
+            "uid": "2d99f78c-d00a-4027-a63d-358ca2de034c",
+            "apiVersion": "coordination.k8s.io/v1",
+            "resourceVersion": "12904"
+        },
+        "reason": "LeaderElection",
+        "message": "kube-controller-manager-v2-dd675d7d8-zxpn2_4365137c-54b3-4579-a1a4-6b132c683bc8 became leader",
+        "source": {
+            "component": "kube-controller-manager"
+        },
+        "firstTimestamp": "2025-03-08T06:33:01Z",
+        "lastTimestamp": "2025-03-08T06:33:01Z",
+        "count": 1,
+        "type": "Normal",
+        "eventTime": null,
+        "reportingComponent": "kube-controller-manager",
+        "reportingInstance": ""
+    },
+    {
+        "metadata": {
+            "name": "kube-scheduler.182ac03ae184a425",
+            "namespace": "kube-system",
+            "uid": "d44bb781-8a4b-492a-8e69-b89c0692bb8b",
+            "resourceVersion": "12848",
+            "creationTimestamp": "2025-03-08T06:32:45Z",
+            "managedFields": [
+                {
+                    "manager": "kube-scheduler",
+                    "operation": "Update",
+                    "apiVersion": "v1",
+                    "time": "2025-03-08T06:32:45Z",
+                    "fieldsType": "FieldsV1",
+                    "fieldsV1": {
+                        "f:count": {},
+                        "f:firstTimestamp": {},
+                        "f:involvedObject": {},
+                        "f:lastTimestamp": {},
+                        "f:message": {},
+                        "f:reason": {},
+                        "f:reportingComponent": {},
+                        "f:source": {
+                            "f:component": {}
+                        },
+                        "f:type": {}
+                    }
+                }
+            ]
+        },
+        "involvedObject": {
+            "kind": "Lease",
+            "namespace": "kube-system",
+            "name": "kube-scheduler",
+            "uid": "ee9793c4-2864-48d1-9dd6-b6035ee64425",
+            "apiVersion": "coordination.k8s.io/v1",
+            "resourceVersion": "12846"
+        },
+        "reason": "LeaderElection",
+        "message": "kube-scheduler-v2-5d49d5cdcf-rqq9g_00a907e7-f6b5-4225-84b4-844bc6e86134 became leader",
+        "source": {
+            "component": "default-scheduler"
+        },
+        "firstTimestamp": "2025-03-08T06:32:45Z",
+        "lastTimestamp": "2025-03-08T06:32:45Z",
+        "count": 1,
+        "type": "Normal",
+        "eventTime": null,
+        "reportingComponent": "default-scheduler",
+        "reportingInstance": ""
+    }
+]
