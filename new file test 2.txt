@@ -1,0 +1,6 @@
+Creating a file in the KUBERNETES folder in the local PC did not give me
+COMMIT options in VS CODE but I open KUBERNETES folder (almost empty
+before creating this file) in VS CODE associated with 
+GITHUB REPOSITORY instead of open and creating a text file in
+WINDOWS with explorer (instead of inside of visual studio code.)
+ 
