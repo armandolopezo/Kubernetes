@@ -22,28 +22,52 @@ az aks create \
 ```
 ### --enable-app-routing    # THIS LINE WAS NOT IN THE ORIGINAL COMMAND. I ADDED IT AFTER CHECKING THE "HORIZONTAL POD AUTOSCALER" learning exercises.
 
-### Run the az aks nodepool add command to add another node pool that uses the default Linux operating system
-
-```
-az aks nodepool add \
---resource-group $RESOURCE_GROUP \
---cluster-name $CLUSTER_NAME \
---name userpool --node-count 2 \
---node-vm-size Standard_DS2_v2
-```
 ### Link your Kubernetes cluster with kubectl by running the following command in Cloud Shell.
 
 `az aks get-credentials --name $CLUSTER_NAME --resource-group $RESOURCE_GROUP`
 
-### Run the kubectl get nodes command to check that you can connect to your cluster, and confirm its configuration
+### Verify that the cluster is running and that you can connect to it using the "kubectl get nodes" command.
 
 `kubectl get nodes`
 
-```diff
-- output sample:
-- NAME                                STATUS   ROLES   AGE    VERSION
-- aks-nodepool1-21895026-vmss000000   Ready    agent   245s   v1.23.12
-- aks-nodepool1-21895026-vmss000001   Ready    agent   245s   v1.23.12
-- aks-userpool-21895026-vmss000000    Ready    agent   105s   v1.23.12
-- aks-userpool-21895026-vmss000001    Ready    agent   105s   v1.23.12
-```
+### Create the application namespace using the "kubectl create namespace" command
+
+`kubectl create namespace hpa-contoso`
+
+### Deploy the application to the cluster using the "kubectl apply" command
+
+`kubectl apply -f deployment.yaml`
+
+### Create an Azure DNS zone using the "az network dns zone create" command. The following example creates a DNS zone named contoso-website.com:
+
+`az network dns zone create --resource-group $RESOURCE_GROUP --name contoso-website.com`
+
+### Get the resource ID for your DNS zone using the "az network dns zone show" command and save the output to a variable named DNS_ZONE_ID.
+
+`DNS_ZONE_ID=$(az network dns zone show --resource-group $RESOURCE_GROUP --name contoso-website.com --query id --output tsv)`
+
+### Update the application routing cluster add-on to enable Azure DNS integration using the az aks approuting zone command.
+
+`az aks approuting zone add --resource-group $RESOURCE_GROUP --name $CLUSTER_NAME --ids=${DNS_ZONE_ID} --attach-zones`
+
+### Create the service resource
+
+`kubectl apply -f service.yaml`
+
+### Update the "INGRESS.YAML" with the DNS ZONE RECENTLY CREATED.
+
+### Deploy the ingress resource to the cluster using the "kubectl apply" command
+
+`kubectl apply -f ingress.yaml`
+
+### Create a HorizontalPodAutoscaler 
+
+`kubectl apply -f hpa.yaml`
+
+### Check the results - Query the metrics and usage of the HPA using the "kubectl get hpa" command
+
+`kubectl get hpa --namespace hpa-contoso`
+
+### Check the REPLICAS
+
+`kubectl get rs -n hpa-contoso`

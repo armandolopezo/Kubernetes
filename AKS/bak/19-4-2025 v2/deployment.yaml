@@ -3,9 +3,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: contoso-website
-  namespace: hpa-contoso
 spec:
-  replicas: 1 # Define the number of replicas
   selector: # Define the wrapping strategy
     matchLabels: # Match all pods with the defined labels
       app: contoso-website # Labels follow the `name: value` template
