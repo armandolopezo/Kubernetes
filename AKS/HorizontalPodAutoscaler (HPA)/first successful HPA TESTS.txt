@@ -1,0 +1,188 @@
+19-4-2024
+alo
+
+
+Following are messages and commands in AZURE CLOUD SHELL
+------------------------------------------------------------
+ kubectl describe hpa --namespace hpa-contoso
+Name:                                                     contoso-website
+Namespace:                                                hpa-contoso
+Labels:                                                   <none>
+Annotations:                                              <none>
+CreationTimestamp:                                        Sat, 19 Apr 2025 21:17:05 +0000
+Reference:                                                Deployment/contoso-website
+Metrics:                                                  ( current / target )
+  resource cpu on pods  (as a percentage of request):     37% (37m) / 20%
+  resource memory on pods  (as a percentage of request):  1% (2313216) / 50%
+Min replicas:                                             1
+Max replicas:                                             10
+Deployment pods:                                          4 current / 4 desired
+Conditions:
+  Type            Status  Reason              Message
+  ----            ------  ------              -------
+  AbleToScale     True    ReadyForNewScale    recommended size matches current size
+  ScalingActive   True    ValidMetricFound    the HPA was able to successfully calculate a replica count from cpu resource utilization (percentage of request)
+  ScalingLimited  False   DesiredWithinRange  the desired count is within the acceptable range
+Events:
+  Type    Reason             Age   From                       Message
+  ----    ------             ----  ----                       -------
+  Normal  SuccessfulRescale  113s  horizontal-pod-autoscaler  New size: 4; reason: cpu resource utilization (percentage of request) above target
+armando [ ~ ]$ kubectl get hpa --namespace hpa-contoso
+NAME              REFERENCE                    TARGETS                        MINPODS   MAXPODS   REPLICAS   AGE
+contoso-website   Deployment/contoso-website   cpu: 26%/20%, memory: 1%/50%   1         10        6          111m
+armando [ ~ ]$ kubectl describe hpa --namespace hpa-contoso
+Name:                                                     contoso-website
+Namespace:                                                hpa-contoso
+Labels:                                                   <none>
+Annotations:                                              <none>
+CreationTimestamp:                                        Sat, 19 Apr 2025 21:17:05 +0000
+Reference:                                                Deployment/contoso-website
+Metrics:                                                  ( current / target )
+  resource cpu on pods  (as a percentage of request):     26% (26m) / 20%
+  resource memory on pods  (as a percentage of request):  1% (2293760) / 50%
+Min replicas:                                             1
+Max replicas:                                             10
+Deployment pods:                                          6 current / 6 desired
+Conditions:
+  Type            Status  Reason              Message
+  ----            ------  ------              -------
+  AbleToScale     True    ReadyForNewScale    recommended size matches current size
+  ScalingActive   True    ValidMetricFound    the HPA was able to successfully calculate a replica count from cpu resource utilization (percentage of request)
+  ScalingLimited  False   DesiredWithinRange  the desired count is within the acceptable range
+Events:
+  Type    Reason             Age    From                       Message
+  ----    ------             ----   ----                       -------
+  Normal  SuccessfulRescale  2m39s  horizontal-pod-autoscaler  New size: 4; reason: cpu resource utilization (percentage of request) above target
+  Normal  SuccessfulRescale  39s    horizontal-pod-autoscaler  New size: 6; reason: cpu resource utilization (percentage of request) above target
+armando [ ~ ]$ kubectl describe hpa --namespace hpa-contoso
+Name:                                                     contoso-website
+Namespace:                                                hpa-contoso
+Labels:                                                   <none>
+Annotations:                                              <none>
+CreationTimestamp:                                        Sat, 19 Apr 2025 21:17:05 +0000
+Reference:                                                Deployment/contoso-website
+Metrics:                                                  ( current / target )
+  resource cpu on pods  (as a percentage of request):     20% (20m) / 20%
+  resource memory on pods  (as a percentage of request):  1% (2200917333m) / 50%
+Min replicas:                                             1
+Max replicas:                                             10
+Deployment pods:                                          6 current / 6 desired
+Conditions:
+  Type            Status  Reason              Message
+  ----            ------  ------              -------
+  AbleToScale     True    ReadyForNewScale    recommended size matches current size
+  ScalingActive   True    ValidMetricFound    the HPA was able to successfully calculate a replica count from cpu resource utilization (percentage of request)
+  ScalingLimited  False   DesiredWithinRange  the desired count is within the acceptable range
+Events:
+  Type    Reason             Age    From                       Message
+  ----    ------             ----   ----                       -------
+  Normal  SuccessfulRescale  3m17s  horizontal-pod-autoscaler  New size: 4; reason: cpu resource utilization (percentage of request) above target
+  Normal  SuccessfulRescale  77s    horizontal-pod-autoscaler  New size: 6; reason: cpu resource utilization (percentage of request) above target
+armando [ ~ ]$ kubectl describe hpa --namespace hpa-contoso
+Name:                                                     contoso-website
+Namespace:                                                hpa-contoso
+Labels:                                                   <none>
+Annotations:                                              <none>
+CreationTimestamp:                                        Sat, 19 Apr 2025 21:17:05 +0000
+Reference:                                                Deployment/contoso-website
+Metrics:                                                  ( current / target )
+  resource cpu on pods  (as a percentage of request):     0% (0) / 20%
+  resource memory on pods  (as a percentage of request):  1% (2142890666m) / 50%
+Min replicas:                                             1
+Max replicas:                                             10
+Deployment pods:                                          6 current / 6 desired
+Conditions:
+  Type            Status  Reason               Message
+  ----            ------  ------               -------
+  AbleToScale     True    ScaleDownStabilized  recent recommendations were higher than current one, applying the highest recent recommendation
+  ScalingActive   True    ValidMetricFound     the HPA was able to successfully calculate a replica count from memory resource utilization (percentage of request)
+  ScalingLimited  False   DesiredWithinRange   the desired count is within the acceptable range
+Events:
+  Type    Reason             Age    From                       Message
+  ----    ------             ----   ----                       -------
+  Normal  SuccessfulRescale  5m49s  horizontal-pod-autoscaler  New size: 4; reason: cpu resource utilization (percentage of request) above target
+  Normal  SuccessfulRescale  3m49s  horizontal-pod-autoscaler  New size: 6; reason: cpu resource utilization (percentage of request) above target
+armando [ ~ ]$ kubectl describe hpa --namespace hpa-contoso
+Name:                                                     contoso-website
+Namespace:                                                hpa-contoso
+Labels:                                                   <none>
+Annotations:                                              <none>
+CreationTimestamp:                                        Sat, 19 Apr 2025 21:17:05 +0000
+Reference:                                                Deployment/contoso-website
+Metrics:                                                  ( current / target )
+  resource cpu on pods  (as a percentage of request):     0% (0) / 20%
+  resource memory on pods  (as a percentage of request):  1% (2140842666m) / 50%
+Min replicas:                                             1
+Max replicas:                                             10
+Deployment pods:                                          6 current / 6 desired
+Conditions:
+  Type            Status  Reason               Message
+  ----            ------  ------               -------
+  AbleToScale     True    ScaleDownStabilized  recent recommendations were higher than current one, applying the highest recent recommendation
+  ScalingActive   True    ValidMetricFound     the HPA was able to successfully calculate a replica count from memory resource utilization (percentage of request)
+  ScalingLimited  False   DesiredWithinRange   the desired count is within the acceptable range
+Events:
+  Type    Reason             Age   From                       Message
+  ----    ------             ----  ----                       -------
+  Normal  SuccessfulRescale  6m2s  horizontal-pod-autoscaler  New size: 4; reason: cpu resource utilization (percentage of request) above target
+  Normal  SuccessfulRescale  4m2s  horizontal-pod-autoscaler  New size: 6; reason: cpu resource utilization (percentage of request) above target
+armando [ ~ ]$ kubectl get hpa --namespace hpa-contoso
+NAME              REFERENCE                    TARGETS                       MINPODS   MAXPODS   REPLICAS   AGE
+contoso-website   Deployment/contoso-website   cpu: 0%/20%, memory: 1%/50%   1         10        6          115m
+armando [ ~ ]$ kubectl get hpa --namespace hpa-contoso
+NAME              REFERENCE                    TARGETS                       MINPODS   MAXPODS   REPLICAS   AGE
+contoso-website   Deployment/contoso-website   cpu: 0%/20%, memory: 1%/50%   1         10        6          115m
+armando [ ~ ]$ kubectl describe hpa --namespace hpa-contoso
+Name:                                                     contoso-website
+Namespace:                                                hpa-contoso
+Labels:                                                   <none>
+Annotations:                                              <none>
+CreationTimestamp:                                        Sat, 19 Apr 2025 21:17:05 +0000
+Reference:                                                Deployment/contoso-website
+Metrics:                                                  ( current / target )
+  resource cpu on pods  (as a percentage of request):     0% (0) / 20%
+  resource memory on pods  (as a percentage of request):  1% (2140842666m) / 50%
+Min replicas:                                             1
+Max replicas:                                             10
+Deployment pods:                                          6 current / 6 desired
+Conditions:
+  Type            Status  Reason               Message
+  ----            ------  ------               -------
+  AbleToScale     True    ScaleDownStabilized  recent recommendations were higher than current one, applying the highest recent recommendation
+  ScalingActive   True    ValidMetricFound     the HPA was able to successfully calculate a replica count from memory resource utilization (percentage of request)
+  ScalingLimited  False   DesiredWithinRange   the desired count is within the acceptable range
+Events:
+  Type    Reason             Age    From                       Message
+  ----    ------             ----   ----                       -------
+  Normal  SuccessfulRescale  6m17s  horizontal-pod-autoscaler  New size: 4; reason: cpu resource utilization (percentage of request) above target
+  Normal  SuccessfulRescale  4m17s  horizontal-pod-autoscaler  New size: 6; reason: cpu resource utilization (percentage of request) above target
+armando [ ~ ]$ kubectl describe hpa --namespace hpa-contoso
+Name:                                                     contoso-website
+Namespace:                                                hpa-contoso
+Labels:                                                   <none>
+Annotations:                                              <none>
+CreationTimestamp:                                        Sat, 19 Apr 2025 21:17:05 +0000
+Reference:                                                Deployment/contoso-website
+Metrics:                                                  ( current / target )
+  resource cpu on pods  (as a percentage of request):     0% (0) / 20%
+  resource memory on pods  (as a percentage of request):  1% (2146304) / 50%
+Min replicas:                                             1
+Max replicas:                                             10
+Deployment pods:                                          1 current / 1 desired
+Conditions:
+  Type            Status  Reason              Message
+  ----            ------  ------              -------
+  AbleToScale     True    ReadyForNewScale    recommended size matches current size
+  ScalingActive   True    ValidMetricFound    the HPA was able to successfully calculate a replica count from memory resource utilization (percentage of request)
+  ScalingLimited  False   DesiredWithinRange  the desired count is within the acceptable range
+Events:
+  Type    Reason             Age    From                       Message
+  ----    ------             ----   ----                       -------
+  Normal  SuccessfulRescale  10m    horizontal-pod-autoscaler  New size: 4; reason: cpu resource utilization (percentage of request) above target
+  Normal  SuccessfulRescale  8m42s  horizontal-pod-autoscaler  New size: 6; reason: cpu resource utilization (percentage of request) above target
+  Normal  SuccessfulRescale  116s   horizontal-pod-autoscaler  New size: 5; reason: All metrics below target
+  Normal  SuccessfulRescale  56s    horizontal-pod-autoscaler  New size: 1; reason: All metrics below target
+armando [ ~ ]$ kubectl get hpa --namespace hpa-contoso
+NAME              REFERENCE                    TARGETS                       MINPODS   MAXPODS   REPLICAS   AGE
+contoso-website   Deployment/contoso-website   cpu: 0%/20%, memory: 1%/50%   1         10        1          119m
+armando [ ~ ]$ 
