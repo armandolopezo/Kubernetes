@@ -17,7 +17,7 @@ az aks create \
 --name $CLUSTER_NAME \
 --node-count 2 \
 --generate-ssh-keys \
---node-vm-size Standard_DS2_v2 \
+--node-vm-size Standard_B2s \
 --enable-app-routing    
 ```
 ### --enable-app-routing    # THIS LINE WAS NOT IN THE ORIGINAL COMMAND. I ADDED IT AFTER CHECKING THE "HORIZONTAL POD AUTOSCALER" learning exercises.
@@ -29,7 +29,7 @@ az aks nodepool add \
 --resource-group $RESOURCE_GROUP \
 --cluster-name $CLUSTER_NAME \
 --name userpool --node-count 2 \
---node-vm-size Standard_DS2_v2
+--node-vm-size Standard_B2s
 ```
 ### Link your Kubernetes cluster with kubectl by running the following command in Cloud Shell.
 
