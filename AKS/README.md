@@ -5,8 +5,10 @@
 ###### 4) Execute commands from README.MD in the subfolder with the following secuence:
 ###### 5) Deploy networking SERVICE with the SERVICE.YAML file.
 ###### 6) Deploy the networking INGRESS with the INGRESS.YAML file.
+###### 7) Go to the HORZONTAL POD AUTOSCALER, STOP PREVIOUS PROCESSESS (after verifying that they work) and REPEAT PROCESSESS because HPA have DIFFERENT FILES
 
-###### Some additional clarifications:
+###### -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+###### Some additional clarifications for practicing MICROSOFT LEARN:
 ###### following was required to practicing AKS in Microsoft Learn (INTRODUCTION TO KUBERNETES ON AKS)
 az provider register --namespace Microsoft.ContainerService
 
