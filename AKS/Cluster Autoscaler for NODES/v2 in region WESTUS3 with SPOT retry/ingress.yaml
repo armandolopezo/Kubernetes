@@ -1,0 +1,22 @@
+# To add an Azure DNS zone to your ingress.yaml for AKS, you need to add annotations 
+# under the metadata section. Here is an example of how you can modify your ingress.yaml
+# file to include the Azure DNS zone:
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: contoso-website
+  namespace: costsavings
+  annotations:
+    external-dns.alpha.kubernetes.io/hostname: contoso-website.com
+spec:
+  ingressClassName: webapprouting.kubernetes.azure.com
+  rules:
+  - http:
+      paths:
+      - backend:
+          service:
+            name: contoso-website
+            port:
+              number: 80
+        path: /
+        pathType: Prefix
