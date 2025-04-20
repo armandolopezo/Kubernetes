@@ -127,7 +127,7 @@ az aks create \
 
 ### Check the nodes in the user mode pool
 
-`kubectl get nodes -l agentpool=batchprocpl`
+`kubectl get nodes -l agentpool=batchprocpl2`
 
 ### Check the nodes in the SYSTEM mode pool
 

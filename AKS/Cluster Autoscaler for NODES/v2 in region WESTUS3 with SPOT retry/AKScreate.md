@@ -3,7 +3,7 @@
 
 `export RESOURCE_GROUP=rg-contoso-video`               
 `export CLUSTER_NAME=aks-contoso-video`                
-`export LOCATION=eastus`               
+`export LOCATION=westus3`               
 
 ### Run the az group create command to create a resource group. Deploy all resources into this new resource group.
 
@@ -127,7 +127,7 @@ az aks create \
 
 ### Check the nodes in the user mode pool
 
-`kubectl get nodes -l agentpool=batchprocpl`
+`kubectl get nodes -l agentpool=batchprocpl2`
 
 ### Check the nodes in the SYSTEM mode pool
 
