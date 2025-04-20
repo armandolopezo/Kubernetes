@@ -116,3 +116,7 @@ az aks create \
 ### Check the REPLICAS
 
 `kubectl get rs -n costsavings`
+
+### Check the pods
+
+`kubectl get pods -n costsavings`
