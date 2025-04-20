@@ -126,7 +126,7 @@ az aks create \
 
 ### Check the nodes in the user mode pool
 
-`kubectl get nodes -l agentpool=batchprocpl2`
+`kubectl get nodes -l agentpool=batch200`
 
 ### Check the nodes in the SYSTEM mode pool
 
@@ -138,3 +138,7 @@ az aks create \
 
 `kubectl describe node aks-nodepool1-31272769-vmss000000`
 
+
+### to Check other POD information
+
+`kubectl describe pods -n costsavings` 

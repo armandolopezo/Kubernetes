@@ -1,0 +1,47 @@
+20-4-2025
+alo
+
+some useful links for aks in azure
+------------------------------------
+
+https://portal.azure.com/#@NetworkIntelligence21ca.onmicrosoft.com/resource/subscriptions/bc99b519-c96c-4361-81b2-34a263cb4caf/resourceGroups/rg-contoso-video/providers/Microsoft.ContainerService/managedClusters/aks-contoso-video/overview
+
+https://portal.azure.com/#@NetworkIntelligence21ca.onmicrosoft.com/resource/subscriptions/bc99b519-c96c-4361-81b2-34a263cb4caf/resourceGroups/rg-contoso-video/providers/Microsoft.ContainerService/managedClusters/aks-contoso-video/monitor
+
+events:
+
+https://portal.azure.com/#view/Microsoft_Azure_ContainerService/AksEvents.ReactView/aksClusterId/%2Fsubscriptions%2Fbc99b519-c96c-4361-81b2-34a263cb4caf%2Fresourcegroups%2Frg-contoso-video%2Fproviders%2Fmicrosoft.containerservice%2Fmanagedclusters%2Faks-contoso-video/eventScope/cluster/defaultFilters~/%7B%22eventType%22%3A%22Normal%22%7D
+
+deployment documentation for monitoring Kubernetes deployments,
+replicaSets, pods, nodes and others:
+https://kubernetes.io/docs/concepts/workloads/controllers/deployment/
+
+for azure cloud shell (use bash):
+
+https://portal.azure.com/#home
+
+and some useful CLI commands:
+
+kubectl get nodes -l agentpool=batch200
+
+kubectl get nodes
+
+kubectl get deployment -n costsavings
+
+kubectl get rs -n costsavings
+
+az aks get-credentials --name $CLUSTER_NAME --resource-group $RESOURCE_GROUP
+
+az group create --name=$RESOURCE_GROUP --location=$LOCATION
+
+kubectl describe pods -n costsavings
+
+export RESOURCE_GROUP=rg-contoso-video
+
+export CLUSTER_NAME=aks-contoso-video
+
+export LOCATION=westus3
+
+az login
+
+
