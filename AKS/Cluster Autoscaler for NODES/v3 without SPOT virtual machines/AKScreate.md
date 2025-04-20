@@ -67,6 +67,7 @@ az aks create \
 `kubectl apply -f deployment.yaml`
 
 ### Create an Azure DNS zone using the "az network dns zone create" command. The following example creates a DNS zone named contoso-website.com:
+
 ### Check DEPLOYMENT
 
 `kubectl get deployment -n costsavings`
