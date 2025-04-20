@@ -120,3 +120,15 @@ az aks create \
 ### Check the pods
 
 `kubectl get pods -n costsavings`
+
+### Check the NODE POOLS
+
+`az aks nodepool list --resource-group $RESOURCE_GROUP --cluster-name $CLUSTER_NAME --output table`
+
+### Check the nodes in the user mode pool
+
+`kubectl get nodes -l agentpool=batchprocpl`
+
+### Check the nodes in the SYSTEM mode pool
+
+`kubectl get nodes -l agentpool=nodepool1`
