@@ -17,7 +17,7 @@ az aks create \
 --name $CLUSTER_NAME \
 --node-count 1 \
 --generate-ssh-keys \
---node-vm-size Standard_DS2_v2 \
+--node-vm-size Standard_B2s \
 --enable-app-routing    
 ```
 ### --enable-app-routing    # THIS LINE WAS NOT IN THE ORIGINAL COMMAND. I ADDED IT AFTER CHECKING THE "HORIZONTAL POD AUTOSCALER" learning exercises.
