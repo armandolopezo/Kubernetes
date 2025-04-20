@@ -4,20 +4,20 @@
 ###### 3) Look the following file README_service_and_ingress.MD (we can ommit the DNS instructions if we test with PUBLIC IP ADDRESS of the web page).
 ###### 5) Deploy networking SERVICE with the SERVICE.YAML file.
 ###### 6) Deploy the networking INGRESS with the INGRESS.YAML file.
-###### 7) Deploy HORZONTAL POD AUTOSCALER with hpa.yaml file .
+###### 7) Deploy HORIZONTAL POD AUTOSCALER with hpa.yaml file .
 
 ######  The following commands are very useful for checking the differents steps of AKS clusters (asuming i am using a namespace called "hpa-contose" for the load:
 ######
 ###### `kubectl get nodes`
-###### `kubectl get pods`
+###### `kubectl get pods --namespace hpa-contoso`
 ###### `kubectl apply -f ?????????.yaml`
-###### `kubectl get deploy contoso-website`
+###### `kubectl get deploy --namespace hpa-contoso`
 ###### `kubectl get deployment contoso-website --namespace hpa-contoso`
 ###### `kubectl get service contoso-website --namespace hpa-contoso`
 ###### `kubectl get ingress contoso-website --namespace hpa-contoso`
 ###### `kubectl get hpa contoso-website --namespace hpa-contoso`
 ###### `kubectl get rs -n hpa-contoso`
-###### `kubectl describe hpa --namespace hpa-contoso`
+###### `kubectl describe hpa --namespace hpa-contoso` 
 ######
 
 ######   For the first successful testing of Horizontal Pod autoscaling (UP and DOWN) i used Apache JMeter with the TEST PLAN contained in TEST6.JMX with
