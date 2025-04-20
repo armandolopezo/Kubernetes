@@ -132,3 +132,10 @@ az aks create \
 ### Check the nodes in the SYSTEM mode pool
 
 `kubectl get nodes -l agentpool=nodepool1`
+
+### to Check the nodes details or description
+
+`kubectl describe node <NodeName>`
+
+`kubectl describe node aks-nodepool1-31272769-vmss000000`
+
