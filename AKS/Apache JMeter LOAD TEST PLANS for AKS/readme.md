@@ -1,6 +1,9 @@
 19-4-2025
 alo
 
+NOTA: Para configurar los TEST PLANS con GUI correr "JMETER.BAT" o "JMETERW.CMD" para cargar APACHE JMETER con interfase gráfica 
+(pero los tests deben correrse con linea de comandos. NO USAR GUI).  
+
 
 Hice esta prueba en la DELL de vadeos instalando JMETER en E: (m.2 nvme drive) y usando la siguiente carpeta para INSTALAR Y EJECUTAR
 APACHE JMETER después de copiar mis archivos de documentación de GIT y los archivos de documentacion (CON EXTENSION.txt) con cometarios como este
