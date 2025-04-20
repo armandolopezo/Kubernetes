@@ -1,0 +1,43 @@
+kind: Event
+apiVersion: v1
+metadata:
+  name: contoso-website.18381def07965e3c
+  namespace: costsavings
+  uid: 1777542b-8156-45cf-8735-a8fe3c6d99d2
+  resourceVersion: '49169'
+  creationTimestamp: '2025-04-20T20:51:59Z'
+  managedFields:
+    - manager: kube-controller-manager
+      operation: Update
+      apiVersion: v1
+      time: '2025-04-20T20:51:59Z'
+      fieldsType: FieldsV1
+      fieldsV1:
+        f:count: {}
+        f:firstTimestamp: {}
+        f:involvedObject: {}
+        f:lastTimestamp: {}
+        f:message: {}
+        f:reason: {}
+        f:reportingComponent: {}
+        f:source:
+          f:component: {}
+        f:type: {}
+involvedObject:
+  kind: Deployment
+  namespace: costsavings
+  name: contoso-website
+  uid: b770ed73-2448-464d-9e6d-3015e3b25426
+  apiVersion: apps/v1
+  resourceVersion: '49162'
+reason: ScalingReplicaSet
+message: Scaled down replica set contoso-website-b9c9db67d to 2 from 3
+source:
+  component: deployment-controller
+firstTimestamp: '2025-04-20T19:36:08Z'
+lastTimestamp: '2025-04-20T20:51:59Z'
+count: 2
+type: Normal
+eventTime: null
+reportingComponent: deployment-controller
+reportingInstance: ''

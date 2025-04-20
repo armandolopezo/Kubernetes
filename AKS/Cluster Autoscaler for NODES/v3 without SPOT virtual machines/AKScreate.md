@@ -142,3 +142,7 @@ az aks create \
 ### to Check other POD information
 
 `kubectl describe pods -n costsavings` 
+
+### to Check other DETAILS in deployments like CPU AND RAM requests, limits. Nodes , some scaling events.
+
+`kubectl describe  deployment -n costsavings`
