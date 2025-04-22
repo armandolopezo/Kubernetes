@@ -62,7 +62,7 @@ az aks create \
     --cluster-name $CLUSTER_NAME \
     --name batch200 \
     --enable-cluster-autoscaler \
-    --max-count 5 \
+    --max-count 3 \
     --min-count 1 \
     --eviction-policy Delete \
     --node-vm-size Standard_DS2_v2 \
