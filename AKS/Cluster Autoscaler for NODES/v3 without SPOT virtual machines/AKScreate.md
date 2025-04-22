@@ -11,15 +11,36 @@
 
 ### Run the az aks create command to create an AKS cluster.
 
+###
+
 ```
 az aks create \
 --resource-group $RESOURCE_GROUP \
 --name $CLUSTER_NAME \
---node-count 1 \
+--node-count 2 \
 --generate-ssh-keys \
---node-vm-size Standard_DS2_v2 \
+--node-vm-size Standard_B2S \
 --enable-app-routing    
 ```
+### PREVIOUS CONFIGURATION:
+### ```
+
+### az aks create \
+
+### --resource-group $RESOURCE_GROUP \
+
+### --name $CLUSTER_NAME \
+
+### --node-count 1 \
+
+### --generate-ssh-keys \
+
+### --node-vm-size Standard_DS2_v2 \
+
+### --enable-app-routing    
+
+### ```
+
 ### --enable-app-routing    # THIS LINE WAS NOT IN THE ORIGINAL COMMAND. I ADDED IT AFTER CHECKING THE "HORIZONTAL POD AUTOSCALER" learning exercises.
 
 ### Update the cluster autoscaler profile using the az aks update ### command with the --cluster-autoscaler-profile flag
@@ -41,11 +62,34 @@ az aks create \
     --cluster-name $CLUSTER_NAME \
     --name batch200 \
     --enable-cluster-autoscaler \
-    --max-count 3 \
+    --max-count 5 \
     --min-count 1 \
     --eviction-policy Delete \
-    --node-vm-size Standard_DS2_v2 \
+    --node-vm-size Standard_B2S \
     --no-wait `
+
+### Previous configuration for uUSER NODE POOL: 
+
+###    `az aks nodepool add \
+
+###    --resource-group $RESOURCE_GROUP \
+
+###    --cluster-name $CLUSTER_NAME \
+
+###    --name batch200 \
+
+###    --enable-cluster-autoscaler \
+
+###    --max-count 3 \
+
+###    --min-count 1 \
+
+###    --eviction-policy Delete \
+
+###    --node-vm-size Standard_DS2_v2 \
+
+###    --no-wait` 
+
 
 ### Checking the NODEPOOLS
 
