@@ -19,7 +19,7 @@ az aks create \
 --name $CLUSTER_NAME \
 --node-count 2 \
 --generate-ssh-keys \
---node-vm-size Standard_B2S \
+--node-vm-size Standard_DS2_v2 \
 --enable-app-routing    
 ```
 ### PREVIOUS CONFIGURATION:
@@ -65,7 +65,7 @@ az aks create \
     --max-count 5 \
     --min-count 1 \
     --eviction-policy Delete \
-    --node-vm-size Standard_B2S \
+    --node-vm-size Standard_DS2_v2 \
     --no-wait `
 
 ### Previous configuration for uUSER NODE POOL: 
