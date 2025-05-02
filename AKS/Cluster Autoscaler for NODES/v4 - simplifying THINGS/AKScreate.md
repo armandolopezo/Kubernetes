@@ -168,14 +168,16 @@ a
 `kubectl get node`
 
 
-### Below I create 100 forcing creation of REPLICAS to INDUCE CLUSTER AUTOSCALING with de creation of more NODES to service app: CONTOSO-website
+### Below I create 50 forcing creation of REPLICAS to INDUCE CLUSTER AUTOSCALING with de creation of more NODES to service app: CONTOSO-website
 
-`kubectl scale --replicas=100 deploy contoso-website -n costsavings`
+`kubectl scale --replicas=50 deploy contoso-website -n costsavings`
 
 ### Después del comando anterior deben aparecer algunos PODS RUNNING y otros PENDING como se puede ver con el siguiente comando:
 
 `kubectl get pods -n costsavings|more`
 
+### With the following command below I could do a SCALE DOWN again
 
+`kubectl scale --replicas=1 deploy contoso-website -n costsavings`
 
 
