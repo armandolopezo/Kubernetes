@@ -160,8 +160,22 @@ a
 
 ### kubectl cordon aks-nodepool1-31721111-vmss000000 aks-nodepool1-31721111-vmss000001 aks-nodepool1-31721111-vmss000002
 
-### Below I create 20 forcing creation of REPLICAS to INDUCE CLUSTER AUTOSCALING with de creation of more NODES to service app: CONTOSO-website
+### Después del cambio de nodo el siguiente comando debe decir "SCHEDULING DISABLED" en el node que se aplico Cordon
+### con lo anterior logro que si se requieren nuevos PODS sólo TENGA el NODEPOOL2 disponible para probar CLUSTER autoscaler.
+### Si hice lo anterior y tengo un sólo nodo disponible en NODEPOOL2 (como sucedio por inactividad después de SCALE DOWN)
+### puede genera replicas de los PODS con EL COMANDO DE KUBECTL SCALE o generar carga con APACHE JMETER para CREAR MAS NODOS CON SCALE UP
 
-`kubectl scale --replicas=20 deploy contoso-website -n costsavings`
+`kubectl get node`
+
+
+### Below I create 100 forcing creation of REPLICAS to INDUCE CLUSTER AUTOSCALING with de creation of more NODES to service app: CONTOSO-website
+
+`kubectl scale --replicas=100 deploy contoso-website -n costsavings`
+
+### Después del comando anterior deben aparecer algunos PODS RUNNING y otros PENDING como se puede ver con el siguiente comando:
+
+`kubectl get pods -n costsavings|more`
+
+
 
 
