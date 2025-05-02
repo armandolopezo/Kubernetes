@@ -3,7 +3,7 @@
 
 `export RESOURCE_GROUP=rg-contoso-video`               
 `export CLUSTER_NAME=aks-contoso-video`                
-`export LOCATION=westus3`               
+`export LOCATION=eastus`               
 
 ### Run the az group create command to create a resource group. Deploy all resources into this new resource group.
 
@@ -17,10 +17,15 @@
 az aks create \
 --resource-group $RESOURCE_GROUP \
 --name $CLUSTER_NAME \
---node-count 2 \
+--node-count 1 \
 --generate-ssh-keys \
---node-vm-size Standard_DS2_v2 \
---enable-app-routing    
+--node-vm-size Standard_B2S \
+--enable-app-routing \
+--vm-set-type VirtualMachineScaleSets \
+--load-balancer-sku standard \
+--enable-cluster-autoscaler \
+--min-count 1 \
+--max-count 3 
 ```
 ### PREVIOUS CONFIGURATION:
 ### ```
@@ -65,8 +70,8 @@ az aks create \
     --max-count 3 \
     --min-count 1 \
     --eviction-policy Delete \
-    --node-vm-size Standard_DS2_v2 \
-    --no-wait `
+    --node-vm-size Standard_B2S \
+    --no-wait`
 
 ### Previous configuration for uUSER NODE POOL: 
 
