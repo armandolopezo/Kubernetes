@@ -1,0 +1,1 @@
+Cluster Autoscaler and HPA worked well (scaling up and down) increasing from 10 to 50 Hpa maxReplicas and doing testing with 50 replicas (scale down of nodes was slow 20minutes)
