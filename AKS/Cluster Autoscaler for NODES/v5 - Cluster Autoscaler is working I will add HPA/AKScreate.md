@@ -137,7 +137,7 @@ az aks create \
 `kubectl get pods --all-namespaces -o wide`
 `kubectl get pods -o wide`
 `kubectl get pods --all-namespaces`
-`kubectl get pods -n costsavings -o wide`
+`kubectl get pods -n costsavings -o wide|more`
 
 ### to Check other DETAILS in deployments like CPU AND RAM requests, limits. Nodes , some scaling events.
 
@@ -183,3 +183,10 @@ a
 ### With the following command below I could do a SCALE UP again
 
 `kubectl scale --replicas=50 deploy contoso-website -n costsavings`
+
+### I will test the commands that follow to try to increase of SCALE DOWN of NODES that was 20 minutes without load-balancer-sku
+
+### Update the cluster autoscaler profile using the az aks update ### command with the --cluster-autoscaler-profile flag
+
+`az aks update --resource-group $RESOURCE_GROUP --name $CLUSTER_NAME  --cluster-autoscaler-profile scan-interval=5s scale-down-unready-time=5m scale-down-delay-after-add=5m`
+
