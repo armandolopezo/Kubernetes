@@ -17,7 +17,7 @@ spec:
       containers:
         - image: mcr.microsoft.com/mslearn/samples/contoso-website
           name: contoso-website
-          resources:50
+          resources:
             requests:
               cpu: 150m
               memory: 150Mi
