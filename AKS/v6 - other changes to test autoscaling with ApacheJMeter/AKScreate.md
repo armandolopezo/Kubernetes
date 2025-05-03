@@ -17,15 +17,15 @@
 az aks create \
 --resource-group $RESOURCE_GROUP \
 --name $CLUSTER_NAME \
---node-count 1 \
+--node-count 2 \
 --generate-ssh-keys \
 --node-vm-size Standard_B2S \
 --enable-app-routing \
 --vm-set-type VirtualMachineScaleSets \
 --load-balancer-sku standard \
 --enable-cluster-autoscaler \
---min-count 1 \
---max-count 1 
+--min-count 2 \
+--max-count 2 
 ```
 
 ### Link your Kubernetes cluster with kubectl by running the following command in Cloud Shell.
