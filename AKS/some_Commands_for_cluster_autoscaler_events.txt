@@ -1,0 +1,9 @@
+3-5-2024
+alo
+
+kubectl get events --field-selector source=cluster-autoscaler
+
+kubectl get events --field-selector source=cluster-autoscaler -n costsavings
+
+kubectl get events --field-selector source=cluster-autoscaler -n kube-system|more
+

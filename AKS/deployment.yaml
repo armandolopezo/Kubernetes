@@ -19,8 +19,8 @@ spec:
           name: contoso-website
           resources:
             requests:
-              cpu: 100m
-              memory: 128Mi
+              cpu: 150m
+              memory: 150Mi
             limits:
               cpu: 250m
               memory: 256Mi

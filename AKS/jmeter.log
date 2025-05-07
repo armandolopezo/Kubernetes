@@ -1,0 +1,38 @@
+2025-05-06 21:10:18,244 INFO o.a.j.u.JMeterUtils: Setting Locale to en_EN
+2025-05-06 21:10:18,271 INFO o.a.j.JMeter: Loading user properties from: user.properties
+2025-05-06 21:10:18,271 INFO o.a.j.JMeter: Loading system properties from: system.properties
+2025-05-06 21:10:18,280 INFO o.a.j.JMeter: Copyright (c) 1998-2024 The Apache Software Foundation
+2025-05-06 21:10:18,280 INFO o.a.j.JMeter: Version 5.6.3
+2025-05-06 21:10:18,280 INFO o.a.j.JMeter: java.version=17.0.15
+2025-05-06 21:10:18,280 INFO o.a.j.JMeter: java.vm.name=OpenJDK 64-Bit Server VM
+2025-05-06 21:10:18,280 INFO o.a.j.JMeter: os.name=Windows 11
+2025-05-06 21:10:18,280 INFO o.a.j.JMeter: os.arch=amd64
+2025-05-06 21:10:18,280 INFO o.a.j.JMeter: os.version=10.0
+2025-05-06 21:10:18,282 INFO o.a.j.JMeter: file.encoding=Cp1252
+2025-05-06 21:10:18,282 INFO o.a.j.JMeter: java.awt.headless=null
+2025-05-06 21:10:18,282 INFO o.a.j.JMeter: Max memory     =2147483648
+2025-05-06 21:10:18,282 INFO o.a.j.JMeter: Available Processors =4
+2025-05-06 21:10:18,294 INFO o.a.j.JMeter: Default Locale=English (EN)
+2025-05-06 21:10:18,294 INFO o.a.j.JMeter: JMeter  Locale=English (EN)
+2025-05-06 21:10:18,294 INFO o.a.j.JMeter: JMeterHome=E:\_borrables2\apache-jmeter-5.6.3\apache-jmeter-5.6.3
+2025-05-06 21:10:18,296 INFO o.a.j.JMeter: user.dir  =E:\_borrables2\apache-jmeter-5.6.3\apache-jmeter-5.6.3\bin
+2025-05-06 21:10:18,296 INFO o.a.j.JMeter: PWD       =E:\_borrables2\apache-jmeter-5.6.3\apache-jmeter-5.6.3\bin
+2025-05-06 21:10:18,297 INFO o.a.j.JMeter: IP: 192.168.0.225 Name: dellvadeos FullName: dellvadeos
+2025-05-06 21:10:18,317 INFO o.a.j.JMeter: Loaded icon properties from org/apache/jmeter/images/icon.properties
+2025-05-06 21:10:18,532 INFO o.a.j.JMeterGuiLauncher: Setting LAF to: com.github.weisj.darklaf.DarkLaf:com.github.weisj.darklaf.theme.DarculaTheme
+2025-05-06 21:10:27,701 INFO o.a.j.s.FileServer: Default base='E:\_borrables2\apache-jmeter-5.6.3\apache-jmeter-5.6.3\bin'
+2025-05-06 21:10:27,702 INFO o.a.j.g.a.Load: Loading file: E:\_borrables2\apache-jmeter-5.6.3\apache-jmeter-5.6.3\bin\TEST9.jmx
+2025-05-06 21:10:27,702 INFO o.a.j.s.FileServer: Set new base='E:\_borrables2\apache-jmeter-5.6.3\apache-jmeter-5.6.3\bin'
+2025-05-06 21:10:27,941 INFO o.a.j.s.SaveService: Testplan (JMX) version: 2.2. Testlog (JTL) version: 2.2
+2025-05-06 21:10:27,985 INFO o.a.j.s.SaveService: Using SaveService properties version 5.0
+2025-05-06 21:10:27,985 INFO o.a.j.s.SaveService: Using SaveService properties file encoding UTF-8
+2025-05-06 21:10:27,985 INFO o.a.j.s.SaveService: Loading file: E:\_borrables2\apache-jmeter-5.6.3\apache-jmeter-5.6.3\bin\TEST9.jmx
+2025-05-06 21:10:28,018 INFO o.a.j.p.h.c.CookieManager: Settings: Delete null: true Check: true Allow variable: true Save: false Prefix: COOKIE_
+2025-05-06 21:10:28,020 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/html is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2025-05-06 21:10:28,020 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for application/xhtml+xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2025-05-06 21:10:28,020 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for application/xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2025-05-06 21:10:28,020 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2025-05-06 21:10:28,020 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/vnd.wap.wml is org.apache.jmeter.protocol.http.parser.RegexpHTMLParser
+2025-05-06 21:10:28,020 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/css is org.apache.jmeter.protocol.http.parser.CssParser
+2025-05-06 21:10:28,295 INFO o.a.j.s.FileServer: Set new base='E:\_borrables2\apache-jmeter-5.6.3\apache-jmeter-5.6.3\bin'
+2025-05-06 21:23:09,784 INFO o.a.j.s.FileServer: Set new base='E:\_borrables2\apache-jmeter-5.6.3\apache-jmeter-5.6.3\bin'

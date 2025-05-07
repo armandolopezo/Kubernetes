@@ -3,7 +3,7 @@
 
 `export RESOURCE_GROUP=rg-contoso-video`               
 `export CLUSTER_NAME=aks-contoso-video`                
-`export LOCATION=eastus`               
+`export LOCATION=westus3`               
 
 ### Run the az group create command to create a resource group. Deploy all resources into this new resource group.
 
@@ -17,15 +17,15 @@
 az aks create \
 --resource-group $RESOURCE_GROUP \
 --name $CLUSTER_NAME \
---node-count 1 \
+--node-count 2 \
 --generate-ssh-keys \
 --node-vm-size Standard_B2S \
 --enable-app-routing \
 --vm-set-type VirtualMachineScaleSets \
 --load-balancer-sku standard \
 --enable-cluster-autoscaler \
---min-count 1 \
---max-count 1 
+--min-count 2 \
+--max-count 2 
 ```
 
 ### Link your Kubernetes cluster with kubectl by running the following command in Cloud Shell.
@@ -35,6 +35,16 @@ az aks create \
 ### Verify that the cluster is running and that you can connect to it using the "kubectl get nodes" command.
 
 `kubectl get nodes`
+
+### AKS cluster system node to force POD REPLICAS to use NODEPOOL=nodepool2 (creation below)
+ 
+### Cordon the existing SYSTEM nodes: Cordoning marks specified nodes as unschedulable and prevents any more pods from being added to the nodes.
+
+`kubectl cordon <node-names>`
+
+### example below:
+
+### kubectl cordon aks-nodepool
 
 ### Run the az aks nodepool add command to add another node pool 
 
@@ -46,22 +56,14 @@ az aks create \
     --max-count 3 \
     --min-count 1 \
     --eviction-policy Delete \
-    --node-vm-size Standard_B2S \
+    --node-vm-size Standard_A2_V2 \
     --no-wait`
 
 ### Checking the NODEPOOLS
 
 `az aks nodepool list  --resource-group $RESOURCE_GROUP  --cluster-name $CLUSTER_NAME`
 
-### AKS cluster system node to force POD REPLICAS to use NODEPOOL=nodepool2 (creation below)
- 
-### Cordon the existing SYSTEM nodes: Cordoning marks specified nodes as unschedulable and prevents any more pods from being added to the nodes.
 
-`kubectl cordon <node-names>`
-
-### example below:
-
-### kubectl cordon aks-nodepool
 
 
 ### Run the az aks nodepool show command to show the details of the new spot node pool for the USER WORKLOADS
@@ -118,6 +120,8 @@ az aks create \
 ### Check the pods
 
 `kubectl get pods -n costsavings`
+
+`kubectl get pods -n costsavings -o wide|more`
 
 ### Check the NODE POOLS
 

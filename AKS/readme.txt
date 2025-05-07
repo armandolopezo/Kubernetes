@@ -1,8 +1,6 @@
-20-4-2025
-ALO
+27-3-2025
+alo
 
-I tried to use SPOT configuration for VMs for reducing costs in EASTUS but
-it didn't work even though I waited between 30-90 minutos.
-
-I decided try a retry with WESTUS3 region 
+I learned that I have to use a folder in the windows drive to download the files and folders from 
+a CLONED GITHUB REPOSITORY.
 
